@@ -1,0 +1,26977 @@
+cscope 15 $HOME/venky/code               0000167173
+	@debug.h
+
+42 #i‚de‡
+_DEBUG_H_
+
+
+43 
+	#_DEBUG_H_
+
+
+	)
+
+45 
+	~<löux/kî√l.h
+>
+
+47 
+	#USB_STORAGE
+ "usb-°‹age: "
+
+	)
+
+49 #ifde‡
+CONFIG_USB_STORAGE_DEBUG
+
+
+50 
+usb_°‹_show_comm™d
+(c⁄° 
+us_d©a
+ *
+us
+, 
+scsi_cmnd
+ *
+§b
+);
+
+51 
+usb_°‹_show_£n£
+(c⁄° 
+us_d©a
+ *
+us
+, 
+key
+,
+
+52 
+asc
+, 
+ascq
+);
+
+53 
+	$__¥ötf
+(2, 3Ë
+	`usb_°‹_dbg
+(c⁄° 
+us_d©a
+ *
+us
+,
+
+54 c⁄° *
+fmt
+, ...);
+
+56 
+	#US_DEBUGPX
+(
+fmt
+, ...Ë
+	`¥ötk
+(fmt, ##
+__VA_ARGS__
+)
+
+	)
+
+57 
+	#US_DEBUG
+(
+x
+Ë
+	)
+x
+
+59 
+	$__¥ötf
+(2, 3)
+
+60 
+ölöe
+ 
+	$_usb_°‹_dbg
+(c⁄° 
+us_d©a
+ *
+us
+,
+
+61 c⁄° *
+fmt
+, ...)
+
+63 
+	}
+}
+
+64 
+	#usb_°‹_dbg
+(
+us
+, 
+fmt
+, ...) \
+
+65 dÿ{ i‡(0Ë
+	`_usb_°‹_dbg
+(
+us
+, 
+fmt
+, ##
+__VA_ARGS__
+); } 0)
+
+	)
+
+66 
+	#US_DEBUGPX
+(
+fmt
+, ...) \
+
+67 dÿ{ i‡(0Ë
+	`¥ötk
+(
+fmt
+, ##
+__VA_ARGS__
+); } 0)
+
+	)
+
+68 
+	#US_DEBUG
+(
+x
+)
+
+	)
+
+	@driver.c
+
+1 #ifde‡
+CONFIG_USB_STORAGE_DEBUG
+
+
+2 
+	#DEBUG
+
+
+	)
+
+5 
+	~<löux/sched.h
+>
+
+6 
+	~<löux/sched.h
+>
+
+7 
+	~<löux/î∫o.h
+>
+
+8 
+	~<löux/‰ìzî.h
+>
+
+9 
+	~<löux/moduÀ.h
+>
+
+10 
+	~<löux/¶ab.h
+>
+
+11 
+	~<löux/kthªad.h
+>
+
+12 
+	~<löux/muãx.h
+>
+
+13 
+	~<löux/ut¢ame.h
+>
+
+15 
+	~<scsi/scsi.h
+>
+
+16 
+	~<scsi/scsi_cmnd.h
+>
+
+17 
+	~<scsi/scsi_devi˚.h
+>
+
+19 
+	~"usb.h
+"
+
+20 
+	~"scsiglue.h
+"
+
+21 
+	~"debug.h
+"
+
+22 
+	~"å™•‹t.h
+"
+
+23 
+	~"¥Ÿocﬁ.h
+"
+
+25 #i‡
+IS_ENABLED
+(
+CONFIG_USB_UAS
+)
+
+29 
+MODULE_AUTHOR
+("Venkatesh");
+
+30 
+MODULE_DESCRIPTION
+("USB Mass Storage Driver for Linux");
+
+31 
+MODULE_LICENSE
+("GPL");
+
+33 
+	gdñay_u£
+ = 1;
+
+34 
+moduÀ_∑øm
+(
+dñay_u£
+, 
+uöt
+, 
+S_IRUGO
+ | 
+S_IWUSR
+);
+
+35 
+MODULE_PARM_DESC
+(
+dñay_u£
+, "secondsÅo delay before usingáÇew device");
+
+38 
+	#UNUSUAL_DEV
+(
+idVíd‹
+, 
+idProdu˘
+, 
+bcdDevi˚Mö
+, 
+bcdDevi˚Max
+, \
+
+39 
+víd‹_«me
+, 
+¥odu˘_«me
+, 
+u£_¥Ÿocﬁ
+, 
+u£_å™•‹t
+, \
+
+40 
+öô_fun˘i⁄
+, 
+Fœgs
+) \
+
+42 .
+víd‹_«me
+ = vendor_name, \
+
+43 .
+¥odu˘Name
+ = 
+¥odu˘_«me
+, \
+
+44 .
+u£PrŸocﬁ
+ = 
+u£_¥Ÿocﬁ
+, \
+
+45 .
+u£Tøn•‹t
+ = 
+u£_å™•‹t
+, \
+
+46 .
+öôFun˘i⁄
+ = 
+öô_fun˘i⁄
+, \
+
+47 }
+
+	)
+
+49 
+	#COMPLIANT_DEV
+ 
+UNUSUAL_DEV
+
+
+	)
+
+51 
+	#USUAL_DEV
+(
+u£_¥Ÿocﬁ
+, 
+u£_å™•‹t
+) \
+
+53 .
+u£PrŸocﬁ
+ = 
+u£_¥Ÿocﬁ
+, \
+
+54 .
+u£Tøn•‹t
+ = 
+u£_å™•‹t
+, \
+
+55 }
+
+	)
+
+58 
+us_unusuÆ_dev
+ 
+	gus_unusuÆ_dev_li°
+[] = {
+
+63 
+us_unusuÆ_dev
+ 
+	gf‹_dy«mic_ids
+ =
+
+64 
+USUAL_DEV
+(
+USB_SC_SCSI
+, 
+USB_PR_BULK
+);
+
+66 #unde‡
+UNUSUAL_DEV
+
+
+67 #unde‡
+COMPLIANT_DEV
+
+
+68 #unde‡
+USUAL_DEV
+
+
+69 #unde‡
+UNUSUAL_VENDOR_INTF
+
+
+71 #ifde‡
+CONFIG_LOCKDEP
+
+
+73 
+lock_˛ass_key
+ 
+	gus_öãrÁ˚_key
+[
+USB_MAXINTERFACES
+];
+
+75 
+	$us_£t_lock_˛ass
+(
+muãx
+ *muãx, 
+usb_öãrÁ˚
+ *
+ötf
+)
+
+77 
+usb_devi˚
+ *
+udev
+ = 
+	`öãrÁ˚_to_usbdev
+(
+ötf
+);
+
+78 
+usb_ho°_c⁄fig
+ *
+c⁄fig
+ = 
+udev
+->
+a˘c⁄fig
+;
+
+79 
+i
+;
+
+81 
+i
+ = 0; i < 
+c⁄fig
+->
+desc
+.
+bNumI¡îÁ˚s
+; i++)
+
+83 i‡(
+c⁄fig
+->
+öãrÁ˚
+[
+i
+] =
+ötf
+)
+
+87 
+	`BUG_ON
+(
+i
+ =
+c⁄fig
+->
+desc
+.
+bNumI¡îÁ˚s
+);
+
+88 
+	`lockdï_£t_˛ass
+(
+muãx
+, &
+us_öãrÁ˚_key
+[
+i
+]);
+
+89 
+	}
+}
+
+92 
+	$us_£t_lock_˛ass
+(
+muãx
+ *muãx, 
+usb_öãrÁ˚
+ *
+ötf
+)
+
+94 
+	}
+}
+
+97 
+	$usb_°‹_c⁄åﬁ_thªad
+(* 
+__us
+)
+
+99 
+us_d©a
+ *
+us
+ = (us_d©®*)
+__us
+;
+
+100 
+Scsi_Ho°
+ *
+ho°
+ = 
+	`us_to_ho°
+(
+us
+);
+
+104 
+	`usb_°‹_dbg
+(
+us
+, "***Åhread sleeping\n");
+
+105 i‡(
+	`waô_f‹_com∂ëi⁄_öãºu±ibÀ
+(&
+us
+->
+cmnd_ªady
+))
+
+107 
+	`usb_°‹_dbg
+(
+us
+, "***Åhreadáwakened\n");
+
+110 
+	`muãx_lock
+(&(
+us
+->
+dev_muãx
+));
+
+113 
+	`scsi_lock
+(
+ho°
+);
+
+116 i‡(
+us
+->
+§b
+ =
+NULL
+)
+
+118 
+	`scsi_u∆ock
+(
+ho°
+);
+
+119 
+	`muãx_u∆ock
+(&
+us
+->
+dev_muãx
+);
+
+120 
+	`usb_°‹_dbg
+(
+us
+, "--Éxiting\n");
+
+125 i‡(
+	`ã°_bô
+(
+US_FLIDX_TIMED_OUT
+, &
+us
+->
+dÊags
+)) {
+
+126 
+us
+->
+§b
+->
+ªsu…
+ = 
+DID_ABORT
+ << 16;
+
+127 
+SkùF‹Ab‹t
+;
+
+130 
+	`scsi_u∆ock
+(
+ho°
+);
+
+133 i‡(
+us
+->
+§b
+->
+sc_d©a_dúe˘i⁄
+ =
+DMA_BIDIRECTIONAL
+) {
+
+134 
+	`usb_°‹_dbg
+(
+us
+, "UNKNOWN data direction\n");
+
+135 
+us
+->
+§b
+->
+ªsu…
+ = 
+DID_ABORT
+ << 16;
+
+140 i‡(
+us
+->
+§b
+->
+devi˚
+->
+id
+ &&
+
+141 !(
+us
+->
+fÊags
+ & 
+US_FL_SCM_MULT_TARG
+))
+
+143 
+	`usb_°‹_dbg
+(
+us
+, "BadÅargetÇumber (%d:%llu)\n",
+
+144 
+us
+->
+§b
+->
+devi˚
+->
+id
+, us->§b->devi˚->
+lun
+);
+
+145 
+us
+->
+§b
+->
+ªsu…
+ = 
+DID_BAD_TARGET
+ << 16;
+
+147 i‡(
+us
+->
+§b
+->
+devi˚
+->
+lun
+ > us->
+max_lun
+) {
+
+148 
+	`usb_°‹_dbg
+(
+us
+, "Bad LUN (%d:%llu)\n",
+
+149 
+us
+->
+§b
+->
+devi˚
+->
+id
+, us->§b->devi˚->
+lun
+);
+
+150 
+us
+->
+§b
+->
+ªsu…
+ = 
+DID_BAD_TARGET
+ << 16;
+
+155 i‡((
+us
+->
+§b
+->
+cmnd
+[0] =
+INQUIRY
+) &&
+
+156 (
+us
+->
+fÊags
+ & 
+US_FL_FIX_INQUIRY
+)) {
+
+160 
+	`usb_°‹_dbg
+(
+us
+, "Faking INQUIRY command\n");
+
+161 
+us
+->
+§b
+->
+ªsu…
+ = 
+SAM_STAT_GOOD
+;
+
+165 
+	`US_DEBUG
+(
+	`usb_°‹_show_comm™d
+(
+us
+, us->
+§b
+));
+
+166 
+us
+->
+	`¥Ÿo_h™dÀr
+(us->
+§b
+, us);
+
+167 
+	`usb_m¨k_œ°_busy
+(
+us
+->
+pusb_dev
+);
+
+171 
+	`scsi_lock
+(
+ho°
+);
+
+174 i‡(
+us
+->
+§b
+->
+ªsu…
+ !
+DID_ABORT
+ << 16) {
+
+175 
+	`usb_°‹_dbg
+(
+us
+, "scsi cmd done,Ñesult=0x%x\n",
+
+176 
+us
+->
+§b
+->
+ªsu…
+);
+
+177 
+us
+->
+§b
+->
+	`scsi_d⁄e
+(us->srb);
+
+179 
+SkùF‹Ab‹t
+:
+
+180 
+	`usb_°‹_dbg
+(
+us
+, "scsi commandáborted\n");
+
+188 i‡(
+	`ã°_bô
+(
+US_FLIDX_TIMED_OUT
+, &
+us
+->
+dÊags
+))
+
+190 
+	`com∂ëe
+(&
+us
+->
+nŸify
+);
+
+192 
+	`˛ór_bô
+(
+US_FLIDX_ABORTING
+, &
+us
+->
+dÊags
+);
+
+193 
+	`˛ór_bô
+(
+US_FLIDX_TIMED_OUT
+, &
+us
+->
+dÊags
+);
+
+197 
+us
+->
+§b
+ = 
+NULL
+;
+
+198 
+	`scsi_u∆ock
+(
+ho°
+);
+
+200 
+	`muãx_u∆ock
+(&
+us
+->
+dev_muãx
+);
+
+205 
+	`£t_cuºít_°©e
+(
+TASK_INTERRUPTIBLE
+);
+
+206 i‡(
+	`kthªad_should_°›
+());
+
+208 
+	`scheduÀ
+();
+
+210 
+	`__£t_cuºít_°©e
+(
+TASK_RUNNING
+);
+
+212 
+	}
+}
+
+214 
+	$usb_°‹_sg_èbÀsize
+(
+usb_öãrÁ˚
+ *
+ötf
+)
+
+216 
+usb_devi˚
+ *
+usb_dev
+ = 
+	`öãrÁ˚_to_usbdev
+(
+ötf
+);
+
+218 i‡(
+usb_dev
+->
+bus
+->
+sg_èbÀsize
+)
+
+219  
+usb_dev
+->
+bus
+->
+sg_èbÀsize
+;
+
+220  
+SG_ALL
+;
+
+221 
+	}
+}
+
+223 
+	$assocüã_dev
+(
+us_d©a
+ *
+us
+, 
+usb_öãrÁ˚
+ *
+ötf
+)
+
+225 
+us
+->
+pusb_dev
+ = 
+	`öãrÁ˚_to_usbdev
+(
+ötf
+);
+
+226 
+us
+->
+pusb_ötf
+ = 
+ötf
+;
+
+227 
+us
+->
+i‚um
+ = 
+ötf
+->
+cur_Æt£âög
+->
+desc
+.
+bI¡îÁ˚Numbî
+;
+
+228 
+	`usb_°‹_dbg
+(
+us
+, "vendor: 0x%04x,Öroduct: 0x%04x, Revision: 0x%04x\n",
+
+229 
+	`À16_to_˝u
+(
+us
+->
+pusb_dev
+->
+des¸ùt‹
+.
+idVíd‹
+),
+
+230 
+	`À16_to_˝u
+(
+us
+->
+pusb_dev
+->
+des¸ùt‹
+.
+idProdu˘
+),
+
+231 
+	`À16_to_˝u
+(
+us
+->
+pusb_dev
+->
+des¸ùt‹
+.
+bcdDevi˚
+));
+
+232 
+	`usb_°‹_dbg
+(
+us
+, "InterfaceSubClass: 0x%02x,Örotocol: 0x%02x\n",
+
+233 
+ötf
+->
+cur_Æt£âög
+->
+desc
+.
+bI¡îÁ˚SubCœss
+,
+
+234 
+ötf
+->
+cur_Æt£âög
+->
+desc
+.
+bI¡îÁ˚PrŸocﬁ
+);
+
+237 
+	`usb_£t_ötfd©a
+(
+ötf
+, 
+us
+);
+
+239 
+	`¥_öfo
+("Hi dude\n");
+
+241 
+us
+->
+¸
+ = 
+	`kmÆloc
+((*us->¸), 
+GFP_KERNEL
+);
+
+242 i‡(!
+us
+->
+¸
+)
+
+243  -
+ENOMEM
+;
+
+244 
+us
+->
+iobuf
+ = 
+	`usb_Æloc_cohîít
+(us->
+pusb_dev
+, 
+US_IOBUF_SIZE
+, 
+GFP_KERNEL
+,
+
+245 &
+us
+->
+iobuf_dma
+);
+
+246 i‡(
+us
+->
+iobuf
+) {
+
+247 
+	`usb_°‹_dbg
+(
+us
+, "I/O bufferállocation failed\n");
+
+248  -
+ENOMEM
+;
+
+251 
+	}
+}
+
+253 
+	$gë_devi˚_öfo
+(
+us_d©a
+ *
+us
+, c⁄° 
+usb_devi˚_id
+ *
+id
+,
+
+254 
+us_unusuÆ_dev
+ *
+unusuÆ_dev
+)
+
+256 
+usb_devi˚
+ *
+dev
+ = 
+us
+->
+pusb_dev
+;
+
+257 
+usb_öãrÁ˚_des¸ùt‹
+ *
+idesc
+ =
+
+258 &
+us
+->
+pusb_ötf
+->
+cur_Æt£âög
+->
+desc
+;
+
+259 
+devi˚
+ *
+pdev
+ = &
+us
+->
+pusb_ötf
+->
+dev
+;
+
+262 
+us
+->
+unusuÆ_dev
+ = unusual_dev;
+
+263 
+us
+->
+sub˛ass
+ = (
+unusuÆ_dev
+->
+u£PrŸocﬁ
+ =
+USB_SC_DEVICE
+) ?
+
+264 
+idesc
+->
+bI¡îÁ˚SubCœss
+: 
+unusuÆ_dev
+->
+u£PrŸocﬁ
+;
+
+265 
+us
+->
+¥Ÿocﬁ
+ = (
+unusuÆ_dev
+->
+u£Tøn•‹t
+ =
+USB_PR_DEVICE
+) ?
+
+266 
+idesc
+->
+bI¡îÁ˚PrŸocﬁ
+: 
+unusuÆ_dev
+->
+u£Tøn•‹t
+;
+
+267 
+us
+->
+fÊags
+ = 
+id
+->
+drivî_öfo
+;
+
+269 i‡(
+us
+->
+fÊags
+ & 
+US_FL_IGNORE_DEVICE
+) {
+
+270 
+	`dev_öfo
+(
+pdev
+, "Device ignored\n");
+
+271  -
+ENODEV
+;
+
+274 i‡(
+dev
+->
+•ìd
+ !
+USB_SPEED_HIGH
+)
+
+275 
+us
+->
+fÊags
+ &~
+US_FL_GO_SLOW
+;
+
+276 i‡(
+us
+->
+fÊags
+)
+
+277 
+	`dev_öfo
+(
+pdev
+, "Quirks match for vid %04xÖid %04x: %lx\n",
+
+278 
+	`À16_to_˝u
+(
+dev
+->
+des¸ùt‹
+.
+idVíd‹
+),
+
+279 
+	`À16_to_˝u
+(
+dev
+->
+des¸ùt‹
+.
+idProdu˘
+),
+
+280 
+us
+->
+fÊags
+);
+
+282 i‡(
+id
+->
+idVíd‹
+ || id->
+idProdu˘
+) {
+
+283 c⁄° *
+msgs
+[3] = {
+
+288 
+usb_devi˚_des¸ùt‹
+ *
+ddesc
+ = &
+dev
+->
+des¸ùt‹
+;
+
+289 
+msg
+ = -1;
+
+291 i‡(
+unusuÆ_dev
+->
+u£PrŸocﬁ
+ !
+USB_SC_DEVICE
+ &&
+
+292 
+us
+->
+sub˛ass
+ =
+idesc
+->
+bI¡îÁ˚SubCœss
+)
+
+293 
+msg
+ += 1;
+
+294 i‡(
+unusuÆ_dev
+->
+u£Tøn•‹t
+ !
+USB_PR_DEVICE
+ &&
+
+295 
+us
+->
+¥Ÿocﬁ
+ =
+idesc
+->
+bI¡îÁ˚PrŸocﬁ
+)
+
+296 
+msg
+ += 2;
+
+297 i‡(
+msg
+ > 0 && !(
+us
+->
+fÊags
+ & 
+US_FL_NEED_OVERRIDE
+))
+
+298 
+	`dev_nŸi˚
+(
+pdev
+, "This device "
+
+305 
+	`À16_to_˝u
+(
+ddesc
+->
+idVíd‹
+),
+
+306 
+	`À16_to_˝u
+(
+ddesc
+->
+idProdu˘
+),
+
+307 
+	`À16_to_˝u
+(
+ddesc
+->
+bcdDevi˚
+),
+
+308 
+idesc
+->
+bI¡îÁ˚SubCœss
+,
+
+309 
+idesc
+->
+bI¡îÁ˚PrŸocﬁ
+,
+
+310 
+msgs
+[
+msg
+],
+
+311 
+	`ut¢ame
+()->
+ªÀa£
+);
+
+314 
+	}
+}
+
+316 
+	$gë_å™•‹t
+(
+us_d©a
+ *
+us
+)
+
+318 
+us
+->
+¥Ÿocﬁ
+) {
+
+319 
+USB_PR_BULK
+:
+
+320 
+us
+->
+å™•‹t_«me
+ = "Bulk";
+
+321 
+us
+->
+å™•‹t
+ = 
+usb_°‹_Bulk_å™•‹t
+;
+
+322 
+us
+->
+å™•‹t_ª£t
+ = 
+usb_°‹_Bulk_ª£t
+;
+
+325 
+	}
+}
+
+327 
+	$gë_¥Ÿocﬁ
+(
+us_d©a
+ *
+us
+)
+
+329 
+us
+->
+sub˛ass
+)
+
+331 
+USB_SC_SCSI
+:
+
+332 
+us
+->
+¥Ÿocﬁ_«me
+ = "Transparent SCSI";
+
+333 
+us
+->
+¥Ÿo_h™dÀr
+ = 
+usb_°‹_å™•¨ít_scsi_comm™d
+;
+
+336 
+	}
+}
+
+338 
+	$gë_pùes
+(
+us_d©a
+ *
+us
+)
+
+340 
+usb_ho°_öãrÁ˚
+ *
+Æt£âög
+ = 
+us
+->
+pusb_ötf
+->
+cur_Æt£âög
+;
+
+341 
+i
+;
+
+342 
+usb_ídpoöt_des¸ùt‹
+ *
+ï
+;
+
+343 
+usb_ídpoöt_des¸ùt‹
+ *
+ï_ö
+ = 
+NULL
+;
+
+344 
+usb_ídpoöt_des¸ùt‹
+ *
+ï_out
+ = 
+NULL
+;
+
+345 
+usb_ídpoöt_des¸ùt‹
+ *
+ï_öt
+ = 
+NULL
+;
+
+350 
+i
+ = 0; i < 
+Æt£âög
+->
+desc
+.
+bNumEndpoöts
+; i++)
+
+352 
+ï
+ = &
+Æt£âög
+->
+ídpoöt
+[
+i
+].
+desc
+;
+
+354 i‡(
+	`usb_ídpoöt_x„r_bulk
+(
+ï
+))
+
+356 i‡(
+	`usb_ídpoöt_dú_ö
+(
+ï
+)) {
+
+357 i‡(!
+ï_ö
+)
+
+358 
+ï_ö
+ = 
+ï
+;
+
+360 i‡(!
+ï_out
+)
+
+361 
+ï_out
+ = 
+ï
+;
+
+364 i‡(
+	`usb_ídpoöt_is_öt_ö
+(
+ï
+)) {
+
+365 i‡(!
+ï_öt
+)
+
+366 
+ï_öt
+ = 
+ï
+;
+
+370 i‡(!
+ï_ö
+ || !
+ï_out
+ || (
+us
+->
+¥Ÿocﬁ
+ =
+USB_PR_CBI
+ && !
+ï_öt
+)) {
+
+371 
+	`usb_°‹_dbg
+(
+us
+,"endpoint sanity check failed!Ñejecting dev\n");
+
+372  -
+EIO
+;
+
+376 
+us
+->
+£nd_˘æ_pùe
+ = 
+	`usb_¢d˘æpùe
+(us->
+pusb_dev
+, 0);
+
+377 
+us
+->
+ªcv_˘æ_pùe
+ = 
+	`usb_rcv˘æpùe
+(us->
+pusb_dev
+, 0);
+
+378 
+us
+->
+£nd_bulk_pùe
+ = 
+	`usb_¢dbulkpùe
+(us->
+pusb_dev
+,
+
+379 
+	`usb_ídpoöt_num
+(
+ï_out
+));
+
+380 
+us
+->
+ªcv_bulk_pùe
+ = 
+	`usb_rcvbulkpùe
+(us->
+pusb_dev
+,
+
+381 
+	`usb_ídpoöt_num
+(
+ï_ö
+));
+
+382 i‡(
+ï_öt
+) {
+
+383 
+us
+->
+ªcv_öå_pùe
+ = 
+	`usb_rcvöçùe
+(us->
+pusb_dev
+,
+
+384 
+	`usb_ídpoöt_num
+(
+ï_öt
+));
+
+385 
+us
+->
+ï_bI¡îvÆ
+ = 
+ï_öt
+->
+bI¡îvÆ
+;
+
+388 
+	}
+}
+
+390 
+	$usb_°‹_acquúe_ªsour˚s
+(
+us_d©a
+ *
+us
+)
+
+392 
+p
+;
+
+393 
+èsk_°ru˘
+ *
+th
+;
+
+395 
+us
+->
+cuºít_urb
+ = 
+	`usb_Æloc_urb
+(0, 
+GFP_KERNEL
+);
+
+396 i‡(!
+us
+->
+cuºít_urb
+) {
+
+397 
+	`usb_°‹_dbg
+(
+us
+, "URBállocation failed\n");
+
+398  -
+ENOMEM
+;
+
+402 i‡(
+us
+->
+unusuÆ_dev
+->
+öôFun˘i⁄
+) {
+
+403 
+p
+ = 
+us
+->
+unusuÆ_dev
+->
+	`öôFun˘i⁄
+(us);
+
+404 i‡(
+p
+)
+
+405  
+p
+;
+
+409 
+th
+ = 
+	`kthªad_run
+(
+usb_°‹_c⁄åﬁ_thªad
+, 
+us
+, "usb-storage");
+
+410 i‡(
+	`IS_ERR
+(
+th
+)) {
+
+411 
+	`dev_w¨n
+(&
+us
+->
+pusb_ötf
+->
+dev
+,"UnableÅo start controlÅhread\n");
+
+412  
+	`PTR_ERR
+(
+th
+);
+
+414 
+us
+->
+˘l_thªad
+ = 
+th
+;
+
+416 
+	}
+}
+
+418 
+	$usb_°‹_ªÀa£_ªsour˚s
+(
+us_d©a
+ *
+us
+)
+
+420 
+	`usb_°‹_dbg
+(
+us
+, "-- SendingÉxit commandÅoÅhread\n");
+
+421 
+	`com∂ëe
+(&
+us
+->
+cmnd_ªady
+);
+
+422 i‡(
+us
+->
+˘l_thªad
+)
+
+423 
+	`kthªad_°›
+(
+us
+->
+˘l_thªad
+);
+
+424 i‡(
+us
+->
+exåa_de°ru˘‹
+) {
+
+425 
+	`usb_°‹_dbg
+(
+us
+, "--CallingÉxtra_destructor()\n");
+
+426 
+us
+->
+	`exåa_de°ru˘‹
+(us->
+exåa
+);
+
+430 
+	`k‰ì
+(
+us
+->
+exåa
+);
+
+431 
+	`usb_‰ì_urb
+(
+us
+->
+cuºít_urb
+);
+
+432 
+	}
+}
+
+434 
+	$dissocüã_dev
+(
+us_d©a
+ *
+us
+)
+
+437 
+	`k‰ì
+(
+us
+->
+¸
+);
+
+438 
+	`usb_‰ì_cohîít
+(
+us
+->
+pusb_dev
+, 
+US_IOBUF_SIZE
+, us->
+iobuf
+, us->
+iobuf_dma
+);
+
+440 
+	`usb_£t_ötfd©a
+(
+us
+->
+pusb_ötf
+, 
+NULL
+);
+
+441 
+	}
+}
+
+443 
+	$ªÀa£_evîythög
+(
+us_d©a
+ *
+us
+)
+
+445 
+	`usb_°‹_ªÀa£_ªsour˚s
+(
+us
+);
+
+446 
+	`dissocüã_dev
+(
+us
+);
+
+449 
+	`scsi_ho°_put
+(
+	`us_to_ho°
+(
+us
+));
+
+450 
+	}
+}
+
+452 
+	$usb_°‹_sˇn_dw‹k
+(
+w‹k_°ru˘
+ *
+w‹k
+)
+
+454 
+us_d©a
+ *
+us
+ = 
+	`c⁄èöî_of
+(
+w‹k
+, us_d©a, 
+sˇn_dw‹k
+.work);
+
+455 
+devi˚
+ *
+dev
+ = &
+us
+->
+pusb_ötf
+->dev;
+
+457 
+	`dev_dbg
+(
+dev
+, "start scanning\n");
+
+460 i‡(
+us
+->
+¥Ÿocﬁ
+ =
+USB_PR_BULK
+ && !(us->
+fÊags
+ & 
+US_FL_SINGLE_LUN
+) &&
+
+461 !(
+us
+->
+fÊags
+ & 
+US_FL_SCM_MULT_TARG
+))
+
+463 
+	`muãx_lock
+(&
+us
+->
+dev_muãx
+);
+
+464 
+us
+->
+max_lun
+ = 
+	`usb_°‹_Bulk_max_lun
+(us);
+
+468 i‡(
+us
+->
+max_lun
+ >= 8)
+
+469 
+	`us_to_ho°
+(
+us
+)->
+max_lun
+ = us->max_lun + 1;
+
+470 
+	`muãx_u∆ock
+(&
+us
+->
+dev_muãx
+);
+
+472 
+	`scsi_sˇn_ho°
+(
+	`us_to_ho°
+(
+us
+));
+
+473 
+	`dev_dbg
+(
+dev
+, "scan complete \n");
+
+476 
+	`usb_aut›m_put_öãrÁ˚
+(
+us
+->
+pusb_ötf
+);
+
+477 
+	`˛ór_bô
+(
+US_FLIDX_SCAN_PENDING
+, &
+us
+->
+dÊags
+);
+
+478 
+	}
+}
+
+480 
+	$quõs˚_™d_ªmove_ho°
+(
+us_d©a
+ *
+us
+)
+
+482 
+Scsi_Ho°
+ *
+ho°
+ = 
+	`us_to_ho°
+(
+us
+);
+
+485 i‡(
+us
+->
+pusb_dev
+->
+°©e
+ =
+USB_STATE_NOTATTACHED
+) {
+
+486 
+	`£t_bô
+(
+US_FLIDX_DISCONNECTING
+, &
+us
+->
+dÊags
+);
+
+487 
+	`wake_up
+(&
+us
+->
+dñay_waô
+);
+
+491 
+	`ˇn˚l_dñayed_w‹k_sync
+(&
+us
+->
+sˇn_dw‹k
+);
+
+494 i‡(
+	`ã°_bô
+(
+US_FLIDX_SCAN_PENDING
+, &
+us
+->
+dÊags
+))
+
+495 
+	`usb_aut›m_put_öãrÁ˚_no_su•íd
+(
+us
+->
+pusb_ötf
+);
+
+498 
+	`scsi_ªmove_ho°
+(
+ho°
+);
+
+501 
+	`scsi_lock
+(
+ho°
+);
+
+502 
+	`£t_bô
+(
+US_FLIDX_DISCONNECTING
+, &
+us
+->
+dÊags
+);
+
+503 
+	`scsi_u∆ock
+(
+ho°
+);
+
+504 
+	`wake_up
+(&
+us
+->
+dñay_waô
+);
+
+505 
+	}
+}
+
+508 
+	$¥obe1
+(
+us_d©a
+ **
+pus
+, 
+usb_öãrÁ˚
+ *
+öãrÁ˚
+,
+
+509 c⁄° 
+usb_devi˚_id
+ *
+id
+,
+
+510 
+us_unusuÆ_dev
+ *
+unusuÆ_dev
+)
+
+512 
+Scsi_Ho°
+ *
+ho°
+;
+
+513 
+us_d©a
+ *
+us
+;
+
+514 
+ªsu…
+;
+
+516 
+	`dev_öfo
+(&
+öãrÁ˚
+->
+dev
+, "USB Mass Storage device detected\n");
+
+519 
+ho°
+ = 
+	`scsi_ho°_Æloc
+(&
+usb_°‹_ãm∂©e
+, (*
+us
+));
+
+520 i‡(!
+ho°
+){
+
+521 
+	`dev_w¨n
+(&
+öãrÁ˚
+->
+dev
+, "UnableÅoállocateÅhe scsi host\n");
+
+522  -
+ENOMEM
+;
+
+526 
+ho°
+->
+max_cmd_Àn
+ = 16;
+
+527 
+ho°
+->
+sg_èbÀsize
+ = 
+	`usb_°‹_sg_èbÀsize
+(
+öãrÁ˚
+);
+
+528 *
+pus
+ = 
+us
+ = 
+	`ho°_to_us
+(
+ho°
+);
+
+529 
+	`muãx_öô
+(&(
+us
+->
+dev_muãx
+));
+
+530 
+	`us_£t_lock_˛ass
+(&
+us
+->
+dev_muãx
+, 
+öãrÁ˚
+);
+
+531 
+	`öô_com∂ëi⁄
+(&
+us
+->
+cmnd_ªady
+);
+
+532 
+	`öô_com∂ëi⁄
+(&(
+us
+->
+nŸify
+));
+
+533 
+	`öô_waôqueue_hód
+(&
+us
+->
+dñay_waô
+);
+
+534 
+	`INIT_DELAYED_WORK
+(&
+us
+->
+sˇn_dw‹k
+, 
+usb_°‹_sˇn_dw‹k
+);
+
+537 
+ªsu…
+ = 
+	`assocüã_dev
+(
+us
+, 
+öãrÁ˚
+);
+
+538 i‡(
+ªsu…
+)
+
+539 
+BadDevi˚
+;
+
+541 
+ªsu…
+ = 
+	`gë_devi˚_öfo
+(
+us
+, 
+id
+, 
+unusuÆ_dev
+);
+
+542 i‡(
+ªsu…
+)
+
+543 
+BadDevi˚
+;
+
+545 
+	`gë_å™•‹t
+(
+us
+);
+
+546 
+	`gë_¥Ÿocﬁ
+(
+us
+);
+
+549 
+BadDevi˚
+:
+
+550 
+	`usb_°‹_dbg
+(
+us
+, "USBÖrobe() failed\n");
+
+551 
+	`ªÀa£_evîythög
+(
+us
+);
+
+552  
+ªsu…
+;
+
+553 
+	}
+}
+
+555 
+	$¥obe2
+(
+us_d©a
+ *
+us
+)
+
+557 
+ªsu…
+;
+
+558 
+devi˚
+ *
+dev
+ = &
+us
+->
+pusb_ötf
+->dev;
+
+561 i‡(!
+us
+->
+å™•‹t
+ || !us->
+¥Ÿo_h™dÀr
+) {
+
+562 
+ªsu…
+ = -
+ENXIO
+;
+
+563 
+BadDevi˚
+;
+
+566 
+	`usb_°‹_dbg
+(
+us
+, "Tøn•‹t: %s\n", us->
+å™•‹t_«me
+);
+
+567 
+	`usb_°‹_dbg
+(
+us
+, "PrŸocﬁ: %s\n", us->
+¥Ÿocﬁ_«me
+);
+
+569 i‡(
+us
+->
+fÊags
+ & 
+US_FL_SCM_MULT_TARG
+) {
+
+570 
+us
+->
+max_lun
+ = 7;
+
+571 
+	`us_to_ho°
+(
+us
+)->
+this_id
+ = 7;
+
+573 
+	`us_to_ho°
+(
+us
+)->
+max_id
+ = 1;
+
+575 i‡(
+us
+->
+å™•‹t
+ =
+usb_°‹_Bulk_å™•‹t
+)
+
+576 
+	`us_to_ho°
+(
+us
+)->
+no_scsi2_lun_ö_cdb
+ = 1;
+
+580 i‡(
+us
+->
+fÊags
+ & 
+US_FL_SINGLE_LUN
+)
+
+581 
+us
+->
+max_lun
+ = 0;
+
+583 i‡((
+ªsu…
+ = 
+	`gë_pùes
+(
+us
+)))
+
+584 
+BadDevi˚
+;
+
+588 i‡(
+us
+->
+fÊags
+ & 
+US_FL_INITIAL_READ10
+)
+
+589 
+	`£t_bô
+(
+US_FLIDX_REDO_READ10
+, &
+us
+->
+dÊags
+);
+
+592 
+ªsu…
+ = 
+	`usb_°‹_acquúe_ªsour˚s
+(
+us
+);
+
+593 i‡(
+ªsu…
+)
+
+594 
+BadDevi˚
+;
+
+595 
+	`¢¥ötf
+(
+us
+->
+scsi_«me
+, (us->scsi_name), "usb-storage %s",
+
+596 
+	`dev_«me
+(&
+us
+->
+pusb_ötf
+->
+dev
+));
+
+597 
+ªsu…
+ = 
+	`scsi_add_ho°
+(
+	`us_to_ho°
+(
+us
+), 
+dev
+);
+
+598 i‡(
+ªsu…
+) {
+
+599 
+	`dev_w¨n
+(
+dev
+, "UnableÅoáddÅhe scsi host\n");
+
+600 
+BadDevi˚
+;
+
+604 
+	`usb_aut›m_gë_öãrÁ˚_no_ªsume
+(
+us
+->
+pusb_ötf
+);
+
+605 
+	`£t_bô
+(
+US_FLIDX_SCAN_PENDING
+, &
+us
+->
+dÊags
+);
+
+607 i‡(
+dñay_u£
+ > 0)
+
+610 
+	`queue_dñayed_w‹k
+(
+sy°em_‰ìzabÀ_wq
+, &
+us
+->
+sˇn_dw‹k
+, 
+dñay_u£
+*
+HZ
+);
+
+612 
+BadDevi˚
+:
+
+613 
+	`usb_°‹_dbg
+(
+us
+, "Storage_probe() failed\n");
+
+614 
+	`ªÀa£_evîythög
+(
+us
+);
+
+615  
+ªsu…
+;
+
+616 
+	}
+}
+
+618 
+	$°‹age_¥obe
+(
+usb_öãrÁ˚
+ *
+ötf
+, c⁄° 
+usb_devi˚_id
+ *
+id
+)
+
+620 
+us_unusuÆ_dev
+ *
+unusuÆ_dev
+;
+
+621 
+us_d©a
+ *
+us
+;
+
+622 
+ªsu…
+, 
+size
+;
+
+625 i‡(
+	`usb_usuÆ_ign‹e_devi˚
+(
+ötf
+))
+
+626  -
+ENXIO
+;
+
+631 
+size
+ = 
+	`ARRAY_SIZE
+(
+us_unusuÆ_dev_li°
+);
+
+632 i‡(
+id
+ >
+usb_°‹age_usb_ids
+ && id < usb_°‹age_usb_id†+ 
+size
+) {
+
+633 
+unusuÆ_dev
+ = (
+id
+ - 
+usb_°‹age_usb_ids
+Ë+ 
+us_unusuÆ_dev_li°
+;
+
+635 
+unusuÆ_dev
+ = &
+f‹_dy«mic_ids
+;
+
+636 
+	`dev_öfo
+(&
+ötf
+->
+dev
+, "U£ Bulk-O∆yÅøn•‹àwôhÅhêTøn•‹àSCSIÖrŸocﬁ f‹ dy«mi¯id: 0x%04x 0x%04x\n", 
+id
+->
+idVíd‹
+, id->
+idProdu˘
+);
+
+639 
+ªsu…
+ = 
+	`¥obe1
+(&
+us
+, 
+ötf
+, 
+id
+, 
+unusuÆ_dev
+);
+
+640 i‡(
+ªsu…
+)
+
+641  
+ªsu…
+;
+
+644 
+ªsu…
+ = 
+	`¥obe2
+(
+us
+);
+
+645  
+ªsu…
+;
+
+646 
+	}
+}
+
+648 
+	$usb_°‹_disc⁄√˘
+(
+usb_öãrÁ˚
+ *
+öãrÁ˚
+)
+
+650 
+us_d©a
+ *
+us
+ = 
+	`usb_gë_ötfd©a
+(
+öãrÁ˚
+);
+
+651 
+	`quõs˚_™d_ªmove_ho°
+(
+us
+);
+
+652 
+	`ªÀa£_evîythög
+(
+us
+);
+
+653 
+	}
+}
+
+655 
+usb_drivî
+ 
+	gusb_°‹age_drivî
+ = {
+
+656 .
+«me
+ = "venky-storage",
+
+657 .
+	g¥obe
+ = 
+°‹age_¥obe
+,
+
+658 .
+	gdisc⁄√˘
+ = 
+usb_°‹_disc⁄√˘
+,
+
+659 .
+	gid_èbÀ
+ = 
+usb_°‹age_usb_ids
+,
+
+660 .
+	gsuµ‹ts_autosu•íd
+ = 1,
+
+661 .
+	gso·_unböd
+ = 1,
+
+664 
+__öô
+ 
+	$usb_°‹age_öô
+()
+
+666 
+ªtvÆ
+;
+
+668 
+	`¥_öfo
+("InitalizingÅhe USB mass storage driver...\n");
+
+670 
+ªtvÆ
+ = 
+	`usb_ªgi°î
+(&
+usb_°‹age_drivî
+);
+
+671 i‡(
+ªtvÆ
+)
+
+672 
+	`¥_öfo
+("USB deviceÑegistration failed\n");
+
+674  
+ªtvÆ
+;
+
+675 
+	}
+}
+
+677 
+__exô
+ 
+	$usb_°‹age_exô
+()
+
+679 
+	`¥_öfo
+("DeregisteringÅhe USB driver...\n");
+
+680 
+	`usb_dîegi°î
+(&
+usb_°‹age_drivî
+);
+
+681 
+	}
+}
+
+683 
+moduÀ_öô
+(
+usb_°‹age_öô
+);
+
+684 
+moduÀ_exô
+(
+usb_°‹age_exô
+);
+
+	@protocol.c
+
+1 
+	~<löux/highmem.h
+>
+
+2 
+	~<löux/exp‹t.h
+>
+
+3 
+	~<scsi/scsi.h
+>
+
+4 
+	~<scsi/scsi_cmnd.h
+>
+
+6 
+	~"usb.h
+"
+
+7 
+	~"¥Ÿocﬁ.h
+"
+
+8 
+	~"å™•‹t.h
+"
+
+11 
+	$usb_°‹_å™•¨ít_scsi_comm™d
+(
+scsi_cmnd
+ *
+§b
+, 
+us_d©a
+ *
+us
+)
+
+14 
+	`usb_°‹_övoke_å™•‹t
+(
+§b
+, 
+us
+);
+
+15 
+	}
+}
+
+21 
+	$usb_°‹_ac˚ss_x„r_buf
+(*
+buf„r
+,
+
+22 
+buÊí
+, 
+scsi_cmnd
+ *
+§b
+, 
+sˇâîli°
+ **
+sg±r
+,
+
+23 *
+off£t
+, 
+x„r_buf_dú
+ 
+dú
+)
+
+25 
+˙t
+ = 0;
+
+26 
+sˇâîli°
+ *
+sg
+ = *
+sg±r
+;
+
+27 
+sg_m≠pög_ôî
+ 
+môî
+;
+
+28 
+√¡s
+ = 
+	`scsi_sg_cou¡
+(
+§b
+);
+
+30 i‡(
+sg
+)
+
+31 
+√¡s
+ = 
+	`sg_√¡s
+(
+sg
+);
+
+33 
+sg
+ = 
+	`scsi_sgli°
+(
+§b
+);
+
+35 
+	`sg_môî_°¨t
+(&
+môî
+, 
+sg
+, 
+√¡s
+, 
+dú
+ =
+FROM_XFER_BUF
+ ?
+
+36 
+SG_MITER_FROM_SG
+ : 
+SG_MITER_TO_SG
+);
+
+38 i‡(!
+	`sg_môî_skù
+(&
+môî
+, *
+off£t
+))
+
+39  
+˙t
+;
+
+41 
+	`sg_môî_√xt
+(&
+môî
+Ë&& 
+˙t
+ < 
+buÊí
+) {
+
+42 
+Àn
+ = 
+	`mö_t
+(, 
+môî
+.
+Àngth
+,
+
+43 
+buÊí
+ - 
+˙t
+);
+
+44 i‡(
+dú
+ =
+FROM_XFER_BUF
+)
+
+45 
+	`mem˝y
+(
+buf„r
+ + 
+˙t
+, 
+môî
+.
+addr
+, 
+Àn
+);
+
+47 
+	`mem˝y
+(
+môî
+.
+addr
+, 
+buf„r
+ + 
+˙t
+, 
+Àn
+);
+
+48 i‡(*
+off£t
+ + 
+Àn
+ < 
+môî
+.
+pôî
+.
+sg
+->
+Àngth
+) {
+
+49 *
+off£t
+ +
+Àn
+;
+
+50 *
+sg±r
+ = 
+môî
+.
+pôî
+.
+sg
+;
+
+52 *
+off£t
+ = 0;
+
+53 *
+sg±r
+ = 
+	`sg_√xt
+(
+môî
+.
+pôî
+.
+sg
+);
+
+55 
+˙t
+ +
+Àn
+;
+
+57 
+	`sg_môî_°›
+(&
+môî
+);
+
+58  
+˙t
+;
+
+59 
+	}
+}
+
+	@protocol.h
+
+39 #i‚de‡
+_PROTOCOL_H_
+
+
+40 
+	#_PROTOCOL_H_
+
+
+	)
+
+43 
+usb_°‹_∑d12_comm™d
+(
+scsi_cmnd
+*, 
+us_d©a
+*);
+
+44 
+usb_°‹_ufi_comm™d
+(
+scsi_cmnd
+*, 
+us_d©a
+*);
+
+45 
+usb_°‹_å™•¨ít_scsi_comm™d
+(
+scsi_cmnd
+*,
+
+46 
+us_d©a
+*);
+
+49 
+	ex„r_buf_dú
+ {
+	mTO_XFER_BUF
+, 
+	mFROM_XFER_BUF
+};
+
+51 
+usb_°‹_ac˚ss_x„r_buf
+(*
+buf„r
+,
+
+52 
+buÊí
+, 
+scsi_cmnd
+ *
+§b
+, 
+sˇâîli°
+ **,
+
+53 *
+off£t
+, 
+x„r_buf_dú
+ 
+dú
+);
+
+55 
+usb_°‹_£t_x„r_buf
+(*
+buf„r
+,
+
+56 
+buÊí
+, 
+scsi_cmnd
+ *
+§b
+);
+
+	@scsiglue.c
+
+46 
+	~<löux/moduÀ.h
+>
+
+47 
+	~<löux/muãx.h
+>
+
+49 
+	~<scsi/scsi.h
+>
+
+50 
+	~<scsi/scsi_cmnd.h
+>
+
+51 
+	~<scsi/scsi_devöfo.h
+>
+
+52 
+	~<scsi/scsi_devi˚.h
+>
+
+53 
+	~<scsi/scsi_eh.h
+>
+
+55 
+	~"usb.h
+"
+
+56 
+	~"scsiglue.h
+"
+
+57 
+	~"debug.h
+"
+
+58 
+	~"å™•‹t.h
+"
+
+59 
+	~"¥Ÿocﬁ.h
+"
+
+64 
+	#VENDOR_ID_NOKIA
+ 0x0421
+
+	)
+
+65 
+	#VENDOR_ID_NIKON
+ 0x04b0
+
+	)
+
+66 
+	#VENDOR_ID_PENTAX
+ 0x0a17
+
+	)
+
+67 
+	#VENDOR_ID_MOTOROLA
+ 0x22b8
+
+	)
+
+73 c⁄° * 
+	$ho°_öfo
+(
+Scsi_Ho°
+ *
+ho°
+)
+
+75 
+us_d©a
+ *
+us
+ = 
+	`ho°_to_us
+(
+ho°
+);
+
+76  
+us
+->
+scsi_«me
+;
+
+77 
+	}
+}
+
+79 
+	$¶ave_Æloc
+ (
+scsi_devi˚
+ *
+sdev
+)
+
+81 
+us_d©a
+ *
+us
+ = 
+	`ho°_to_us
+(
+sdev
+->
+ho°
+);
+
+88 
+sdev
+->
+öquúy_Àn
+ = 36;
+
+105 
+	`blk_queue_upd©e_dma_Æignmít
+(
+sdev
+->
+ªque°_queue
+, (512 - 1));
+
+108 i‡(
+us
+->
+¥Ÿocﬁ
+ =
+USB_PR_BULK
+ && us->
+max_lun
+ > 0)
+
+109 
+sdev
+->
+sdev_bÊags
+ |
+BLIST_FORCELUN
+;
+
+112 
+	}
+}
+
+114 
+	$¶ave_c⁄figuª
+(
+scsi_devi˚
+ *
+sdev
+)
+
+116 
+us_d©a
+ *
+us
+ = 
+	`ho°_to_us
+(
+sdev
+->
+ho°
+);
+
+122 i‡(
+us
+->
+fÊags
+ & (
+US_FL_MAX_SECTORS_64
+ | 
+US_FL_MAX_SECTORS_MIN
+)) {
+
+123 
+max_£˘‹s
+ = 64;
+
+125 i‡(
+us
+->
+fÊags
+ & 
+US_FL_MAX_SECTORS_MIN
+)
+
+126 
+max_£˘‹s
+ = 
+PAGE_CACHE_SIZE
+ >> 9;
+
+127 i‡(
+	`queue_max_hw_£˘‹s
+(
+sdev
+->
+ªque°_queue
+Ë> 
+max_£˘‹s
+)
+
+128 
+	`blk_queue_max_hw_£˘‹s
+(
+sdev
+->
+ªque°_queue
+,
+
+129 
+max_£˘‹s
+);
+
+130 } i‡(
+sdev
+->
+ty≥
+ =
+TYPE_TAPE
+) {
+
+135 
+	`blk_queue_max_hw_£˘‹s
+(
+sdev
+->
+ªque°_queue
+, 0x7FFFFF);
+
+143 i‡(!
+us
+->
+pusb_dev
+->
+bus
+->
+c⁄åﬁÀr
+->
+dma_mask
+)
+
+144 
+	`blk_queue_boun˚_limô
+(
+sdev
+->
+ªque°_queue
+, 
+BLK_BOUNCE_HIGH
+);
+
+149 i‡(
+sdev
+->
+ty≥
+ =
+TYPE_DISK
+) {
+
+157 
+	`À16_to_˝u
+(
+us
+->
+pusb_dev
+->
+des¸ùt‹
+.
+idVíd‹
+)) {
+
+158 
+VENDOR_ID_NOKIA
+:
+
+159 
+VENDOR_ID_NIKON
+:
+
+160 
+VENDOR_ID_PENTAX
+:
+
+161 
+VENDOR_ID_MOTOROLA
+:
+
+162 i‡(!(
+us
+->
+fÊags
+ & (
+US_FL_FIX_CAPACITY
+ |
+
+163 
+US_FL_CAPACITY_OK
+)))
+
+164 
+us
+->
+fÊags
+ |
+US_FL_CAPACITY_HEURISTICS
+;
+
+171 i‡(
+us
+->
+sub˛ass
+ !
+USB_SC_SCSI
+ && us->sub˛as†!
+USB_SC_CYP_ATACB
+)
+
+172 
+sdev
+->
+u£_10_f‹_ms
+ = 1;
+
+176 
+sdev
+->
+u£_192_byãs_f‹_3f
+ = 1;
+
+185 i‡(
+us
+->
+fÊags
+ & 
+US_FL_NO_WP_DETECT
+)
+
+186 
+sdev
+->
+skù_ms_∑ge_3f
+ = 1;
+
+190 
+sdev
+->
+skù_ms_∑ge_8
+ = 1;
+
+193 
+sdev
+->
+skù_vpd_∑ges
+ = 1;
+
+196 
+sdev
+->
+no_ªp‹t_›codes
+ = 1;
+
+199 
+sdev
+->
+no_wrôe_ßme
+ = 1;
+
+204 i‡(
+us
+->
+fÊags
+ & 
+US_FL_FIX_CAPACITY
+)
+
+205 
+sdev
+->
+fix_ˇ∑côy
+ = 1;
+
+210 i‡(
+us
+->
+fÊags
+ & 
+US_FL_CAPACITY_HEURISTICS
+)
+
+211 
+sdev
+->
+guess_ˇ∑côy
+ = 1;
+
+214 i‡(
+us
+->
+fÊags
+ & 
+US_FL_NO_READ_CAPACITY_16
+)
+
+215 
+sdev
+->
+no_ªad_ˇ∑côy_16
+ = 1;
+
+223 i‡(!(
+us
+->
+fÊags
+ & 
+US_FL_NEEDS_CAP16
+))
+
+224 
+sdev
+->
+åy_rc_10_fú°
+ = 1;
+
+227 i‡(
+sdev
+->
+scsi_Àvñ
+ > 
+SCSI_SPC_2
+)
+
+228 
+us
+->
+fÊags
+ |
+US_FL_SANE_SENSE
+;
+
+236 
+sdev
+->
+ªåy_hwîr‹
+ = 1;
+
+240 
+sdev
+->
+Ælow_ª°¨t
+ = 1;
+
+245 
+sdev
+->
+œ°_£˘‹_bug
+ = 1;
+
+250 i‡(!(
+us
+->
+fÊags
+ & (
+US_FL_FIX_CAPACITY
+ | 
+US_FL_CAPACITY_OK
+ |
+
+251 
+US_FL_SCM_MULT_TARG
+)) &&
+
+252 
+us
+->
+¥Ÿocﬁ
+ =
+USB_PR_BULK
+)
+
+253 
+us
+->
+u£_œ°_£˘‹_hacks
+ = 1;
+
+256 i‡(
+us
+->
+fÊags
+ & 
+US_FL_WRITE_CACHE
+)
+
+257 
+sdev
+->
+w˚_deÁu…_⁄
+ = 1;
+
+260 i‡(
+us
+->
+fÊags
+ & 
+US_FL_BROKEN_FUA
+)
+
+261 
+sdev
+->
+brokí_fua
+ = 1;
+
+268 
+sdev
+->
+u£_10_f‹_ms
+ = 1;
+
+271 i‡(
+us
+->
+fÊags
+ & 
+US_FL_NO_READ_DISC_INFO
+)
+
+272 
+sdev
+->
+no_ªad_disc_öfo
+ = 1;
+
+281 i‡((
+us
+->
+¥Ÿocﬁ
+ =
+USB_PR_CB
+ || us->¥Ÿocﬁ =
+USB_PR_CBI
+) &&
+
+282 
+sdev
+->
+scsi_Àvñ
+ =
+SCSI_UNKNOWN
+)
+
+283 
+us
+->
+max_lun
+ = 0;
+
+287 i‡(
+us
+->
+fÊags
+ & 
+US_FL_NOT_LOCKABLE
+)
+
+288 
+sdev
+->
+lockabÀ
+ = 0;
+
+293 
+	}
+}
+
+295 
+	$èrgë_Æloc
+(
+scsi_èrgë
+ *
+°¨gë
+)
+
+297 
+us_d©a
+ *
+us
+ = 
+	`ho°_to_us
+(
+	`dev_to_sho°
+(
+°¨gë
+->
+dev
+.
+∑ª¡
+));
+
+305 
+°¨gë
+->
+no_ªp‹t_luns
+ = 1;
+
+316 i‡(
+us
+->
+sub˛ass
+ =
+USB_SC_UFI
+)
+
+317 
+°¨gë
+->
+pdt_1f_f‹_no_lun
+ = 1;
+
+320 
+	}
+}
+
+324 
+queuecomm™d_lck
+(
+scsi_cmnd
+ *
+§b
+,
+
+325 (*
+d⁄e
+)(
+scsi_cmnd
+ *))
+
+327 
+us_d©a
+ *
+us
+ = 
+	`ho°_to_us
+(
+§b
+->
+devi˚
+->
+ho°
+);
+
+330 i‡(
+us
+->
+§b
+ !
+NULL
+) {
+
+331 
+	`¥ötk
+(
+KERN_ERR
+ 
+USB_STORAGE
+ "Error in %s: us->srb = %p\n",
+
+332 
+__func__
+, 
+us
+->
+§b
+);
+
+333  
+SCSI_MLQUEUE_HOST_BUSY
+;
+
+337 i‡(
+	`ã°_bô
+(
+US_FLIDX_DISCONNECTING
+, &
+us
+->
+dÊags
+)) {
+
+338 
+	`usb_°‹_dbg
+(
+us
+, "Fail command during disconnect\n");
+
+339 
+§b
+->
+ªsu…
+ = 
+DID_NO_CONNECT
+ << 16;
+
+340 
+	`d⁄e
+(
+§b
+);
+
+345 
+§b
+->
+scsi_d⁄e
+ = 
+d⁄e
+;
+
+346 
+us
+->
+§b
+ = srb;
+
+347 
+	`com∂ëe
+(&
+us
+->
+cmnd_ªady
+);
+
+350 
+	}
+}
+
+352 
+	$DEF_SCSI_QCMD
+(
+queuecomm™d
+)
+
+359 
+	$comm™d_ab‹t
+(
+scsi_cmnd
+ *
+§b
+)
+
+361 
+us_d©a
+ *
+us
+ = 
+	`ho°_to_us
+(
+§b
+->
+devi˚
+->
+ho°
+);
+
+363 
+	`usb_°‹_dbg
+(
+us
+, "%†ˇŒed\n", 
+__func__
+);
+
+367 
+	`scsi_lock
+(
+	`us_to_ho°
+(
+us
+));
+
+370 i‡(
+us
+->
+§b
+ != srb) {
+
+371 
+	`scsi_u∆ock
+(
+	`us_to_ho°
+(
+us
+));
+
+372 
+	`usb_°‹_dbg
+(
+us
+, "--ÇothingÅoábort\n");
+
+373  
+FAILED
+;
+
+381 
+	`£t_bô
+(
+US_FLIDX_TIMED_OUT
+, &
+us
+->
+dÊags
+);
+
+382 i‡(!
+	`ã°_bô
+(
+US_FLIDX_RESETTING
+, &
+us
+->
+dÊags
+)) {
+
+383 
+	`£t_bô
+(
+US_FLIDX_ABORTING
+, &
+us
+->
+dÊags
+);
+
+384 
+	`usb_°‹_°›_å™•‹t
+(
+us
+);
+
+386 
+	`scsi_u∆ock
+(
+	`us_to_ho°
+(
+us
+));
+
+389 
+	`waô_f‹_com∂ëi⁄
+(&
+us
+->
+nŸify
+);
+
+390  
+SUCCESS
+;
+
+391 
+	}
+}
+
+395 
+	$devi˚_ª£t
+(
+scsi_cmnd
+ *
+§b
+)
+
+397 
+us_d©a
+ *
+us
+ = 
+	`ho°_to_us
+(
+§b
+->
+devi˚
+->
+ho°
+);
+
+398 
+ªsu…
+;
+
+400 
+	`usb_°‹_dbg
+(
+us
+, "%†ˇŒed\n", 
+__func__
+);
+
+403 
+	`muãx_lock
+(&(
+us
+->
+dev_muãx
+));
+
+404 
+ªsu…
+ = 
+us
+->
+	`å™•‹t_ª£t
+(us);
+
+405 
+	`muãx_u∆ock
+(&
+us
+->
+dev_muãx
+);
+
+407  
+ªsu…
+ < 0 ? 
+FAILED
+ : 
+SUCCESS
+;
+
+408 
+	}
+}
+
+411 
+	$bus_ª£t
+(
+scsi_cmnd
+ *
+§b
+)
+
+413 
+us_d©a
+ *
+us
+ = 
+	`ho°_to_us
+(
+§b
+->
+devi˚
+->
+ho°
+);
+
+414 
+ªsu…
+;
+
+416 
+	`usb_°‹_dbg
+(
+us
+, "%†ˇŒed\n", 
+__func__
+);
+
+418 
+ªsu…
+ = 
+	`usb_°‹_p‹t_ª£t
+(
+us
+);
+
+419  
+ªsu…
+ < 0 ? 
+FAILED
+ : 
+SUCCESS
+;
+
+420 
+	}
+}
+
+425 
+	$usb_°‹_ªp‹t_devi˚_ª£t
+(
+us_d©a
+ *
+us
+)
+
+427 
+i
+;
+
+428 
+Scsi_Ho°
+ *
+ho°
+ = 
+	`us_to_ho°
+(
+us
+);
+
+430 
+	`scsi_ªp‹t_devi˚_ª£t
+(
+ho°
+, 0, 0);
+
+431 i‡(
+us
+->
+fÊags
+ & 
+US_FL_SCM_MULT_TARG
+) {
+
+432 
+i
+ = 1; i < 
+ho°
+->
+max_id
+; ++i)
+
+433 
+	`scsi_ªp‹t_devi˚_ª£t
+(
+ho°
+, 0, 
+i
+);
+
+435 
+	}
+}
+
+440 
+	$usb_°‹_ªp‹t_bus_ª£t
+(
+us_d©a
+ *
+us
+)
+
+442 
+Scsi_Ho°
+ *
+ho°
+ = 
+	`us_to_ho°
+(
+us
+);
+
+444 
+	`scsi_lock
+(
+ho°
+);
+
+445 
+	`scsi_ªp‹t_bus_ª£t
+(
+ho°
+, 0);
+
+446 
+	`scsi_u∆ock
+(
+ho°
+);
+
+447 
+	}
+}
+
+453 
+	$wrôe_öfo
+(
+Scsi_Ho°
+ *
+ho°
+, *
+buf„r
+, 
+Àngth
+)
+
+456  
+Àngth
+;
+
+457 
+	}
+}
+
+460 #unde‡
+SPRINTF
+
+
+461 
+	#SPRINTF
+(
+¨gs
+...Ë
+	`£q_¥ötf
+(
+m
+, ##árgs)
+
+	)
+
+463 
+	$show_öfo
+ (
+£q_fûe
+ *
+m
+, 
+Scsi_Ho°
+ *
+ho°
+)
+
+465 
+us_d©a
+ *
+us
+ = 
+	`ho°_to_us
+(
+ho°
+);
+
+466 c⁄° *
+°rög
+;
+
+469 
+	`SPRINTF
+(" Ho° scsi%d: usb-°‹age\n", 
+ho°
+->
+ho°_no
+);
+
+472 i‡(
+us
+->
+pusb_dev
+->
+m™uÁ˘uªr
+)
+
+473 
+°rög
+ = 
+us
+->
+pusb_dev
+->
+m™uÁ˘uªr
+;
+
+474 i‡(
+us
+->
+unusuÆ_dev
+->
+víd‹Name
+)
+
+475 
+°rög
+ = 
+us
+->
+unusuÆ_dev
+->
+víd‹Name
+;
+
+477 
+°rög
+ = "Unknown";
+
+478 
+	`SPRINTF
+(" Víd‹: %s\n", 
+°rög
+);
+
+479 i‡(
+us
+->
+pusb_dev
+->
+¥odu˘
+)
+
+480 
+°rög
+ = 
+us
+->
+pusb_dev
+->
+¥odu˘
+;
+
+481 i‡(
+us
+->
+unusuÆ_dev
+->
+¥odu˘Name
+)
+
+482 
+°rög
+ = 
+us
+->
+unusuÆ_dev
+->
+¥odu˘Name
+;
+
+484 
+°rög
+ = "Unknown";
+
+485 
+	`SPRINTF
+(" Produ˘: %s\n", 
+°rög
+);
+
+486 i‡(
+us
+->
+pusb_dev
+->
+£rül
+)
+
+487 
+°rög
+ = 
+us
+->
+pusb_dev
+->
+£rül
+;
+
+489 
+°rög
+ = "None";
+
+490 
+	`SPRINTF
+("Sîü»Numbî: %s\n", 
+°rög
+);
+
+493 
+	`SPRINTF
+(" PrŸocﬁ: %s\n", 
+us
+->
+¥Ÿocﬁ_«me
+);
+
+494 
+	`SPRINTF
+(" Tøn•‹t: %s\n", 
+us
+->
+å™•‹t_«me
+);
+
+497 
+	`SPRINTF
+(" Quirks:");
+
+499 
+	#US_FLAG
+(
+«me
+, 
+vÆue
+) \
+
+500 i‡(
+us
+->
+fÊags
+ & 
+vÆue
+Ë
+	`£q_¥ötf
+(
+m
+, " " #«me);
+
+	)
+
+501 
+US_DO_ALL_FLAGS
+
+
+502 #unde‡
+US_FLAG
+
+
+503 
+	`£q_putc
+(
+m
+, '\n');
+
+505 
+	}
+}
+
+512 
+ssize_t
+ 
+	$max_£˘‹s_show
+(
+devi˚
+ *
+dev
+, 
+devi˚_©åibuã
+ *
+©å
+, *
+buf
+)
+
+514 
+scsi_devi˚
+ *
+sdev
+ = 
+	`to_scsi_devi˚
+(
+dev
+);
+
+516  
+	`•rötf
+(
+buf
+, "%u\n", 
+	`queue_max_hw_£˘‹s
+(
+sdev
+->
+ªque°_queue
+));
+
+517 
+	}
+}
+
+520 
+ssize_t
+ 
+	$max_£˘‹s_°‹e
+(
+devi˚
+ *
+dev
+, 
+devi˚_©åibuã
+ *
+©å
+, c⁄° *
+buf
+,
+
+521 
+size_t
+ 
+cou¡
+)
+
+523 
+scsi_devi˚
+ *
+sdev
+ = 
+	`to_scsi_devi˚
+(
+dev
+);
+
+524 
+ms
+;
+
+526 i‡(
+	`ssˇnf
+(
+buf
+, "%hu", &
+ms
+) > 0) {
+
+527 
+	`blk_queue_max_hw_£˘‹s
+(
+sdev
+->
+ªque°_queue
+, 
+ms
+);
+
+528  
+cou¡
+;
+
+530  -
+EINVAL
+;
+
+531 
+	}
+}
+
+532 
+DEVICE_ATTR_RW
+(
+max_£˘‹s
+);
+
+534 
+devi˚_©åibuã
+ *
+	gsysfs_devi˚_©å_li°
+[] = {
+
+535 &
+dev_©å_max_£˘‹s
+,
+
+536 
+NULL
+,
+
+543 
+scsi_ho°_ãm∂©e
+ 
+	gusb_°‹_ãm∂©e
+ = {
+
+545 .
+«me
+ = "usb-storage",
+
+546 .
+	g¥oc_«me
+ = "usb-storage",
+
+547 .
+	gshow_öfo
+ = 
+show_öfo
+,
+
+548 .
+	gwrôe_öfo
+ = 
+wrôe_öfo
+,
+
+549 .
+	göfo
+ = 
+ho°_öfo
+,
+
+552 .
+	gqueuecomm™d
+ = 
+queuecomm™d
+,
+
+555 .
+	geh_ab‹t_h™dÀr
+ = 
+comm™d_ab‹t
+,
+
+556 .
+	geh_devi˚_ª£t_h™dÀr
+ = 
+devi˚_ª£t
+,
+
+557 .
+	geh_bus_ª£t_h™dÀr
+ = 
+bus_ª£t
+,
+
+560 .
+	gˇn_queue
+ = 1,
+
+561 .
+	gcmd_≥r_lun
+ = 1,
+
+564 .
+	gthis_id
+ = -1,
+
+566 .
+	g¶ave_Æloc
+ = 
+¶ave_Æloc
+,
+
+567 .
+	g¶ave_c⁄figuª
+ = 
+¶ave_c⁄figuª
+,
+
+568 .
+	gèrgë_Æloc
+ = 
+èrgë_Æloc
+,
+
+571 .
+	gsg_èbÀsize
+ = 
+SCSI_MAX_SG_CHAIN_SEGMENTS
+,
+
+574 .
+	gmax_£˘‹s
+ = 240,
+
+580 .
+	gu£_˛u°îög
+ = 1,
+
+583 .
+	gemuœãd
+ = 1,
+
+586 .
+	gskù_£âÀ_dñay
+ = 1,
+
+589 .
+	gsdev_©ås
+ = 
+sysfs_devi˚_©å_li°
+,
+
+592 .
+	gmoduÀ
+ = 
+THIS_MODULE
+
+
+596 
+	gusb_°‹_£n£_övÆidCDB
+[18] = {
+
+598 [2] = 
+ILLEGAL_REQUEST
+,
+
+602 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_£n£_övÆidCDB
+);
+
+	@scsiglue.h
+
+39 #i‚de‡
+_SCSIGLUE_H_
+
+
+40 
+	#_SCSIGLUE_H_
+
+
+	)
+
+42 
+usb_°‹_ªp‹t_devi˚_ª£t
+(
+us_d©a
+ *
+us
+);
+
+43 
+usb_°‹_ªp‹t_bus_ª£t
+(
+us_d©a
+ *
+us
+);
+
+45 
+usb_°‹_£n£_övÆidCDB
+[18];
+
+46 
+scsi_ho°_ãm∂©e
+ 
+usb_°‹_ãm∂©e
+;
+
+	@sd.h
+
+1 #i‚de‡
+_SCSI_DISK_H
+
+
+2 
+	#_SCSI_DISK_H
+
+
+	)
+
+9 
+	#SD_MAJORS
+ 16
+
+	)
+
+14 
+	#SD_TIMEOUT
+ (30 * 
+HZ
+)
+
+	)
+
+15 
+	#SD_MOD_TIMEOUT
+ (75 * 
+HZ
+)
+
+	)
+
+20 
+	#SD_FLUSH_TIMEOUT_MULTIPLIER
+ 2
+
+	)
+
+21 
+	#SD_WRITE_SAME_TIMEOUT
+ (120 * 
+HZ
+)
+
+	)
+
+26 
+	#SD_MAX_RETRIES
+ 5
+
+	)
+
+27 
+	#SD_PASSTHROUGH_RETRIES
+ 1
+
+	)
+
+28 
+	#SD_MAX_MEDIUM_TIMEOUTS
+ 2
+
+	)
+
+33 
+	#SD_BUF_SIZE
+ 512
+
+	)
+
+39 
+	#SD_LAST_BUGGY_SECTORS
+ 8
+
+	)
+
+42 
+	mSD_EXT_CDB_SIZE
+ = 32,
+
+43 
+	mSD_MEMPOOL_SIZE
+ = 2,
+
+47 
+	mSD_DEF_XFER_BLOCKS
+ = 0xffff,
+
+48 
+	mSD_MAX_XFER_BLOCKS
+ = 0xffffffff,
+
+49 
+	mSD_MAX_WS10_BLOCKS
+ = 0xffff,
+
+50 
+	mSD_MAX_WS16_BLOCKS
+ = 0x7fffff,
+
+54 
+	mSD_LBP_FULL
+ = 0,
+
+55 
+	mSD_LBP_UNMAP
+,
+
+56 
+	mSD_LBP_WS16
+,
+
+57 
+	mSD_LBP_WS10
+,
+
+58 
+	mSD_LBP_ZERO
+,
+
+59 
+	mSD_LBP_DISABLE
+,
+
+62 
+	sscsi_disk
+ {
+
+63 
+scsi_drivî
+ *
+	mdrivî
+;
+
+64 
+scsi_devi˚
+ *
+	mdevi˚
+;
+
+65 
+devi˚
+ 
+	mdev
+;
+
+66 
+gídisk
+ *
+	mdisk
+;
+
+67 
+©omic_t
+ 
+	m›íîs
+;
+
+68 
+£˘‹_t
+ 
+	mˇ∑côy
+;
+
+69 
+u32
+ 
+	mmax_x„r_blocks
+;
+
+70 
+u32
+ 
+	mmax_ws_blocks
+;
+
+71 
+u32
+ 
+	mmax_unm≠_blocks
+;
+
+72 
+u32
+ 
+	munm≠_gønuœrôy
+;
+
+73 
+u32
+ 
+	munm≠_Æignmít
+;
+
+74 
+u32
+ 
+	mödex
+;
+
+75 
+	mphysiˇl_block_size
+;
+
+76 
+	mmax_medium_ac˚ss_timeouts
+;
+
+77 
+	mmedium_ac˚ss_timed_out
+;
+
+78 
+u8
+ 
+	mmedü_¥e£¡
+;
+
+79 
+u8
+ 
+	mwrôe_¥Ÿ
+;
+
+80 
+u8
+ 
+	m¥Ÿe˘i⁄_ty≥
+;
+
+81 
+u8
+ 
+	m¥ovisi⁄ög_mode
+;
+
+82 
+	mATO
+ : 1;
+
+83 
+	mˇche_ovîride
+ : 1;
+
+84 
+	mWCE
+ : 1;
+
+85 
+	mRCD
+ : 1;
+
+86 
+	mDPOFUA
+ : 1;
+
+87 
+	mfú°_sˇn
+ : 1;
+
+88 
+	mlbpme
+ : 1;
+
+89 
+	mlb¥z
+ : 1;
+
+90 
+	mlbpu
+ : 1;
+
+91 
+	mlbpws
+ : 1;
+
+92 
+	mlbpws10
+ : 1;
+
+93 
+	mlbpvpd
+ : 1;
+
+94 
+	mws10
+ : 1;
+
+95 
+	mws16
+ : 1;
+
+97 
+	#to_scsi_disk
+(
+obj
+Ë
+	`c⁄èöî_of
+(obj,
+scsi_disk
+,
+dev
+)
+
+	)
+
+99 
+ölöe
+ 
+scsi_disk
+ *
+	$scsi_disk
+(
+gídisk
+ *
+disk
+)
+
+101  
+	`c⁄èöî_of
+(
+disk
+->
+¥iv©e_d©a
+, 
+scsi_disk
+, 
+drivî
+);
+
+102 
+	}
+}
+
+104 
+	#sd_¥ötk
+(
+¥efix
+, 
+sdsk
+, 
+fmt
+, 
+a
+...) \
+
+105 (
+sdsk
+)->
+disk
+ ? \
+
+106 
+	`sdev_¥efix_¥ötk
+(
+¥efix
+, (
+sdsk
+)->
+devi˚
+, \
+
+107 (
+sdsk
+)->
+disk
+->
+disk_«me
+, 
+fmt
+, ##
+a
+) : \
+
+108 
+	`sdev_¥ötk
+(
+¥efix
+, (
+sdsk
+)->
+devi˚
+, 
+fmt
+, ##
+a
+)
+
+	)
+
+110 
+	#sd_fú°_¥ötk
+(
+¥efix
+, 
+sdsk
+, 
+fmt
+, 
+a
+...) \
+
+112 i‡((
+sdkp
+)->
+fú°_sˇn
+) \
+
+113 
+	`sd_¥ötk
+(
+¥efix
+, 
+sdsk
+, 
+fmt
+, ##
+a
+); \
+
+114 } 0)
+
+	)
+
+116 
+ölöe
+ 
+	$scsi_medium_ac˚ss_comm™d
+(
+scsi_cmnd
+ *
+scmd
+)
+
+118 
+scmd
+->
+cmnd
+[0]) {
+
+119 
+READ_6
+:
+
+120 
+READ_10
+:
+
+121 
+READ_12
+:
+
+122 
+READ_16
+:
+
+123 
+SYNCHRONIZE_CACHE
+:
+
+124 
+VERIFY
+:
+
+125 
+VERIFY_12
+:
+
+126 
+VERIFY_16
+:
+
+127 
+WRITE_6
+:
+
+128 
+WRITE_10
+:
+
+129 
+WRITE_12
+:
+
+130 
+WRITE_16
+:
+
+131 
+WRITE_SAME
+:
+
+132 
+WRITE_SAME_16
+:
+
+133 
+UNMAP
+:
+
+135 
+VARIABLE_LENGTH_CMD
+:
+
+136 
+scmd
+->
+cmnd
+[9]) {
+
+137 
+READ_32
+:
+
+138 
+VERIFY_32
+:
+
+139 
+WRITE_32
+:
+
+140 
+WRITE_SAME_32
+:
+
+146 
+	}
+}
+
+162 
+	esd_dif_èrgë_¥Ÿe˘i⁄_ty≥s
+ {
+
+163 
+	mSD_DIF_TYPE0_PROTECTION
+ = 0x0,
+
+164 
+	mSD_DIF_TYPE1_PROTECTION
+ = 0x1,
+
+165 
+	mSD_DIF_TYPE2_PROTECTION
+ = 0x2,
+
+166 
+	mSD_DIF_TYPE3_PROTECTION
+ = 0x3,
+
+173 
+ölöe
+ 
+	$sd_¥Ÿ_›
+(
+boﬁ
+ 
+wrôe
+, boﬁ 
+dix
+, boﬁ 
+dif
+)
+
+176 c⁄° 
+›s
+[] = {
+
+177 
+SCSI_PROT_NORMAL
+,
+
+178 
+SCSI_PROT_READ_STRIP
+,
+
+179 
+SCSI_PROT_READ_INSERT
+,
+
+180 
+SCSI_PROT_READ_PASS
+,
+
+181 
+SCSI_PROT_NORMAL
+,
+
+182 
+SCSI_PROT_WRITE_INSERT
+,
+
+183 
+SCSI_PROT_WRITE_STRIP
+,
+
+184 
+SCSI_PROT_WRITE_PASS
+,
+
+187  
+›s
+[
+wrôe
+ << 2 | 
+dix
+ << 1 | 
+dif
+];
+
+188 
+	}
+}
+
+194 
+ölöe
+ 
+	$sd_¥Ÿ_Êag_mask
+(
+¥Ÿ_›
+)
+
+196 c⁄° 
+Êag_mask
+[] = {
+
+197 [
+SCSI_PROT_NORMAL
+] = 0,
+
+199 [
+SCSI_PROT_READ_STRIP
+] = 
+SCSI_PROT_TRANSFER_PI
+ |
+
+200 
+SCSI_PROT_GUARD_CHECK
+ |
+
+201 
+SCSI_PROT_REF_CHECK
+ |
+
+202 
+SCSI_PROT_REF_INCREMENT
+,
+
+204 [
+SCSI_PROT_READ_INSERT
+] = 
+SCSI_PROT_REF_INCREMENT
+ |
+
+205 
+SCSI_PROT_IP_CHECKSUM
+,
+
+207 [
+SCSI_PROT_READ_PASS
+] = 
+SCSI_PROT_TRANSFER_PI
+ |
+
+208 
+SCSI_PROT_GUARD_CHECK
+ |
+
+209 
+SCSI_PROT_REF_CHECK
+ |
+
+210 
+SCSI_PROT_REF_INCREMENT
+ |
+
+211 
+SCSI_PROT_IP_CHECKSUM
+,
+
+213 [
+SCSI_PROT_WRITE_INSERT
+] = 
+SCSI_PROT_TRANSFER_PI
+ |
+
+214 
+SCSI_PROT_REF_INCREMENT
+,
+
+216 [
+SCSI_PROT_WRITE_STRIP
+] = 
+SCSI_PROT_GUARD_CHECK
+ |
+
+217 
+SCSI_PROT_REF_CHECK
+ |
+
+218 
+SCSI_PROT_REF_INCREMENT
+ |
+
+219 
+SCSI_PROT_IP_CHECKSUM
+,
+
+221 [
+SCSI_PROT_WRITE_PASS
+] = 
+SCSI_PROT_TRANSFER_PI
+ |
+
+222 
+SCSI_PROT_GUARD_CHECK
+ |
+
+223 
+SCSI_PROT_REF_CHECK
+ |
+
+224 
+SCSI_PROT_REF_INCREMENT
+ |
+
+225 
+SCSI_PROT_IP_CHECKSUM
+,
+
+228  
+Êag_mask
+[
+¥Ÿ_›
+];
+
+229 
+	}
+}
+
+234 
+	ssd_dif_tu∂e
+ {
+
+235 
+__be16
+ 
+	mgu¨d_èg
+;
+
+236 
+__be16
+ 
+	m≠p_èg
+;
+
+237 
+__be32
+ 
+	mªf_èg
+;
+
+240 #ifde‡
+CONFIG_BLK_DEV_INTEGRITY
+
+
+242 
+sd_dif_c⁄fig_ho°
+(
+scsi_disk
+ *);
+
+243 
+sd_dif_¥ï¨e
+(
+scsi_cmnd
+ *
+scmd
+);
+
+244 
+sd_dif_com∂ëe
+(
+scsi_cmnd
+ *, );
+
+248 
+ölöe
+ 
+	$sd_dif_c⁄fig_ho°
+(
+scsi_disk
+ *
+disk
+)
+
+250 
+	}
+}
+
+251 
+ölöe
+ 
+	$sd_dif_¥ï¨e
+(
+scsi_cmnd
+ *
+scmd
+)
+
+254 
+	}
+}
+
+255 
+ölöe
+ 
+	$sd_dif_com∂ëe
+(
+scsi_cmnd
+ *
+cmd
+, 
+a
+)
+
+257 
+	}
+}
+
+	@transport.c
+
+1 
+	~<löux/sched.h
+>
+
+2 
+	~<löux/gÂ.h
+>
+
+3 
+	~<löux/î∫o.h
+>
+
+4 
+	~<löux/exp‹t.h
+>
+
+6 
+	~<löux/usb/quúks.h
+>
+
+8 
+	~<scsi/scsi.h
+>
+
+9 
+	~<scsi/scsi_eh.h
+>
+
+10 
+	~<scsi/scsi_devi˚.h
+>
+
+12 
+	~"usb.h
+"
+
+13 
+	~"å™•‹t.h
+"
+
+14 
+	~"¥Ÿocﬁ.h
+"
+
+15 
+	~"scsiglue.h
+"
+
+16 
+	~"debug.h
+"
+
+18 
+	~<löux/blkdev.h
+>
+
+19 
+	~"sd.h
+"
+
+23 
+	$usb_°‹_blockög_com∂ëi⁄
+(
+urb
+ *urb)
+
+25 
+com∂ëi⁄
+ *
+urb_d⁄e_±r
+ = 
+urb
+->
+c⁄ãxt
+;
+
+26 
+	`com∂ëe
+(
+urb_d⁄e_±r
+);
+
+27 
+	}
+}
+
+29 
+	$usb_°‹_msg_comm⁄
+(
+us_d©a
+ *
+us
+, 
+timeout
+)
+
+31 
+com∂ëi⁄
+ 
+urb_d⁄e
+;
+
+32 
+timñe·
+;
+
+33 
+°©us
+;
+
+36 i‡(
+	`ã°_bô
+(
+US_FLIDX_ABORTING
+, &
+us
+->
+dÊags
+))
+
+37  -
+EIO
+;
+
+40 
+	`öô_com∂ëi⁄
+(&
+urb_d⁄e
+);
+
+43 
+us
+->
+cuºít_urb
+->
+c⁄ãxt
+ = &
+urb_d⁄e
+;
+
+44 
+us
+->
+cuºít_urb
+->
+å™s„r_Êags
+ = 0;
+
+50 i‡(
+us
+->
+cuºít_urb
+->
+å™s„r_buf„r
+ =us->
+iobuf
+)
+
+51 
+us
+->
+cuºít_urb
+->
+å™s„r_Êags
+ |
+URB_NO_TRANSFER_DMA_MAP
+;
+
+52 
+us
+->
+cuºít_urb
+->
+å™s„r_dma
+ = us->
+iobuf_dma
+;
+
+55 
+°©us
+ = 
+	`usb_submô_urb
+(
+us
+->
+cuºít_urb
+, 
+GFP_NOIO
+);
+
+56 i‡(
+°©us
+)
+
+57  
+°©us
+;
+
+59 
+	`£t_bô
+(
+US_FLIDX_URB_ACTIVE
+, &
+us
+->
+dÊags
+);
+
+62 i‡(
+	`ã°_bô
+(
+US_FLIDX_ABORTING
+, &
+us
+->
+dÊags
+)) {
+
+64 i‡(
+	`ã°_™d_˛ór_bô
+(
+US_FLIDX_URB_ACTIVE
+, &
+us
+->
+dÊags
+))
+
+66 
+	`usb_°‹_dbg
+(
+us
+, "--CancellingÅhe URB\n");
+
+67 
+	`usb_u∆ök_urb
+(
+us
+->
+cuºít_urb
+);
+
+72 
+timñe·
+ = 
+	`waô_f‹_com∂ëi⁄_öãºu±ibÀ_timeout
+(
+
+73 &
+urb_d⁄e
+, 
+timeout
+ ? : 
+MAX_SCHEDULE_TIMEOUT
+);
+
+74 
+	`˛ór_bô
+(
+US_FLIDX_URB_ACTIVE
+, &
+us
+->
+dÊags
+);
+
+76 i‡(
+timñe·
+ <= 0) {
+
+77 
+	`usb_°‹_dbg
+(
+us
+, "%†-- C™˚Œög URB\n", 
+timñe·
+ == 0 ? "Timeout" : "Signal");
+
+78 
+	`usb_kûl_urb
+(
+us
+->
+cuºít_urb
+);
+
+82  
+us
+->
+cuºít_urb
+->
+°©us
+;
+
+83 
+	}
+}
+
+85 
+	$usb_°‹_c⁄åﬁ_msg
+(
+us_d©a
+ *
+us
+, 
+pùe
+,
+
+86 
+u8
+ 
+ªque°
+, u8 
+ªque°ty≥
+, 
+u16
+ 
+vÆue
+,
+
+87 
+u16
+ 
+ödex
+, *
+d©a
+, u16 
+size
+, 
+timeout
+)
+
+89 
+°©us
+;
+
+91 
+	`usb_°‹_dbg
+(
+us
+, "rq=%02xÑqtype=%02x value=%04x index=%02xÜen=%u\n",
+
+92 
+ªque°
+, 
+ªque°ty≥
+, 
+vÆue
+, 
+ödex
+, 
+size
+);
+
+96 
+us
+->
+¸
+->
+bReque°Ty≥
+ = 
+ªque°ty≥
+;
+
+97 
+us
+->
+¸
+->
+bReque°
+ = 
+ªque°
+;
+
+98 
+us
+->
+¸
+->
+wVÆue
+ = 
+	`˝u_to_À16
+(
+vÆue
+);
+
+99 
+us
+->
+¸
+->
+wIndex
+ = 
+	`˝u_to_À16
+(
+ödex
+);
+
+100 
+us
+->
+¸
+->
+wLígth
+ = 
+	`˝u_to_À16
+(
+size
+);
+
+103 
+	`usb_fûl_c⁄åﬁ_urb
+(
+us
+->
+cuºít_urb
+, us->
+pusb_dev
+,
+
+104 
+pùe
+, (*Ë
+us
+->
+¸
+,
+
+105 
+d©a
+, 
+size
+, 
+usb_°‹_blockög_com∂ëi⁄
+, 
+NULL
+);
+
+106 
+°©us
+ = 
+	`usb_°‹_msg_comm⁄
+(
+us
+, 
+timeout
+);
+
+109 i‡(
+°©us
+ == 0)
+
+110 
+°©us
+ = 
+us
+->
+cuºít_urb
+->
+a˘uÆ_Àngth
+;
+
+111  
+°©us
+;
+
+112 
+	}
+}
+
+117 
+	$usb_°‹_Bulk_max_lun
+(
+us_d©a
+ *
+us
+)
+
+119 
+ªsu…
+;
+
+122 
+us
+->
+iobuf
+[0] = 0;
+
+123 
+ªsu…
+ = 
+	`usb_°‹_c⁄åﬁ_msg
+(
+us
+, us->
+ªcv_˘æ_pùe
+,
+US_BULK_GET_MAX_LUN
+,
+
+124 
+USB_DIR_IN
+ | 
+USB_TYPE_CLASS
+ | 
+USB_RECIP_INTERFACE
+,
+
+125 0, 
+us
+->
+i‚um
+, us->
+iobuf
+, 1, 10*
+HZ
+);
+
+126 
+	`usb_°‹_dbg
+(
+us
+, "GetMaxLUN commandÑesult is %d, data is %d\n",
+
+127 
+ªsu…
+, 
+us
+->
+iobuf
+[0]);
+
+133 i‡(
+ªsu…
+ > 0) {
+
+134 i‡(
+us
+->
+iobuf
+[0] < 16) {
+
+135  
+us
+->
+iobuf
+[0];
+
+137 
+	`dev_öfo
+(&
+us
+->
+pusb_ötf
+->
+dev
+,
+
+138 "Max LUN %d i†nŸ vÆid, usög 0 in°ód", 
+us
+->
+iobuf
+[0]);
+
+151 
+	}
+}
+
+158 
+	$œ°_£˘‹_hacks
+(
+us_d©a
+ *
+us
+, 
+scsi_cmnd
+ *
+§b
+)
+
+160 
+gídisk
+ *
+disk
+;
+
+161 
+scsi_disk
+ *
+sdkp
+;
+
+162 
+u32
+ 
+£˘‹
+;
+
+165 
+ªc‹d_nŸ_found
+[18] = {
+
+167 [2] = 
+MEDIUM_ERROR
+,
+
+175 i‡(!
+us
+->
+u£_œ°_£˘‹_hacks
+)
+
+178 i‡(
+§b
+->
+cmnd
+[0] !
+READ_10
+ && srb->cmnd[0] !
+WRITE_10
+)
+
+179 
+d⁄e
+;
+
+181 
+£˘‹
+ = (
+§b
+->
+cmnd
+[2] << 24) | (srb->cmnd[3] << 16) |
+
+182 (
+§b
+->
+cmnd
+[4] << 8) | (srb->cmnd[5]);
+
+183 
+disk
+ = 
+§b
+->
+ªque°
+->
+rq_disk
+;
+
+184 i‡(!
+disk
+)
+
+185 
+d⁄e
+;
+
+186 
+sdkp
+ = 
+	`scsi_disk
+(
+disk
+);
+
+187 i‡(!
+sdkp
+)
+
+188 
+d⁄e
+;
+
+189 i‡(
+£˘‹
+ + 1 !
+sdkp
+->
+ˇ∑côy
+)
+
+190 
+d⁄e
+;
+
+192 i‡(
+§b
+->
+ªsu…
+ =
+SAM_STAT_GOOD
+ && 
+	`scsi_gë_ªsid
+(srb) == 0) {
+
+193 
+us
+->
+u£_œ°_£˘‹_hacks
+ = 0;
+
+202 i‡(++
+us
+->
+œ°_£˘‹_ªåõs
+ < 3)
+
+204 
+§b
+->
+ªsu…
+ = 
+SAM_STAT_CHECK_CONDITION
+;
+
+205 
+	`mem˝y
+(
+§b
+->
+£n£_buf„r
+, 
+ªc‹d_nŸ_found
+,
+
+206 (
+ªc‹d_nŸ_found
+));
+
+208 
+d⁄e
+:
+
+213 i‡(
+§b
+->
+cmnd
+[0] !
+TEST_UNIT_READY
+)
+
+214 
+us
+->
+œ°_£˘‹_ªåõs
+ = 0;
+
+215 
+	}
+}
+
+218 
+	$usb_°‹_övoke_å™•‹t
+(
+scsi_cmnd
+ *
+§b
+, 
+us_d©a
+ *
+us
+)
+
+220 
+√ed_auto_£n£
+;
+
+221 
+ªsu…
+;
+
+224 
+	`scsi_£t_ªsid
+(
+§b
+, 0);
+
+225 
+ªsu…
+ = 
+us
+->
+	`å™•‹t
+(
+§b
+, us);
+
+230 i‡(
+	`ã°_bô
+(
+US_FLIDX_TIMED_OUT
+, &
+us
+->
+dÊags
+)) {
+
+231 
+	`usb_°‹_dbg
+(
+us
+, "-- command wasáborted\b");
+
+232 
+§b
+->
+ªsu…
+ = 
+DID_ABORT
+ << 16;
+
+233 
+H™dÀ_Eº‹s
+;
+
+236 i‡(
+ªsu…
+ =
+USB_STOR_TRANSPORT_ERROR
+) {
+
+237 
+	`usb_°‹_dbg
+(
+us
+, "--Transport indicatesÉrror,Ñesetting \n");
+
+238 
+§b
+->
+ªsu…
+ = 
+DID_ERROR
+ << 16;
+
+239 
+H™dÀ_Eº‹s
+;
+
+243 i‡(
+ªsu…
+ =
+USB_STOR_TRANSPORT_NO_SENSE
+) {
+
+244 
+§b
+->
+ªsu…
+ = 
+SAM_STAT_CHECK_CONDITION
+;
+
+245 
+	`œ°_£˘‹_hacks
+(
+us
+, 
+§b
+);
+
+248 
+§b
+->
+ªsu…
+ = 
+SAM_STAT_GOOD
+;
+
+250 
+√ed_auto_£n£
+ = 0;
+
+252 i‡((
+us
+->
+¥Ÿocﬁ
+ =
+USB_PR_CB
+ || us->¥Ÿocﬁ =
+USB_PR_DPCM_USB
+) &&
+
+253 
+§b
+->
+sc_d©a_dúe˘i⁄
+ !
+DMA_FROM_DEVICE
+) {
+
+254 
+	`usb_°‹_dbg
+(
+us
+, "--CBÅransport deviceÑequiringáuto-sense\n");
+
+255 
+√ed_auto_£n£
+ = 1;
+
+261 i‡(
+ªsu…
+ =
+USB_STOR_TRANSPORT_FAILED
+) {
+
+262 
+	`usb_°‹_dbg
+(
+us
+, "--Åransport indicates command failure\n");
+
+263 
+√ed_auto_£n£
+ = 1;
+
+269 i‡(
+	`u∆ikñy
+((
+§b
+->
+cmnd
+[0] =
+ATA_16
+ || srb->cmnd[0] =
+ATA_12
+) &&
+
+270 
+ªsu…
+ =
+USB_STOR_TRANSPORT_GOOD
+ &&
+
+271 !(
+us
+->
+fÊags
+ & 
+US_FL_SANE_SENSE
+) &&
+
+272 !(
+us
+->
+fÊags
+ & 
+US_FL_BAD_SENSE
+) &&
+
+273 !(
+§b
+->
+cmnd
+[2] & 0x20))) {
+
+274 
+	`usb_°‹_dbg
+(
+us
+, "--SAT supported, increasingáuto-sens\n");
+
+275 
+us
+->
+fÊags
+ |
+US_FL_SANE_SENSE
+;
+
+279 i‡((
+	`scsi_gë_ªsid
+(
+§b
+Ë> 0Ë&& !((§b->
+cmnd
+[0] =
+REQUEST_SENSE
+) ||
+
+280 (
+§b
+->
+cmnd
+[0] =
+INQUIRY
+Ë|| (§b->cmnd[0] =
+MODE_SENSE
+) ||
+
+281 (
+§b
+->
+cmnd
+[0] =
+LOG_SENSE
+Ë|| (§b->cmnd[0] =
+MODE_SENSE_10
+)))
+
+283 
+	`usb_°‹_dbg
+(
+us
+, "--unexpectedly shortÅransfer\n");
+
+286 i‡(
+√ed_auto_£n£
+)
+
+288 
+ãmp_ªsu…
+;
+
+289 
+scsi_eh_ßve
+ 
+£s
+;
+
+290 
+£n£_size
+ = 
+US_SENSE_SIZE
+;
+
+291 
+scsi_£n£_hdr
+ 
+sshdr
+;
+
+292 c⁄° 
+u8
+ *
+scdd
+;
+
+293 
+u8
+ 
+fm_ûi
+;
+
+296 i‡(
+us
+->
+fÊags
+ & 
+US_FL_SANE_SENSE
+)
+
+297 
+£n£_size
+ = ~0;
+
+298 
+Rëry_Sí£
+:
+
+299 
+	`usb_°‹_dbg
+(
+us
+, "Issuingáuto-REQUEST_SENSE\n");
+
+300 
+	`scsi_eh_¥ï_cmnd
+(
+§b
+, &
+£s
+, 
+NULL
+, 0, 
+£n£_size
+);
+
+302 i‡(
+us
+->
+sub˛ass
+ =
+USB_SC_RBC
+ || us->sub˛as†=
+USB_SC_SCSI
+ ||
+
+303 
+us
+->
+sub˛ass
+ =
+USB_SC_CYP_ATACB
+)
+
+304 
+§b
+->
+cmd_Àn
+ = 6;
+
+306 
+§b
+->
+cmd_Àn
+ = 12;
+
+309 
+	`scsi_£t_ªsid
+(
+§b
+, 0);
+
+310 
+ãmp_ªsu…
+ = 
+us
+->
+	`å™•‹t
+(us->
+§b
+, us);
+
+313 
+	`scsi_eh_ª°‹e_cmnd
+(
+§b
+, &
+£s
+);
+
+315 i‡(
+	`ã°_bô
+(
+US_FLIDX_TIMED_OUT
+, &
+us
+->
+dÊags
+)) {
+
+316 
+	`usb_°‹_dbg
+(
+us
+, "--auto-senseáborted\n");
+
+317 
+§b
+->
+ªsu…
+ = 
+DID_ABORT
+ << 16;
+
+319 i‡(
+£n£_size
+ !
+US_SENSE_SIZE
+) {
+
+320 
+us
+->
+fÊags
+ &~
+US_FL_SANE_SENSE
+;
+
+321 
+us
+->
+fÊags
+ |
+US_FL_BAD_SENSE
+;
+
+323 
+H™dÀ_Eº‹s
+;
+
+329 i‡(
+ãmp_ªsu…
+ =
+USB_STOR_TRANSPORT_FAILED
+ &&
+
+330 
+£n£_size
+ !
+US_SENSE_SIZE
+) {
+
+331 
+	`usb_°‹_dbg
+(
+us
+, "--auto-sense failure,Ñetry small sense \n");
+
+332 
+£n£_size
+ = 
+US_SENSE_SIZE
+;
+
+333 
+us
+->
+fÊags
+ &~
+US_FL_SANE_SENSE
+;
+
+334 
+us
+->
+fÊags
+ |
+US_FL_BAD_SENSE
+;
+
+335 
+Rëry_Sí£
+;
+
+339 i‡(
+ãmp_ªsu…
+ !
+USB_STOR_TRANSPORT_GOOD
+) {
+
+340 
+	`usb_°‹_dbg
+(
+us
+, "--auto-sense failure\n");
+
+344 
+§b
+->
+ªsu…
+ = 
+DID_ERROR
+ << 16;
+
+345 i‡(!(
+us
+->
+fÊags
+ & 
+US_FL_SCM_MULT_TARG
+))
+
+346 
+H™dÀ_Eº‹s
+;
+
+353 i‡(
+§b
+->
+£n£_buf„r
+[7] > (
+US_SENSE_SIZE
+ - 8) &&
+
+354 !(
+us
+->
+fÊags
+ & 
+US_FL_SANE_SENSE
+) &&
+
+355 !(
+us
+->
+fÊags
+ & 
+US_FL_BAD_SENSE
+) &&
+
+356 (
+§b
+->
+£n£_buf„r
+[0] & 0x7C) == 0x70) {
+
+357 
+	`usb_°‹_dbg
+(
+us
+,"--Sense dataÅruncatedÅo %i from %i\n",
+
+358 
+US_SENSE_SIZE
+, 
+§b
+->
+£n£_buf„r
+[7] + 8);
+
+359 
+§b
+->
+£n£_buf„r
+[7] = (
+US_SENSE_SIZE
+ - 8);
+
+361 
+	`scsi_n‹mÆize_£n£
+(
+§b
+->
+£n£_buf„r
+, 
+SCSI_SENSE_BUFFERSIZE
+,
+
+362 &
+sshdr
+);
+
+363 
+	`usb_°‹_dbg
+(
+us
+, "--Resu… fromáuto-£n£ i†%d\n",
+ãmp_ªsu…
+);
+
+364 
+	`usb_°‹_dbg
+(
+us
+,"--code: 0x%x, key: 0x%x, ASC: 0x%x, ASCQ: 0x%x",
+
+365 
+sshdr
+.
+ª•⁄£_code
+, sshdr.
+£n£_key
+,
+
+366 
+sshdr
+.
+asc
+, sshdr.
+ascq
+);
+
+367 #ifde‡
+CONFIG_USB_STORAGE_DEBUG
+
+
+368 
+	`usb_°‹_show_£n£
+(
+us
+, 
+sshdr
+.
+£n£_key
+, sshdr.
+asc
+, sshdr.
+ascq
+);
+
+371 
+§b
+->
+ªsu…
+ = 
+SAM_STAT_CHECK_CONDITION
+;
+
+372 
+scdd
+ = 
+	`scsi_£n£_desc_föd
+(
+§b
+->
+£n£_buf„r
+,
+
+373 
+SCSI_SENSE_BUFFERSIZE
+, 4);
+
+374 
+fm_ûi
+ = (
+scdd
+ ? scdd[3] : 
+§b
+->
+£n£_buf„r
+[2]) & 0xA0;
+
+378 i‡(
+sshdr
+.
+£n£_key
+ =0 && sshdr.
+asc
+ =0 && sshdr.
+ascq
+ == 0 &&
+
+379 
+fm_ûi
+ == 0) {
+
+380 i‡(
+ªsu…
+ =
+USB_STOR_TRANSPORT_GOOD
+) {
+
+381 
+§b
+->
+ªsu…
+ = 
+SAM_STAT_GOOD
+;
+
+382 
+§b
+->
+£n£_buf„r
+[0] = 0x0;
+
+388 
+§b
+->
+ªsu…
+ = 
+DID_ERROR
+ << 16;
+
+389 i‡((
+sshdr
+.
+ª•⁄£_code
+ & 0x72) == 0x72)
+
+390 
+§b
+->
+£n£_buf„r
+[1] = 
+HARDWARE_ERROR
+;
+
+392 
+§b
+->
+£n£_buf„r
+[2] = 
+HARDWARE_ERROR
+;
+
+403 i‡(
+	`u∆ikñy
+((
+us
+->
+fÊags
+ & 
+US_FL_INITIAL_READ10
+) &&
+
+404 
+§b
+->
+cmnd
+[0] =
+READ_10
+))
+
+406 i‡(
+§b
+->
+ªsu…
+ =
+SAM_STAT_GOOD
+) {
+
+407 
+	`£t_bô
+(
+US_FLIDX_READ10_WORKED
+, &
+us
+->
+dÊags
+);
+
+408 } i‡(
+	`ã°_bô
+(
+US_FLIDX_READ10_WORKED
+, &
+us
+->
+dÊags
+)) {
+
+409 
+	`˛ór_bô
+(
+US_FLIDX_READ10_WORKED
+, &
+us
+->
+dÊags
+);
+
+410 
+	`£t_bô
+(
+US_FLIDX_REDO_READ10
+, &
+us
+->
+dÊags
+);
+
+416 i‡(
+	`ã°_bô
+(
+US_FLIDX_REDO_READ10
+, &
+us
+->
+dÊags
+))
+
+418 
+	`˛ór_bô
+(
+US_FLIDX_REDO_READ10
+, &
+us
+->
+dÊags
+);
+
+419 
+§b
+->
+ªsu…
+ = 
+DID_IMM_RETRY
+ << 16;
+
+420 
+§b
+->
+£n£_buf„r
+[0] = 0;
+
+424 i‡((
+§b
+->
+ªsu…
+ =
+SAM_STAT_GOOD
+ || srb->
+£n£_buf„r
+[2] == 0) &&
+
+425 
+	`scsi_bufÊí
+(
+§b
+Ë- 
+	`scsi_gë_ªsid
+(§bË< srb->
+undîÊow
+)
+
+426 
+§b
+->
+ªsu…
+ = 
+DID_ERROR
+ << 16;
+
+427 
+	`œ°_£˘‹_hacks
+(
+us
+, 
+§b
+);
+
+433 
+H™dÀ_Eº‹s
+:
+
+436 
+	`scsi_lock
+(
+	`us_to_ho°
+(
+us
+));
+
+437 
+	`£t_bô
+(
+US_FLIDX_RESETTING
+, &
+us
+->
+dÊags
+);
+
+438 
+	`˛ór_bô
+(
+US_FLIDX_ABORTING
+, &
+us
+->
+dÊags
+);
+
+439 
+	`scsi_u∆ock
+(
+	`us_to_ho°
+(
+us
+));
+
+443 
+	`muãx_u∆ock
+(&
+us
+->
+dev_muãx
+);
+
+444 
+ªsu…
+ = 
+	`usb_°‹_p‹t_ª£t
+(
+us
+);
+
+445 
+	`muãx_lock
+(&
+us
+->
+dev_muãx
+);
+
+447 i‡(
+ªsu…
+ < 0)
+
+449 
+	`scsi_lock
+(
+	`us_to_ho°
+(
+us
+));
+
+450 
+	`usb_°‹_ªp‹t_devi˚_ª£t
+(
+us
+);
+
+451 
+	`scsi_u∆ock
+(
+	`us_to_ho°
+(
+us
+));
+
+452 
+us
+->
+	`å™•‹t_ª£t
+(us);
+
+454 
+	`˛ór_bô
+(
+US_FLIDX_RESETTING
+, &
+us
+->
+dÊags
+);
+
+455 
+	`œ°_£˘‹_hacks
+(
+us
+, 
+§b
+);
+
+456 
+	}
+}
+
+462 
+	$usb_°‹_˛ór_hÆt
+(
+us_d©a
+ *
+us
+, 
+pùe
+)
+
+464 
+ªsu…
+;
+
+465 
+ídp
+ = 
+	`usb_pùìndpoöt
+(
+pùe
+);
+
+467 i‡(
+	`usb_pùeö
+ (
+pùe
+))
+
+468 
+ídp
+ |
+USB_DIR_IN
+;
+
+470 
+ªsu…
+ = 
+	`usb_°‹_c⁄åﬁ_msg
+(
+us
+, us->
+£nd_˘æ_pùe
+,
+
+471 
+USB_REQ_CLEAR_FEATURE
+, 
+USB_RECIP_ENDPOINT
+,
+
+472 
+USB_ENDPOINT_HALT
+, 
+ídp
+, 
+NULL
+, 0, 3*
+HZ
+);
+
+473 i‡(
+ªsu…
+ >= 0)
+
+474 
+	`usb_ª£t_ídpoöt
+(
+us
+->
+pusb_dev
+, 
+ídp
+);
+
+476 
+	`usb_°‹_dbg
+(
+us
+, "ªsu… = %d\n", 
+ªsu…
+);
+
+477  
+ªsu…
+;
+
+478 
+	}
+}
+
+489 
+	$usb_°‹_ª£t_comm⁄
+(
+us_d©a
+ *
+us
+, 
+u8
+ 
+ªque°
+, u8 
+ªque°ty≥
+,
+
+490 
+u16
+ 
+vÆue
+, u16 
+ödex
+, *
+d©a
+, u16 
+size
+)
+
+492 
+ªsu…
+;
+
+493 
+ªsu…2
+;
+
+495 i‡(
+	`ã°_bô
+(
+US_FLIDX_DISCONNECTING
+, &
+us
+->
+dÊags
+)) {
+
+496 
+	`usb_°‹_dbg
+(
+us
+, "NoÑeset during disconnect\n");
+
+497  -
+EIO
+;
+
+500 
+ªsu…
+ = 
+	`usb_°‹_c⁄åﬁ_msg
+(
+us
+, us->
+£nd_˘æ_pùe
+, 
+ªque°
+,
+
+501 
+ªque°ty≥
+, 
+vÆue
+, 
+ödex
+, 
+d©a
+, 
+size
+, 5*
+HZ
+);
+
+502 i‡(
+ªsu…
+ < 0) {
+
+503 
+	`usb_°‹_dbg
+(
+us
+, "So·Ñe£àÁûed: %d\n", 
+ªsu…
+);
+
+504  
+ªsu…
+;
+
+509 
+	`waô_evít_öãºu±ibÀ_timeout
+(
+us
+->
+dñay_waô
+,
+
+510 
+	`ã°_bô
+(
+US_FLIDX_DISCONNECTING
+, &
+us
+->
+dÊags
+), 
+HZ
+*6);
+
+511 i‡(
+	`ã°_bô
+(
+US_FLIDX_DISCONNECTING
+, &
+us
+->
+dÊags
+)) {
+
+512 
+	`usb_°‹_dbg
+(
+us
+, "Reset interrupted by disconnect\n");
+
+513  -
+EIO
+;
+
+516 
+	`usb_°‹_dbg
+(
+us
+, "SoftÑeset: clearing bulk-inÉndpoint halt \n");
+
+517 
+ªsu…
+ = 
+	`usb_°‹_˛ór_hÆt
+(
+us
+, us->
+ªcv_bulk_pùe
+);
+
+519 
+	`usb_°‹_dbg
+(
+us
+, "SoftÑeset: Clearing bulk-outÉndPoint half \n");
+
+520 
+ªsu…2
+ = 
+	`usb_°‹_˛ór_hÆt
+(
+us
+, us->
+£nd_bulk_pùe
+);
+
+522 i‡(
+ªsu…
+ >= 0)
+
+523 
+ªsu…
+ = 
+ªsu…2
+;
+
+524 i‡(
+ªsu…
+ < 0)
+
+525 
+	`usb_°‹_dbg
+(
+us
+, "SoftÑeset failed\n");
+
+527 
+	`usb_°‹_dbg
+(
+us
+, "SoftÑeset done \n");
+
+528  
+ªsu…
+;
+
+529 
+	}
+}
+
+531 
+	$usb_°‹_Bulk_ª£t
+(
+us_d©a
+ *
+us
+)
+
+533  
+	`usb_°‹_ª£t_comm⁄
+(
+us
+, 
+US_BULK_RESET_REQUEST
+,
+
+534 
+USB_TYPE_CLASS
+ | 
+USB_RECIP_INTERFACE
+,
+
+535 0, 
+us
+->
+i‚um
+, 
+NULL
+, 0);
+
+536 
+	}
+}
+
+543 
+	$öãΩªt_urb_ªsu…
+(
+us_d©a
+ *
+us
+, 
+pùe
+,
+
+544 
+Àngth
+, 
+ªsu…
+, 
+∑πül
+)
+
+546 
+	`usb_°‹_dbg
+(
+us
+, "Status code %d;Åransferred %u/%u\n",
+
+547 
+ªsu…
+, 
+∑πül
+, 
+Àngth
+);
+
+548 
+ªsu…
+)
+
+552 i‡(
+∑πül
+ !
+Àngth
+) {
+
+553 
+	`usb_°‹_dbg
+(
+us
+, "-- shortÅransfer\n");
+
+554  
+USB_STOR_XFER_SHORT
+;
+
+556 
+	`usb_°‹_dbg
+(
+us
+, "--Åransfer complete\n");
+
+557  
+USB_STOR_XFER_GOOD
+;
+
+560 -
+EPIPE
+:
+
+561 i‡(
+	`usb_pùec⁄åﬁ
+(
+pùe
+)) {
+
+562 
+	`usb_°‹_dbg
+(
+us
+, "-- stall on controlÖipe\n");
+
+563  
+USB_STOR_XFER_STALLED
+;
+
+566 
+	`usb_°‹_dbg
+(
+us
+, "CÀ¨ögÉndpoöàhÆàf‹Öùê0x%x\n", 
+pùe
+);
+
+567 i‡(
+	`usb_°‹_˛ór_hÆt
+(
+us
+, 
+pùe
+) > 0)
+
+568  
+USB_STOR_XFER_ERROR
+;
+
+569  
+USB_STOR_XFER_STALLED
+;
+
+572 -
+EOVERFLOW
+:
+
+573 
+	`usb_°‹_dbg
+(
+us
+, "--babble\n");
+
+574  
+USB_STOR_XFER_LONG
+;
+
+578 -
+ECONNRESET
+:
+
+579 
+	`usb_°‹_dbg
+(
+us
+, "-- Transfer cancelled\n");
+
+580  
+USB_STOR_XFER_ERROR
+;
+
+583 -
+EREMOTEIO
+:
+
+584 
+	`usb_°‹_dbg
+(
+us
+, "--ShortÑeadÅransfer\n");
+
+585  
+USB_STOR_XFER_SHORT
+;
+
+588 -
+EIO
+:
+
+589 
+	`usb_°‹_dbg
+(
+us
+, "--Abort or disconnect inÖrogress\n");
+
+590  
+USB_STOR_XFER_ERROR
+;
+
+594 
+	`usb_°‹_dbg
+(
+us
+, "--UnknownÉrrors\n");
+
+595  
+USB_STOR_XFER_ERROR
+;
+
+597 
+	}
+}
+
+606 
+	$usb_°‹_bulk_å™s„r_buf
+(
+us_d©a
+ *
+us
+, 
+pùe
+,
+
+607 *
+buf
+, 
+Àngth
+, *
+a˘_Àn
+)
+
+609 
+ªsu…
+;
+
+611 
+	`usb_°‹_dbg
+(
+us
+, "x„∏%u byãs\n", 
+Àngth
+);
+
+614 
+	`usb_fûl_bulk_urb
+(
+us
+->
+cuºít_urb
+, us->
+pusb_dev
+, 
+pùe
+, 
+buf
+, 
+Àngth
+,
+
+615 
+usb_°‹_blockög_com∂ëi⁄
+, 
+NULL
+);
+
+616 
+ªsu…
+ = 
+	`usb_°‹_msg_comm⁄
+(
+us
+, 0);
+
+619 i‡(
+a˘_Àn
+)
+
+620 *
+a˘_Àn
+ = 
+us
+->
+cuºít_urb
+->
+a˘uÆ_Àngth
+;
+
+621  
+	`öãΩªt_urb_ªsu…
+(
+us
+, 
+pùe
+, 
+Àngth
+, 
+ªsu…
+,
+
+622 
+us
+->
+cuºít_urb
+->
+a˘uÆ_Àngth
+);
+
+623 
+	}
+}
+
+628 
+	$usb_°‹_bulk_å™s„r_sgli°
+(
+us_d©a
+ *
+us
+, 
+pùe
+,
+
+629 
+sˇâîli°
+ *
+sg
+, 
+num_sg
+, 
+Àngth
+,
+
+630 *
+a˘_Àn
+)
+
+632 
+ªsu…
+;
+
+635 i‡(
+	`ã°_bô
+(
+US_FLIDX_ABORTING
+, &
+us
+->
+dÊags
+))
+
+636  
+USB_STOR_XFER_ERROR
+;
+
+638 
+	`usb_°‹_dbg
+(
+us
+, "x„∏%u byãs, %dÉ¡rõs\n", 
+Àngth
+, 
+num_sg
+);
+
+639 
+ªsu…
+ = 
+	`usb_sg_öô
+(&
+us
+->
+cuºít_sg
+, us->
+pusb_dev
+, 
+pùe
+, 0,
+
+640 
+sg
+, 
+num_sg
+, 
+Àngth
+, 
+GFP_NOIO
+);
+
+641 i‡(
+ªsu…
+) {
+
+642 
+	`usb_°‹_dbg
+(
+us
+, "usb_sg_öôÑëu∫ed %d\n", 
+ªsu…
+);
+
+643  
+USB_STOR_XFER_ERROR
+;
+
+648 
+	`£t_bô
+(
+US_FLIDX_SG_ACTIVE
+, &
+us
+->
+dÊags
+);
+
+651 i‡(
+	`ã°_bô
+(
+US_FLIDX_ABORTING
+, &
+us
+->
+dÊags
+)) {
+
+653 i‡(
+	`ã°_™d_˛ór_bô
+(
+US_FLIDX_SG_ACTIVE
+, &
+us
+->
+dÊags
+)) {
+
+654 
+	`usb_°‹_dbg
+(
+us
+, "-- cancelling sgÑequest \n");
+
+655 
+	`usb_sg_ˇn˚l
+(&
+us
+->
+cuºít_sg
+);
+
+659 
+	`usb_sg_waô
+(&
+us
+->
+cuºít_sg
+);
+
+660 
+	`˛ór_bô
+(
+US_FLIDX_SG_ACTIVE
+, &
+us
+->
+dÊags
+);
+
+661 
+ªsu…
+ = 
+us
+->
+cuºít_sg
+.
+°©us
+;
+
+662 i‡(
+a˘_Àn
+)
+
+663 *
+a˘_Àn
+ = 
+us
+->
+cuºít_sg
+.
+byãs
+;
+
+664  
+	`öãΩªt_urb_ªsu…
+(
+us
+, 
+pùe
+, 
+Àngth
+, 
+ªsu…
+,
+
+665 
+us
+->
+cuºít_sg
+.
+byãs
+);
+
+666 
+	}
+}
+
+672 
+	$usb_°‹_bulk_§b
+(
+us_d©a
+* 
+us
+, 
+pùe
+,
+
+673 
+scsi_cmnd
+* 
+§b
+)
+
+675 
+∑πül
+;
+
+676 
+ªsu…
+ = 
+	`usb_°‹_bulk_å™s„r_sgli°
+(
+us
+, 
+pùe
+, 
+	`scsi_sgli°
+(
+§b
+),
+
+677 
+	`scsi_sg_cou¡
+(
+§b
+), 
+	`scsi_bufÊí
+(srb),
+
+678 &
+∑πül
+);
+
+680 
+	`scsi_£t_ªsid
+(
+§b
+, 
+	`scsi_bufÊí
+(§bË- 
+∑πül
+);
+
+681  
+ªsu…
+;
+
+682 
+	}
+}
+
+684 
+	$usb_°‹_Bulk_å™•‹t
+(
+scsi_cmnd
+ *
+§b
+, 
+us_d©a
+ *
+us
+)
+
+686 
+bulk_cb_wøp
+ *
+bcb
+ = (bulk_cb_wø∞*Ë
+us
+->
+iobuf
+;
+
+687 
+bulk_cs_wøp
+ *
+bcs
+ = (bulk_cs_wø∞*Ë
+us
+->
+iobuf
+;
+
+688 
+å™s„r_Àngth
+ = 
+	`scsi_bufÊí
+(
+§b
+);
+
+689 
+ªsidue
+;
+
+690 
+ªsu…
+;
+
+691 
+Áke_£n£
+ = 0;
+
+692 
+cswÀn
+;
+
+693 
+cbwÀn
+ = 
+US_BULK_CB_WRAP_LEN
+;
+
+696 i‡(
+	`u∆ikñy
+(
+us
+->
+fÊags
+ & 
+US_FL_BULK32
+)) {
+
+697 
+cbwÀn
+ = 32;
+
+698 
+us
+->
+iobuf
+[31] = 0;
+
+702 
+bcb
+->
+Sig«tuª
+ = 
+	`˝u_to_À32
+(
+US_BULK_CB_SIGN
+);
+
+703 
+bcb
+->
+D©aTøns„rLígth
+ = 
+	`˝u_to_À32
+(
+å™s„r_Àngth
+);
+
+704 
+bcb
+->
+Fœgs
+ = 
+§b
+->
+sc_d©a_dúe˘i⁄
+ =
+DMA_FROM_DEVICE
+ ?
+
+705 
+US_BULK_FLAG_IN
+ : 0;
+
+706 
+bcb
+->
+Tag
+ = ++
+us
+->
+èg
+;
+
+707 
+bcb
+->
+Lun
+ = 
+§b
+->
+devi˚
+->
+lun
+;
+
+708 i‡(
+us
+->
+fÊags
+ & 
+US_FL_SCM_MULT_TARG
+)
+
+709 
+bcb
+->
+Lun
+ |
+§b
+->
+devi˚
+->
+id
+ << 4;
+
+710 
+bcb
+->
+Lígth
+ = 
+§b
+->
+cmd_Àn
+;
+
+713 
+	`mem£t
+(
+bcb
+->
+CDB
+, 0, (bcb->CDB));
+
+714 
+	`mem˝y
+(
+bcb
+->
+CDB
+, 
+§b
+->
+cmnd
+, bcb->
+Lígth
+);
+
+717 
+	`usb_°‹_dbg
+(
+us
+, "Bulk command S 0x%x T 0x%x L %d F %d Trg %d LUN %d CL %d\n",
+
+718 
+	`À32_to_˝u
+(
+bcb
+->
+Sig«tuª
+), bcb->
+Tag
+,
+
+719 
+	`À32_to_˝u
+(
+bcb
+->
+D©aTøns„rLígth
+), bcb->
+Fœgs
+,
+
+720 (
+bcb
+->
+Lun
+ >> 4), (bcb->Lu¿& 0x0F), bcb->
+Lígth
+);
+
+722 
+ªsu…
+ = 
+	`usb_°‹_bulk_å™s„r_buf
+(
+us
+, us->
+£nd_bulk_pùe
+,
+
+723 
+bcb
+, 
+cbwÀn
+, 
+NULL
+);
+
+724 
+	`usb_°‹_dbg
+(
+us
+, "Bulk comm™dÅøns„∏ªsu…=%d\n", 
+ªsu…
+);
+
+725 i‡(
+ªsu…
+ !
+USB_STOR_XFER_GOOD
+)
+
+726  
+USB_STOR_TRANSPORT_ERROR
+;
+
+729 i‡(
+	`u∆ikñy
+(
+us
+->
+fÊags
+ & 
+US_FL_GO_SLOW
+))
+
+730 
+	`udñay
+(125);
+
+732 i‡(
+å™s„r_Àngth
+) {
+
+733 
+pùe
+ = 
+§b
+->
+sc_d©a_dúe˘i⁄
+ =
+DMA_FROM_DEVICE
+ ?
+
+734 
+us
+->
+ªcv_bulk_pùe
+ : us->
+£nd_bulk_pùe
+;
+
+735 
+ªsu…
+ = 
+	`usb_°‹_bulk_§b
+(
+us
+, 
+pùe
+, 
+§b
+);
+
+736 
+	`usb_°‹_dbg
+(
+us
+, "Bulk d©®å™s„∏ªsu… 0x%x\n", 
+ªsu…
+);
+
+737 i‡(
+ªsu…
+ =
+USB_STOR_TRANSPORT_ERROR
+)
+
+738  
+USB_STOR_TRANSPORT_ERROR
+;
+
+744 i‡(
+ªsu…
+ =
+USB_STOR_XFER_LONG
+)
+
+745 
+Áke_£n£
+ = 1;
+
+751 i‡(
+ªsu…
+ =
+USB_STOR_XFER_SHORT
+ &&
+
+752 
+§b
+->
+sc_d©a_dúe˘i⁄
+ =
+DMA_FROM_DEVICE
+ &&
+
+753 
+å™s„r_Àngth
+ - 
+	`scsi_gë_ªsid
+(
+§b
+) ==
+
+754 
+US_BULK_CS_WRAP_LEN
+)
+
+756 
+sˇâîli°
+ *
+sg
+ = 
+NULL
+;
+
+757 
+off£t
+ = 0;
+
+759 i‡(
+	`usb_°‹_ac˚ss_x„r_buf
+((*)
+bcs
+,
+
+760 
+US_BULK_CS_WRAP_LEN
+, 
+§b
+, &
+sg
+,
+
+761 &
+off£t
+, 
+FROM_XFER_BUF
+) ==
+
+762 
+US_BULK_CS_WRAP_LEN
+ && 
+bcs
+->
+Sig«tuª
+ ==
+
+763 
+	`˝u_to_À32
+(
+US_BULK_CS_SIGN
+))
+
+765 
+	`usb_°‹_dbg
+(
+us
+, "Device skipped dataÖhase\n");
+
+766 
+	`scsi_£t_ªsid
+(
+§b
+, 
+å™s„r_Àngth
+);
+
+767 
+skù≥d_d©a_pha£
+;
+
+775 
+	`usb_°‹_dbg
+(
+us
+, "AttemptingÅo get CSW..\n");
+
+776 
+ªsu…
+ = 
+	`usb_°‹_bulk_å™s„r_buf
+(
+us
+, us->
+ªcv_bulk_pùe
+,
+
+777 
+bcs
+, 
+US_BULK_CS_WRAP_LEN
+, &
+cswÀn
+);
+
+783 i‡(
+ªsu…
+ =
+USB_STOR_XFER_SHORT
+ && 
+cswÀn
+ == 0)
+
+785 
+	`usb_°‹_dbg
+(
+us
+, "Received 0-length CSW;Ñetrying...\n");
+
+786 
+ªsu…
+ = 
+	`usb_°‹_bulk_å™s„r_buf
+(
+us
+, us->
+ªcv_bulk_pùe
+,
+
+787 
+bcs
+, 
+US_BULK_CS_WRAP_LEN
+, &
+cswÀn
+);
+
+791 i‡(
+ªsu…
+ =
+USB_STOR_XFER_STALLED
+)
+
+793 
+	`usb_°‹_dbg
+(
+us
+, "AttemptingÅo get CSW 2ndÅry...\n");
+
+794 
+ªsu…
+ = 
+	`usb_°‹_bulk_å™s„r_buf
+(
+us
+, us->
+ªcv_bulk_pùe
+,
+
+795 
+bcs
+, 
+US_BULK_CS_WRAP_LEN
+, 
+NULL
+);
+
+799 
+	`usb_°‹_dbg
+(
+us
+, "Bulk sètu†ªsu… = %d\n", 
+ªsu…
+);
+
+800 i‡(
+ªsu…
+ !
+USB_STOR_XFER_GOOD
+)
+
+801  
+USB_STOR_TRANSPORT_ERROR
+;
+
+803 
+skù≥d_d©a_pha£
+:
+
+805 
+ªsidue
+ = 
+	`À32_to_˝u
+(
+bcs
+->
+Residue
+);
+
+806 
+	`usb_°‹_dbg
+(
+us
+, "Bulk status S 0x%x T 0x%x R %u Stat 0x%x\n",
+
+807 
+	`À32_to_˝u
+(
+bcs
+->
+Sig«tuª
+), bcs->
+Tag
+, 
+ªsidue
+,
+
+808 
+bcs
+->
+Sètus
+);
+
+809 i‡(!(
+bcs
+->
+Tag
+ =
+us
+->
+èg
+ || (us->
+fÊags
+ & 
+US_FL_BULK_IGNORE_TAG
+)) ||
+
+810 
+bcs
+->
+Sètus
+ > 
+US_BULK_STAT_PHASE
+)
+
+812 
+	`usb_°‹_dbg
+(
+us
+, "BulkÜogicalÉrror\n");
+
+813  
+USB_STOR_TRANSPORT_ERROR
+;
+
+820 i‡(!
+us
+->
+bcs_sig«tuª
+) {
+
+821 
+us
+->
+bcs_sig«tuª
+ = 
+bcs
+->
+Sig«tuª
+;
+
+822 i‡(
+us
+->
+bcs_sig«tuª
+ !
+	`˝u_to_À32
+(
+US_BULK_CS_SIGN
+))
+
+823 
+	`usb_°‹_dbg
+(
+us
+, "Learnt BCS signature 0x%08X\n",
+
+824 
+	`À32_to_˝u
+(
+us
+->
+bcs_sig«tuª
+));
+
+825 } i‡(
+bcs
+->
+Sig«tuª
+ !
+us
+->
+bcs_sig«tuª
+) {
+
+826 
+	`usb_°‹_dbg
+(
+us
+,"Signature mismatch: got %08X,Éxpecting %08X\n",
+
+827 
+	`À32_to_˝u
+(
+bcs
+->
+Sig«tuª
+),
+
+828 
+	`À32_to_˝u
+(
+us
+->
+bcs_sig«tuª
+));
+
+829  
+USB_STOR_TRANSPORT_ERROR
+;
+
+834 i‡(
+ªsidue
+ && !(
+us
+->
+fÊags
+ & 
+US_FL_IGNORE_RESIDUE
+)) {
+
+838 i‡(
+bcs
+->
+Sètus
+ =
+US_BULK_STAT_OK
+ && 
+	`scsi_gë_ªsid
+(
+§b
+) == 0
+
+839 && ((
+§b
+->
+cmnd
+[0] =
+INQUIRY
+ && 
+å™s„r_Àngth
+ == 36) ||
+
+840 (
+§b
+->
+cmnd
+[0] =
+READ_CAPACITY
+ && 
+å™s„r_Àngth
+ == 8)))
+
+842 
+us
+->
+fÊags
+ |
+US_FL_IGNORE_RESIDUE
+;
+
+844 
+ªsidue
+ = 
+	`mö
+‘esidue, 
+å™s„r_Àngth
+);
+
+845 
+	`scsi_£t_ªsid
+(
+§b
+, 
+	`max
+(
+	`scsi_gë_ªsid
+(srb),
+
+846 (Ë
+ªsidue
+ ));
+
+851 
+bcs
+->
+Sètus
+) {
+
+852 
+US_BULK_STAT_OK
+:
+
+854 i‡(
+Áke_£n£
+) {
+
+855 
+	`mem˝y
+(
+§b
+->
+£n£_buf„r
+,
+
+856 
+usb_°‹_£n£_övÆidCDB
+,
+
+857 (
+usb_°‹_£n£_övÆidCDB
+));
+
+858  
+USB_STOR_TRANSPORT_NO_SENSE
+;
+
+861  
+USB_STOR_TRANSPORT_GOOD
+;
+
+862 
+US_BULK_STAT_FAIL
+:
+
+864  
+USB_STOR_TRANSPORT_FAILED
+;
+
+865 
+US_BULK_STAT_PHASE
+:
+
+866  
+USB_STOR_TRANSPORT_ERROR
+;
+
+868  
+USB_STOR_TRANSPORT_ERROR
+;
+
+869 
+	}
+}
+
+872 
+	$usb_°‹_p‹t_ª£t
+(
+us_d©a
+ *
+us
+)
+
+874 
+ªsu…
+;
+
+877 i‡(
+us
+->
+pusb_dev
+->
+quúks
+ & 
+USB_QUIRK_RESET
+)
+
+878  -
+EPERM
+;
+
+880 
+ªsu…
+ = 
+	`usb_lock_devi˚_f‹_ª£t
+(
+us
+->
+pusb_dev
+, us->
+pusb_ötf
+);
+
+881 i‡(
+ªsu…
+ < 0)
+
+882 
+	`usb_°‹_dbg
+(
+us
+, "UnableÅoÜockÅhe device forÑeset: %d\n",
+
+883 
+ªsu…
+);
+
+886 i‡(
+	`ã°_bô
+(
+US_FLIDX_DISCONNECTING
+, &
+us
+->
+dÊags
+)) {
+
+887 
+ªsu…
+ = -
+EIO
+;
+
+888 
+	`usb_°‹_dbg
+(
+us
+, "NoÑeset during disconnect \n");
+
+890 
+ªsu…
+ = 
+	`usb_ª£t_devi˚
+(
+us
+->
+pusb_dev
+);
+
+891 
+	`usb_°‹_dbg
+(
+us
+,"usb_ª£t_devi˚Ñëu∫†%d\n",
+ªsu…
+);
+
+893 
+	`usb_u∆ock_devi˚
+(
+us
+->
+pusb_dev
+);
+
+895  
+ªsu…
+;
+
+896 
+	}
+}
+
+899 
+	$usb_°‹_°›_å™•‹t
+(
+us_d©a
+ *
+us
+)
+
+901 i‡(
+	`ã°_™d_˛ór_bô
+(
+US_FLIDX_URB_ACTIVE
+, &
+us
+->
+dÊags
+)) {
+
+902 
+	`usb_u∆ök_urb
+(
+us
+->
+cuºít_urb
+);
+
+903 
+	`usb_°‹_dbg
+(
+us
+, "--Cancelling URB\n");
+
+906 i‡(
+	`ã°_™d_˛ór_bô
+(
+US_FLIDX_SG_ACTIVE
+, &
+us
+->
+dÊags
+)) {
+
+907 
+	`usb_°‹_dbg
+(
+us
+, "--Cancelling sgÑequest\n");
+
+908 
+	`usb_sg_ˇn˚l
+(&
+us
+->
+cuºít_sg
+);
+
+910 
+	}
+}
+
+	@transport.h
+
+39 #i‚de‡
+_TRANSPORT_H_
+
+
+40 
+	#_TRANSPORT_H_
+
+
+	)
+
+42 
+	~<löux/blkdev.h
+>
+
+48 
+	#USB_STOR_XFER_GOOD
+ 0
+
+	)
+
+49 
+	#USB_STOR_XFER_SHORT
+ 1
+
+	)
+
+50 
+	#USB_STOR_XFER_STALLED
+ 2
+
+	)
+
+51 
+	#USB_STOR_XFER_LONG
+ 3
+
+	)
+
+52 
+	#USB_STOR_XFER_ERROR
+ 4
+
+	)
+
+58 
+	#USB_STOR_TRANSPORT_GOOD
+ 0
+
+	)
+
+59 
+	#USB_STOR_TRANSPORT_FAILED
+ 1
+
+	)
+
+60 
+	#USB_STOR_TRANSPORT_NO_SENSE
+ 2
+
+	)
+
+61 
+	#USB_STOR_TRANSPORT_ERROR
+ 3
+
+	)
+
+75 
+	#US_CBI_ADSC
+ 0
+
+	)
+
+77 
+usb_°‹_CB_å™•‹t
+(
+scsi_cmnd
+ *, 
+us_d©a
+*);
+
+78 
+usb_°‹_CB_ª£t
+(
+us_d©a
+*);
+
+80 
+usb_°‹_Bulk_å™•‹t
+(
+scsi_cmnd
+ *, 
+us_d©a
+*);
+
+81 
+usb_°‹_Bulk_max_lun
+(
+us_d©a
+*);
+
+82 
+usb_°‹_Bulk_ª£t
+(
+us_d©a
+*);
+
+84 
+usb_°‹_övoke_å™•‹t
+(
+scsi_cmnd
+ *, 
+us_d©a
+*);
+
+85 
+usb_°‹_°›_å™•‹t
+(
+us_d©a
+*);
+
+87 
+usb_°‹_c⁄åﬁ_msg
+(
+us_d©a
+ *
+us
+, 
+pùe
+,
+
+88 
+u8
+ 
+ªque°
+, u8 
+ªque°ty≥
+, 
+u16
+ 
+vÆue
+, u16 
+ödex
+,
+
+89 *
+d©a
+, 
+u16
+ 
+size
+, 
+timeout
+);
+
+90 
+usb_°‹_˛ór_hÆt
+(
+us_d©a
+ *
+us
+, 
+pùe
+);
+
+92 
+usb_°‹_˘æ_å™s„r
+(
+us_d©a
+ *
+us
+, 
+pùe
+,
+
+93 
+u8
+ 
+ªque°
+, u8 
+ªque°ty≥
+, 
+u16
+ 
+vÆue
+, u16 
+ödex
+,
+
+94 *
+d©a
+, 
+u16
+ 
+size
+);
+
+95 
+usb_°‹_bulk_å™s„r_buf
+(
+us_d©a
+ *
+us
+, 
+pùe
+,
+
+96 *
+buf
+, 
+Àngth
+, *
+a˘_Àn
+);
+
+97 
+usb_°‹_bulk_å™s„r_sg
+(
+us_d©a
+ *
+us
+, 
+pùe
+,
+
+98 *
+buf
+, 
+Àngth
+, 
+u£_sg
+, *
+ªsiduÆ
+);
+
+99 
+usb_°‹_bulk_§b
+(
+us_d©a
+* 
+us
+, 
+pùe
+,
+
+100 
+scsi_cmnd
+* 
+§b
+);
+
+102 
+usb_°‹_p‹t_ª£t
+(
+us_d©a
+ *
+us
+);
+
+	@transport1.c
+
+46 
+	~<löux/sched.h
+>
+
+47 
+	~<löux/gÂ.h
+>
+
+48 
+	~<löux/î∫o.h
+>
+
+49 
+	~<löux/exp‹t.h
+>
+
+51 
+	~<löux/usb/quúks.h
+>
+
+53 
+	~<scsi/scsi.h
+>
+
+54 
+	~<scsi/scsi_eh.h
+>
+
+55 
+	~<scsi/scsi_devi˚.h
+>
+
+57 
+	~"usb.h
+"
+
+58 
+	~"å™•‹t.h
+"
+
+59 
+	~"¥Ÿocﬁ.h
+"
+
+60 
+	~"scsiglue.h
+"
+
+61 
+	~"debug.h
+"
+
+63 
+	~<löux/blkdev.h
+>
+
+64 
+	~"sd.h
+"
+
+115 
+	$usb_°‹_blockög_com∂ëi⁄
+(
+urb
+ *urb)
+
+117 
+com∂ëi⁄
+ *
+urb_d⁄e_±r
+ = 
+urb
+->
+c⁄ãxt
+;
+
+119 
+	`com∂ëe
+(
+urb_d⁄e_±r
+);
+
+120 
+	}
+}
+
+128 
+	$usb_°‹_msg_comm⁄
+(
+us_d©a
+ *
+us
+, 
+timeout
+)
+
+130 
+com∂ëi⁄
+ 
+urb_d⁄e
+;
+
+131 
+timñe·
+;
+
+132 
+°©us
+;
+
+135 i‡(
+	`ã°_bô
+(
+US_FLIDX_ABORTING
+, &
+us
+->
+dÊags
+))
+
+136  -
+EIO
+;
+
+139 
+	`öô_com∂ëi⁄
+(&
+urb_d⁄e
+);
+
+142 
+us
+->
+cuºít_urb
+->
+c⁄ãxt
+ = &
+urb_d⁄e
+;
+
+143 
+us
+->
+cuºít_urb
+->
+å™s„r_Êags
+ = 0;
+
+149 i‡(
+us
+->
+cuºít_urb
+->
+å™s„r_buf„r
+ =us->
+iobuf
+)
+
+150 
+us
+->
+cuºít_urb
+->
+å™s„r_Êags
+ |
+URB_NO_TRANSFER_DMA_MAP
+;
+
+151 
+us
+->
+cuºít_urb
+->
+å™s„r_dma
+ = us->
+iobuf_dma
+;
+
+154 
+°©us
+ = 
+	`usb_submô_urb
+(
+us
+->
+cuºít_urb
+, 
+GFP_NOIO
+);
+
+155 i‡(
+°©us
+) {
+
+157  
+°©us
+;
+
+162 
+	`£t_bô
+(
+US_FLIDX_URB_ACTIVE
+, &
+us
+->
+dÊags
+);
+
+165 i‡(
+	`ã°_bô
+(
+US_FLIDX_ABORTING
+, &
+us
+->
+dÊags
+)) {
+
+168 i‡(
+	`ã°_™d_˛ór_bô
+(
+US_FLIDX_URB_ACTIVE
+, &
+us
+->
+dÊags
+)) {
+
+169 
+	`usb_°‹_dbg
+(
+us
+, "-- cancelling URB\n");
+
+170 
+	`usb_u∆ök_urb
+(
+us
+->
+cuºít_urb
+);
+
+175 
+timñe·
+ = 
+	`waô_f‹_com∂ëi⁄_öãºu±ibÀ_timeout
+(
+
+176 &
+urb_d⁄e
+, 
+timeout
+ ? : 
+MAX_SCHEDULE_TIMEOUT
+);
+
+178 
+	`˛ór_bô
+(
+US_FLIDX_URB_ACTIVE
+, &
+us
+->
+dÊags
+);
+
+180 i‡(
+timñe·
+ <= 0) {
+
+181 
+	`usb_°‹_dbg
+(
+us
+, "%s -- cancelling URB\n",
+
+182 
+timñe·
+ == 0 ? "Timeout" : "Signal");
+
+183 
+	`usb_kûl_urb
+(
+us
+->
+cuºít_urb
+);
+
+187  
+us
+->
+cuºít_urb
+->
+°©us
+;
+
+188 
+	}
+}
+
+194 
+	$usb_°‹_c⁄åﬁ_msg
+(
+us_d©a
+ *
+us
+, 
+pùe
+,
+
+195 
+u8
+ 
+ªque°
+, u8 
+ªque°ty≥
+, 
+u16
+ 
+vÆue
+, u16 
+ödex
+,
+
+196 *
+d©a
+, 
+u16
+ 
+size
+, 
+timeout
+)
+
+198 
+°©us
+;
+
+200 
+	`usb_°‹_dbg
+(
+us
+, "rq=%02xÑqtype=%02x value=%04x index=%02xÜen=%u\n",
+
+201 
+ªque°
+, 
+ªque°ty≥
+, 
+vÆue
+, 
+ödex
+, 
+size
+);
+
+205 
+us
+->
+¸
+->
+bReque°Ty≥
+ = 
+ªque°ty≥
+;
+
+206 
+us
+->
+¸
+->
+bReque°
+ = 
+ªque°
+;
+
+207 
+us
+->
+¸
+->
+wVÆue
+ = 
+	`˝u_to_À16
+(
+vÆue
+);
+
+208 
+us
+->
+¸
+->
+wIndex
+ = 
+	`˝u_to_À16
+(
+ödex
+);
+
+209 
+us
+->
+¸
+->
+wLígth
+ = 
+	`˝u_to_À16
+(
+size
+);
+
+212 
+	`usb_fûl_c⁄åﬁ_urb
+(
+us
+->
+cuºít_urb
+, us->
+pusb_dev
+, 
+pùe
+,
+
+213 (*Ë
+us
+->
+¸
+, 
+d©a
+, 
+size
+,
+
+214 
+usb_°‹_blockög_com∂ëi⁄
+, 
+NULL
+);
+
+215 
+°©us
+ = 
+	`usb_°‹_msg_comm⁄
+(
+us
+, 
+timeout
+);
+
+218 i‡(
+°©us
+ == 0)
+
+219 
+°©us
+ = 
+us
+->
+cuºít_urb
+->
+a˘uÆ_Àngth
+;
+
+220  
+°©us
+;
+
+221 
+	}
+}
+
+222 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_c⁄åﬁ_msg
+);
+
+236 
+	$usb_°‹_˛ór_hÆt
+(
+us_d©a
+ *
+us
+, 
+pùe
+)
+
+238 
+ªsu…
+;
+
+239 
+ídp
+ = 
+	`usb_pùìndpoöt
+(
+pùe
+);
+
+241 i‡(
+	`usb_pùeö
+ (
+pùe
+))
+
+242 
+ídp
+ |
+USB_DIR_IN
+;
+
+244 
+ªsu…
+ = 
+	`usb_°‹_c⁄åﬁ_msg
+(
+us
+, us->
+£nd_˘æ_pùe
+,
+
+245 
+USB_REQ_CLEAR_FEATURE
+, 
+USB_RECIP_ENDPOINT
+,
+
+246 
+USB_ENDPOINT_HALT
+, 
+ídp
+,
+
+247 
+NULL
+, 0, 3*
+HZ
+);
+
+249 i‡(
+ªsu…
+ >= 0)
+
+250 
+	`usb_ª£t_ídpoöt
+(
+us
+->
+pusb_dev
+, 
+ídp
+);
+
+252 
+	`usb_°‹_dbg
+(
+us
+, "ªsu… = %d\n", 
+ªsu…
+);
+
+253  
+ªsu…
+;
+
+254 
+	}
+}
+
+255 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_˛ór_hÆt
+);
+
+265 
+	$öãΩªt_urb_ªsu…
+(
+us_d©a
+ *
+us
+, 
+pùe
+,
+
+266 
+Àngth
+, 
+ªsu…
+, 
+∑πül
+)
+
+268 
+	`usb_°‹_dbg
+(
+us
+, "Status code %d;Åransferred %u/%u\n",
+
+269 
+ªsu…
+, 
+∑πül
+, 
+Àngth
+);
+
+270 
+ªsu…
+) {
+
+274 i‡(
+∑πül
+ !
+Àngth
+) {
+
+275 
+	`usb_°‹_dbg
+(
+us
+, "-- shortÅransfer\n");
+
+276  
+USB_STOR_XFER_SHORT
+;
+
+279 
+	`usb_°‹_dbg
+(
+us
+, "--Åransfer complete\n");
+
+280  
+USB_STOR_XFER_GOOD
+;
+
+283 -
+EPIPE
+:
+
+286 i‡(
+	`usb_pùec⁄åﬁ
+(
+pùe
+)) {
+
+287 
+	`usb_°‹_dbg
+(
+us
+, "-- stall on controlÖipe\n");
+
+288  
+USB_STOR_XFER_STALLED
+;
+
+292 
+	`usb_°‹_dbg
+(
+us
+, "clearingÉndpoint halt forÖipe 0x%x\n",
+
+293 
+pùe
+);
+
+294 i‡(
+	`usb_°‹_˛ór_hÆt
+(
+us
+, 
+pùe
+) < 0)
+
+295  
+USB_STOR_XFER_ERROR
+;
+
+296  
+USB_STOR_XFER_STALLED
+;
+
+299 -
+EOVERFLOW
+:
+
+300 
+	`usb_°‹_dbg
+(
+us
+, "-- babble\n");
+
+301  
+USB_STOR_XFER_LONG
+;
+
+304 -
+ECONNRESET
+:
+
+305 
+	`usb_°‹_dbg
+(
+us
+, "--Åransfer cancelled\n");
+
+306  
+USB_STOR_XFER_ERROR
+;
+
+309 -
+EREMOTEIO
+:
+
+310 
+	`usb_°‹_dbg
+(
+us
+, "-- shortÑeadÅransfer\n");
+
+311  
+USB_STOR_XFER_SHORT
+;
+
+314 -
+EIO
+:
+
+315 
+	`usb_°‹_dbg
+(
+us
+, "--ábort or disconnect inÖrogress\n");
+
+316  
+USB_STOR_XFER_ERROR
+;
+
+320 
+	`usb_°‹_dbg
+(
+us
+, "-- unknownÉrror\n");
+
+321  
+USB_STOR_XFER_ERROR
+;
+
+323 
+	}
+}
+
+329 
+	$usb_°‹_˘æ_å™s„r
+(
+us_d©a
+ *
+us
+, 
+pùe
+,
+
+330 
+u8
+ 
+ªque°
+, u8 
+ªque°ty≥
+, 
+u16
+ 
+vÆue
+, u16 
+ödex
+,
+
+331 *
+d©a
+, 
+u16
+ 
+size
+)
+
+333 
+ªsu…
+;
+
+335 
+	`usb_°‹_dbg
+(
+us
+, "rq=%02xÑqtype=%02x value=%04x index=%02xÜen=%u\n",
+
+336 
+ªque°
+, 
+ªque°ty≥
+, 
+vÆue
+, 
+ödex
+, 
+size
+);
+
+339 
+us
+->
+¸
+->
+bReque°Ty≥
+ = 
+ªque°ty≥
+;
+
+340 
+us
+->
+¸
+->
+bReque°
+ = 
+ªque°
+;
+
+341 
+us
+->
+¸
+->
+wVÆue
+ = 
+	`˝u_to_À16
+(
+vÆue
+);
+
+342 
+us
+->
+¸
+->
+wIndex
+ = 
+	`˝u_to_À16
+(
+ödex
+);
+
+343 
+us
+->
+¸
+->
+wLígth
+ = 
+	`˝u_to_À16
+(
+size
+);
+
+346 
+	`usb_fûl_c⁄åﬁ_urb
+(
+us
+->
+cuºít_urb
+, us->
+pusb_dev
+, 
+pùe
+,
+
+347 (*Ë
+us
+->
+¸
+, 
+d©a
+, 
+size
+,
+
+348 
+usb_°‹_blockög_com∂ëi⁄
+, 
+NULL
+);
+
+349 
+ªsu…
+ = 
+	`usb_°‹_msg_comm⁄
+(
+us
+, 0);
+
+351  
+	`öãΩªt_urb_ªsu…
+(
+us
+, 
+pùe
+, 
+size
+, 
+ªsu…
+,
+
+352 
+us
+->
+cuºít_urb
+->
+a˘uÆ_Àngth
+);
+
+353 
+	}
+}
+
+354 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_˘æ_å™s„r
+);
+
+363 
+	$usb_°‹_öå_å™s„r
+(
+us_d©a
+ *
+us
+, *
+buf
+,
+
+364 
+Àngth
+)
+
+366 
+ªsu…
+;
+
+367 
+pùe
+ = 
+us
+->
+ªcv_öå_pùe
+;
+
+368 
+maxp
+;
+
+370 
+	`usb_°‹_dbg
+(
+us
+, "x„∏%u byãs\n", 
+Àngth
+);
+
+373 
+maxp
+ = 
+	`usb_max∑ckë
+(
+us
+->
+pusb_dev
+, 
+pùe
+, 
+	`usb_pùeout
+(pipe));
+
+374 i‡(
+maxp
+ > 
+Àngth
+)
+
+375 
+maxp
+ = 
+Àngth
+;
+
+378 
+	`usb_fûl_öt_urb
+(
+us
+->
+cuºít_urb
+, us->
+pusb_dev
+, 
+pùe
+, 
+buf
+,
+
+379 
+maxp
+, 
+usb_°‹_blockög_com∂ëi⁄
+, 
+NULL
+,
+
+380 
+us
+->
+ï_bI¡îvÆ
+);
+
+381 
+ªsu…
+ = 
+	`usb_°‹_msg_comm⁄
+(
+us
+, 0);
+
+383  
+	`öãΩªt_urb_ªsu…
+(
+us
+, 
+pùe
+, 
+Àngth
+, 
+ªsu…
+,
+
+384 
+us
+->
+cuºít_urb
+->
+a˘uÆ_Àngth
+);
+
+385 
+	}
+}
+
+392 
+	$usb_°‹_bulk_å™s„r_buf
+(
+us_d©a
+ *
+us
+, 
+pùe
+,
+
+393 *
+buf
+, 
+Àngth
+, *
+a˘_Àn
+)
+
+395 
+ªsu…
+;
+
+397 
+	`usb_°‹_dbg
+(
+us
+, "x„∏%u byãs\n", 
+Àngth
+);
+
+400 
+	`usb_fûl_bulk_urb
+(
+us
+->
+cuºít_urb
+, us->
+pusb_dev
+, 
+pùe
+, 
+buf
+, 
+Àngth
+,
+
+401 
+usb_°‹_blockög_com∂ëi⁄
+, 
+NULL
+);
+
+402 
+ªsu…
+ = 
+	`usb_°‹_msg_comm⁄
+(
+us
+, 0);
+
+405 i‡(
+a˘_Àn
+)
+
+406 *
+a˘_Àn
+ = 
+us
+->
+cuºít_urb
+->
+a˘uÆ_Àngth
+;
+
+407  
+	`öãΩªt_urb_ªsu…
+(
+us
+, 
+pùe
+, 
+Àngth
+, 
+ªsu…
+,
+
+408 
+us
+->
+cuºít_urb
+->
+a˘uÆ_Àngth
+);
+
+409 
+	}
+}
+
+410 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_bulk_å™s„r_buf
+);
+
+418 
+	$usb_°‹_bulk_å™s„r_sgli°
+(
+us_d©a
+ *
+us
+, 
+pùe
+,
+
+419 
+sˇâîli°
+ *
+sg
+, 
+num_sg
+, 
+Àngth
+,
+
+420 *
+a˘_Àn
+)
+
+422 
+ªsu…
+;
+
+425 i‡(
+	`ã°_bô
+(
+US_FLIDX_ABORTING
+, &
+us
+->
+dÊags
+))
+
+426  
+USB_STOR_XFER_ERROR
+;
+
+429 
+	`usb_°‹_dbg
+(
+us
+, "x„∏%u byãs, %dÉ¡rõs\n", 
+Àngth
+, 
+num_sg
+);
+
+430 
+ªsu…
+ = 
+	`usb_sg_öô
+(&
+us
+->
+cuºít_sg
+, us->
+pusb_dev
+, 
+pùe
+, 0,
+
+431 
+sg
+, 
+num_sg
+, 
+Àngth
+, 
+GFP_NOIO
+);
+
+432 i‡(
+ªsu…
+) {
+
+433 
+	`usb_°‹_dbg
+(
+us
+, "usb_sg_öôÑëu∫ed %d\n", 
+ªsu…
+);
+
+434  
+USB_STOR_XFER_ERROR
+;
+
+439 
+	`£t_bô
+(
+US_FLIDX_SG_ACTIVE
+, &
+us
+->
+dÊags
+);
+
+442 i‡(
+	`ã°_bô
+(
+US_FLIDX_ABORTING
+, &
+us
+->
+dÊags
+)) {
+
+445 i‡(
+	`ã°_™d_˛ór_bô
+(
+US_FLIDX_SG_ACTIVE
+, &
+us
+->
+dÊags
+)) {
+
+446 
+	`usb_°‹_dbg
+(
+us
+, "-- cancelling sgÑequest\n");
+
+447 
+	`usb_sg_ˇn˚l
+(&
+us
+->
+cuºít_sg
+);
+
+452 
+	`usb_sg_waô
+(&
+us
+->
+cuºít_sg
+);
+
+453 
+	`˛ór_bô
+(
+US_FLIDX_SG_ACTIVE
+, &
+us
+->
+dÊags
+);
+
+455 
+ªsu…
+ = 
+us
+->
+cuºít_sg
+.
+°©us
+;
+
+456 i‡(
+a˘_Àn
+)
+
+457 *
+a˘_Àn
+ = 
+us
+->
+cuºít_sg
+.
+byãs
+;
+
+458  
+	`öãΩªt_urb_ªsu…
+(
+us
+, 
+pùe
+, 
+Àngth
+, 
+ªsu…
+,
+
+459 
+us
+->
+cuºít_sg
+.
+byãs
+);
+
+460 
+	}
+}
+
+466 
+	$usb_°‹_bulk_§b
+(
+us_d©a
+* 
+us
+, 
+pùe
+,
+
+467 
+scsi_cmnd
+* 
+§b
+)
+
+469 
+∑πül
+;
+
+470 
+ªsu…
+ = 
+	`usb_°‹_bulk_å™s„r_sgli°
+(
+us
+, 
+pùe
+, 
+	`scsi_sgli°
+(
+§b
+),
+
+471 
+	`scsi_sg_cou¡
+(
+§b
+), 
+	`scsi_bufÊí
+(srb),
+
+472 &
+∑πül
+);
+
+474 
+	`scsi_£t_ªsid
+(
+§b
+, 
+	`scsi_bufÊí
+(§bË- 
+∑πül
+);
+
+475  
+ªsu…
+;
+
+476 
+	}
+}
+
+477 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_bulk_§b
+);
+
+488 
+	$usb_°‹_bulk_å™s„r_sg
+(
+us_d©a
+* 
+us
+, 
+pùe
+,
+
+489 *
+buf
+, 
+Àngth_À·
+, 
+u£_sg
+, *
+ªsiduÆ
+)
+
+491 
+ªsu…
+;
+
+492 
+∑πül
+;
+
+495 i‡(
+u£_sg
+) {
+
+497 
+ªsu…
+ = 
+	`usb_°‹_bulk_å™s„r_sgli°
+(
+us
+, 
+pùe
+,
+
+498 (
+sˇâîli°
+ *Ë
+buf
+, 
+u£_sg
+,
+
+499 
+Àngth_À·
+, &
+∑πül
+);
+
+500 
+Àngth_À·
+ -
+∑πül
+;
+
+503 
+ªsu…
+ = 
+	`usb_°‹_bulk_å™s„r_buf
+(
+us
+, 
+pùe
+, 
+buf
+,
+
+504 
+Àngth_À·
+, &
+∑πül
+);
+
+505 
+Àngth_À·
+ -
+∑πül
+;
+
+509 i‡(
+ªsiduÆ
+)
+
+510 *
+ªsiduÆ
+ = 
+Àngth_À·
+;
+
+511  
+ªsu…
+;
+
+512 
+	}
+}
+
+513 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_bulk_å™s„r_sg
+);
+
+523 
+	$œ°_£˘‹_hacks
+(
+us_d©a
+ *
+us
+, 
+scsi_cmnd
+ *
+§b
+)
+
+525 
+gídisk
+ *
+disk
+;
+
+526 
+scsi_disk
+ *
+sdkp
+;
+
+527 
+u32
+ 
+£˘‹
+;
+
+530 
+ªc‹d_nŸ_found
+[18] = {
+
+532 [2] = 
+MEDIUM_ERROR
+,
+
+542 i‡(!
+us
+->
+u£_œ°_£˘‹_hacks
+)
+
+546 i‡(
+§b
+->
+cmnd
+[0] !
+READ_10
+ && srb->cmnd[0] !
+WRITE_10
+)
+
+547 
+d⁄e
+;
+
+550 
+£˘‹
+ = (
+§b
+->
+cmnd
+[2] << 24) | (srb->cmnd[3] << 16) |
+
+551 (
+§b
+->
+cmnd
+[4] << 8) | (srb->cmnd[5]);
+
+552 
+disk
+ = 
+§b
+->
+ªque°
+->
+rq_disk
+;
+
+553 i‡(!
+disk
+)
+
+554 
+d⁄e
+;
+
+555 
+sdkp
+ = 
+	`scsi_disk
+(
+disk
+);
+
+556 i‡(!
+sdkp
+)
+
+557 
+d⁄e
+;
+
+558 i‡(
+£˘‹
+ + 1 !
+sdkp
+->
+ˇ∑côy
+)
+
+559 
+d⁄e
+;
+
+561 i‡(
+§b
+->
+ªsu…
+ =
+SAM_STAT_GOOD
+ && 
+	`scsi_gë_ªsid
+(srb) == 0) {
+
+566 
+us
+->
+u£_œ°_£˘‹_hacks
+ = 0;
+
+577 i‡(++
+us
+->
+œ°_£˘‹_ªåõs
+ < 3)
+
+579 
+§b
+->
+ªsu…
+ = 
+SAM_STAT_CHECK_CONDITION
+;
+
+580 
+	`mem˝y
+(
+§b
+->
+£n£_buf„r
+, 
+ªc‹d_nŸ_found
+,
+
+581 (
+ªc‹d_nŸ_found
+));
+
+584 
+d⁄e
+:
+
+589 i‡(
+§b
+->
+cmnd
+[0] !
+TEST_UNIT_READY
+)
+
+590 
+us
+->
+œ°_£˘‹_ªåõs
+ = 0;
+
+591 
+	}
+}
+
+598 
+	$usb_°‹_övoke_å™•‹t
+(
+scsi_cmnd
+ *
+§b
+, 
+us_d©a
+ *
+us
+)
+
+600 
+√ed_auto_£n£
+;
+
+601 
+ªsu…
+;
+
+604 
+	`scsi_£t_ªsid
+(
+§b
+, 0);
+
+605 
+ªsu…
+ = 
+us
+->
+	`å™•‹t
+(
+§b
+, us);
+
+610 i‡(
+	`ã°_bô
+(
+US_FLIDX_TIMED_OUT
+, &
+us
+->
+dÊags
+)) {
+
+611 
+	`usb_°‹_dbg
+(
+us
+, "-- command wasáborted\n");
+
+612 
+§b
+->
+ªsu…
+ = 
+DID_ABORT
+ << 16;
+
+613 
+H™dÀ_Eº‹s
+;
+
+617 i‡(
+ªsu…
+ =
+USB_STOR_TRANSPORT_ERROR
+) {
+
+618 
+	`usb_°‹_dbg
+(
+us
+, "--Åransport indicatesÉrror,Ñesetting\n");
+
+619 
+§b
+->
+ªsu…
+ = 
+DID_ERROR
+ << 16;
+
+620 
+H™dÀ_Eº‹s
+;
+
+624 i‡(
+ªsu…
+ =
+USB_STOR_TRANSPORT_NO_SENSE
+) {
+
+625 
+§b
+->
+ªsu…
+ = 
+SAM_STAT_CHECK_CONDITION
+;
+
+626 
+	`œ°_£˘‹_hacks
+(
+us
+, 
+§b
+);
+
+630 
+§b
+->
+ªsu…
+ = 
+SAM_STAT_GOOD
+;
+
+637 
+√ed_auto_£n£
+ = 0;
+
+645 i‡((
+us
+->
+¥Ÿocﬁ
+ =
+USB_PR_CB
+ || us->¥Ÿocﬁ =
+USB_PR_DPCM_USB
+) &&
+
+646 
+§b
+->
+sc_d©a_dúe˘i⁄
+ !
+DMA_FROM_DEVICE
+) {
+
+647 
+	`usb_°‹_dbg
+(
+us
+, "-- CBÅransport deviceÑequiringáuto-sense\n");
+
+648 
+√ed_auto_£n£
+ = 1;
+
+656 i‡(
+ªsu…
+ =
+USB_STOR_TRANSPORT_FAILED
+) {
+
+657 
+	`usb_°‹_dbg
+(
+us
+, "--Åransport indicates command failure\n");
+
+658 
+√ed_auto_£n£
+ = 1;
+
+667 i‡(
+	`u∆ikñy
+((
+§b
+->
+cmnd
+[0] =
+ATA_16
+ || srb->cmnd[0] =
+ATA_12
+) &&
+
+668 
+ªsu…
+ =
+USB_STOR_TRANSPORT_GOOD
+ &&
+
+669 !(
+us
+->
+fÊags
+ & 
+US_FL_SANE_SENSE
+) &&
+
+670 !(
+us
+->
+fÊags
+ & 
+US_FL_BAD_SENSE
+) &&
+
+671 !(
+§b
+->
+cmnd
+[2] & 0x20))) {
+
+672 
+	`usb_°‹_dbg
+(
+us
+, "-- SAT supported, increasingáuto-sense\n");
+
+673 
+us
+->
+fÊags
+ |
+US_FL_SANE_SENSE
+;
+
+680 i‡((
+	`scsi_gë_ªsid
+(
+§b
+) > 0) &&
+
+681 !((
+§b
+->
+cmnd
+[0] =
+REQUEST_SENSE
+) ||
+
+682 (
+§b
+->
+cmnd
+[0] =
+INQUIRY
+) ||
+
+683 (
+§b
+->
+cmnd
+[0] =
+MODE_SENSE
+) ||
+
+684 (
+§b
+->
+cmnd
+[0] =
+LOG_SENSE
+) ||
+
+685 (
+§b
+->
+cmnd
+[0] =
+MODE_SENSE_10
+))) {
+
+686 
+	`usb_°‹_dbg
+(
+us
+, "-- unexpectedly shortÅransfer\n");
+
+690 i‡(
+√ed_auto_£n£
+) {
+
+691 
+ãmp_ªsu…
+;
+
+692 
+scsi_eh_ßve
+ 
+£s
+;
+
+693 
+£n£_size
+ = 
+US_SENSE_SIZE
+;
+
+694 
+scsi_£n£_hdr
+ 
+sshdr
+;
+
+695 c⁄° 
+u8
+ *
+scdd
+;
+
+696 
+u8
+ 
+fm_ûi
+;
+
+699 i‡(
+us
+->
+fÊags
+ & 
+US_FL_SANE_SENSE
+)
+
+700 
+£n£_size
+ = ~0;
+
+701 
+Rëry_Sí£
+:
+
+702 
+	`usb_°‹_dbg
+(
+us
+, "Issuingáuto-REQUEST_SENSE\n");
+
+704 
+	`scsi_eh_¥ï_cmnd
+(
+§b
+, &
+£s
+, 
+NULL
+, 0, 
+£n£_size
+);
+
+707 i‡(
+us
+->
+sub˛ass
+ =
+USB_SC_RBC
+ || us->sub˛as†=
+USB_SC_SCSI
+ ||
+
+708 
+us
+->
+sub˛ass
+ =
+USB_SC_CYP_ATACB
+)
+
+709 
+§b
+->
+cmd_Àn
+ = 6;
+
+711 
+§b
+->
+cmd_Àn
+ = 12;
+
+714 
+	`scsi_£t_ªsid
+(
+§b
+, 0);
+
+715 
+ãmp_ªsu…
+ = 
+us
+->
+	`å™•‹t
+(us->
+§b
+, us);
+
+718 
+	`scsi_eh_ª°‹e_cmnd
+(
+§b
+, &
+£s
+);
+
+720 i‡(
+	`ã°_bô
+(
+US_FLIDX_TIMED_OUT
+, &
+us
+->
+dÊags
+)) {
+
+721 
+	`usb_°‹_dbg
+(
+us
+, "--áuto-senseáborted\n");
+
+722 
+§b
+->
+ªsu…
+ = 
+DID_ABORT
+ << 16;
+
+725 i‡(
+£n£_size
+ !
+US_SENSE_SIZE
+) {
+
+726 
+us
+->
+fÊags
+ &~
+US_FL_SANE_SENSE
+;
+
+727 
+us
+->
+fÊags
+ |
+US_FL_BAD_SENSE
+;
+
+729 
+H™dÀ_Eº‹s
+;
+
+737 i‡(
+ãmp_ªsu…
+ =
+USB_STOR_TRANSPORT_FAILED
+ &&
+
+738 
+£n£_size
+ !
+US_SENSE_SIZE
+) {
+
+739 
+	`usb_°‹_dbg
+(
+us
+, "--áuto-sense failure,Ñetry small sense\n");
+
+740 
+£n£_size
+ = 
+US_SENSE_SIZE
+;
+
+741 
+us
+->
+fÊags
+ &~
+US_FL_SANE_SENSE
+;
+
+742 
+us
+->
+fÊags
+ |
+US_FL_BAD_SENSE
+;
+
+743 
+Rëry_Sí£
+;
+
+747 i‡(
+ãmp_ªsu…
+ !
+USB_STOR_TRANSPORT_GOOD
+) {
+
+748 
+	`usb_°‹_dbg
+(
+us
+, "--áuto-sense failure\n");
+
+754 
+§b
+->
+ªsu…
+ = 
+DID_ERROR
+ << 16;
+
+755 i‡(!(
+us
+->
+fÊags
+ & 
+US_FL_SCM_MULT_TARG
+))
+
+756 
+H™dÀ_Eº‹s
+;
+
+764 i‡(
+§b
+->
+£n£_buf„r
+[7] > (
+US_SENSE_SIZE
+ - 8) &&
+
+765 !(
+us
+->
+fÊags
+ & 
+US_FL_SANE_SENSE
+) &&
+
+766 !(
+us
+->
+fÊags
+ & 
+US_FL_BAD_SENSE
+) &&
+
+767 (
+§b
+->
+£n£_buf„r
+[0] & 0x7C) == 0x70) {
+
+768 
+	`usb_°‹_dbg
+(
+us
+, "-- SANE_SENSE supportÉnabled\n");
+
+769 
+us
+->
+fÊags
+ |
+US_FL_SANE_SENSE
+;
+
+774 
+	`usb_°‹_dbg
+(
+us
+, "-- Sense dataÅruncatedÅo %i from %i\n",
+
+775 
+US_SENSE_SIZE
+,
+
+776 
+§b
+->
+£n£_buf„r
+[7] + 8);
+
+777 
+§b
+->
+£n£_buf„r
+[7] = (
+US_SENSE_SIZE
+ - 8);
+
+780 
+	`scsi_n‹mÆize_£n£
+(
+§b
+->
+£n£_buf„r
+, 
+SCSI_SENSE_BUFFERSIZE
+,
+
+781 &
+sshdr
+);
+
+783 
+	`usb_°‹_dbg
+(
+us
+, "-- Result fromáuto-sense is %d\n",
+
+784 
+ãmp_ªsu…
+);
+
+785 
+	`usb_°‹_dbg
+(
+us
+, "-- code: 0x%x, key: 0x%x, ASC: 0x%x, ASCQ: 0x%x\n",
+
+786 
+sshdr
+.
+ª•⁄£_code
+, sshdr.
+£n£_key
+,
+
+787 
+sshdr
+.
+asc
+, sshdr.
+ascq
+);
+
+788 #ifde‡
+CONFIG_USB_STORAGE_DEBUG
+
+
+789 
+	`usb_°‹_show_£n£
+(
+us
+, 
+sshdr
+.
+£n£_key
+, sshdr.
+asc
+, sshdr.
+ascq
+);
+
+793 
+§b
+->
+ªsu…
+ = 
+SAM_STAT_CHECK_CONDITION
+;
+
+795 
+scdd
+ = 
+	`scsi_£n£_desc_föd
+(
+§b
+->
+£n£_buf„r
+,
+
+796 
+SCSI_SENSE_BUFFERSIZE
+, 4);
+
+797 
+fm_ûi
+ = (
+scdd
+ ? scdd[3] : 
+§b
+->
+£n£_buf„r
+[2]) & 0xA0;
+
+803 i‡(
+sshdr
+.
+£n£_key
+ =0 && sshdr.
+asc
+ =0 && sshdr.
+ascq
+ == 0 &&
+
+804 
+fm_ûi
+ == 0) {
+
+809 i‡(
+ªsu…
+ =
+USB_STOR_TRANSPORT_GOOD
+) {
+
+810 
+§b
+->
+ªsu…
+ = 
+SAM_STAT_GOOD
+;
+
+811 
+§b
+->
+£n£_buf„r
+[0] = 0x0;
+
+818 
+§b
+->
+ªsu…
+ = 
+DID_ERROR
+ << 16;
+
+819 i‡((
+sshdr
+.
+ª•⁄£_code
+ & 0x72) == 0x72)
+
+820 
+§b
+->
+£n£_buf„r
+[1] = 
+HARDWARE_ERROR
+;
+
+822 
+§b
+->
+£n£_buf„r
+[2] = 
+HARDWARE_ERROR
+;
+
+835 i‡(
+	`u∆ikñy
+((
+us
+->
+fÊags
+ & 
+US_FL_INITIAL_READ10
+) &&
+
+836 
+§b
+->
+cmnd
+[0] =
+READ_10
+)) {
+
+837 i‡(
+§b
+->
+ªsu…
+ =
+SAM_STAT_GOOD
+) {
+
+838 
+	`£t_bô
+(
+US_FLIDX_READ10_WORKED
+, &
+us
+->
+dÊags
+);
+
+839 } i‡(
+	`ã°_bô
+(
+US_FLIDX_READ10_WORKED
+, &
+us
+->
+dÊags
+)) {
+
+840 
+	`˛ór_bô
+(
+US_FLIDX_READ10_WORKED
+, &
+us
+->
+dÊags
+);
+
+841 
+	`£t_bô
+(
+US_FLIDX_REDO_READ10
+, &
+us
+->
+dÊags
+);
+
+849 i‡(
+	`ã°_bô
+(
+US_FLIDX_REDO_READ10
+, &
+us
+->
+dÊags
+)) {
+
+850 
+	`˛ór_bô
+(
+US_FLIDX_REDO_READ10
+, &
+us
+->
+dÊags
+);
+
+851 
+§b
+->
+ªsu…
+ = 
+DID_IMM_RETRY
+ << 16;
+
+852 
+§b
+->
+£n£_buf„r
+[0] = 0;
+
+857 i‡((
+§b
+->
+ªsu…
+ =
+SAM_STAT_GOOD
+ || srb->
+£n£_buf„r
+[2] == 0) &&
+
+858 
+	`scsi_bufÊí
+(
+§b
+Ë- 
+	`scsi_gë_ªsid
+(§bË< srb->
+undîÊow
+)
+
+859 
+§b
+->
+ªsu…
+ = 
+DID_ERROR
+ << 16;
+
+861 
+	`œ°_£˘‹_hacks
+(
+us
+, 
+§b
+);
+
+867 
+H™dÀ_Eº‹s
+:
+
+871 
+	`scsi_lock
+(
+	`us_to_ho°
+(
+us
+));
+
+872 
+	`£t_bô
+(
+US_FLIDX_RESETTING
+, &
+us
+->
+dÊags
+);
+
+873 
+	`˛ór_bô
+(
+US_FLIDX_ABORTING
+, &
+us
+->
+dÊags
+);
+
+874 
+	`scsi_u∆ock
+(
+	`us_to_ho°
+(
+us
+));
+
+878 
+	`muãx_u∆ock
+(&
+us
+->
+dev_muãx
+);
+
+879 
+ªsu…
+ = 
+	`usb_°‹_p‹t_ª£t
+(
+us
+);
+
+880 
+	`muãx_lock
+(&
+us
+->
+dev_muãx
+);
+
+882 i‡(
+ªsu…
+ < 0) {
+
+883 
+	`scsi_lock
+(
+	`us_to_ho°
+(
+us
+));
+
+884 
+	`usb_°‹_ªp‹t_devi˚_ª£t
+(
+us
+);
+
+885 
+	`scsi_u∆ock
+(
+	`us_to_ho°
+(
+us
+));
+
+886 
+us
+->
+	`å™•‹t_ª£t
+(us);
+
+888 
+	`˛ór_bô
+(
+US_FLIDX_RESETTING
+, &
+us
+->
+dÊags
+);
+
+889 
+	`œ°_£˘‹_hacks
+(
+us
+, 
+§b
+);
+
+890 
+	}
+}
+
+893 
+	$usb_°‹_°›_å™•‹t
+(
+us_d©a
+ *
+us
+)
+
+899 i‡(
+	`ã°_™d_˛ór_bô
+(
+US_FLIDX_URB_ACTIVE
+, &
+us
+->
+dÊags
+)) {
+
+900 
+	`usb_°‹_dbg
+(
+us
+, "-- cancelling URB\n");
+
+901 
+	`usb_u∆ök_urb
+(
+us
+->
+cuºít_urb
+);
+
+905 i‡(
+	`ã°_™d_˛ór_bô
+(
+US_FLIDX_SG_ACTIVE
+, &
+us
+->
+dÊags
+)) {
+
+906 
+	`usb_°‹_dbg
+(
+us
+, "-- cancelling sgÑequest\n");
+
+907 
+	`usb_sg_ˇn˚l
+(&
+us
+->
+cuºít_sg
+);
+
+909 
+	}
+}
+
+915 
+	$usb_°‹_CB_å™•‹t
+(
+scsi_cmnd
+ *
+§b
+, 
+us_d©a
+ *
+us
+)
+
+917 
+å™s„r_Àngth
+ = 
+	`scsi_bufÊí
+(
+§b
+);
+
+918 
+pùe
+ = 0;
+
+919 
+ªsu…
+;
+
+923 
+ªsu…
+ = 
+	`usb_°‹_˘æ_å™s„r
+(
+us
+, us->
+£nd_˘æ_pùe
+,
+
+924 
+US_CBI_ADSC
+,
+
+925 
+USB_TYPE_CLASS
+ | 
+USB_RECIP_INTERFACE
+, 0,
+
+926 
+us
+->
+i‚um
+, 
+§b
+->
+cmnd
+, srb->
+cmd_Àn
+);
+
+929 
+	`usb_°‹_dbg
+(
+us
+, "CallÅo usb_stor_ctrl_transfer()Ñeturned %d\n",
+
+930 
+ªsu…
+);
+
+933 i‡(
+ªsu…
+ =
+USB_STOR_XFER_STALLED
+) {
+
+934  
+USB_STOR_TRANSPORT_FAILED
+;
+
+938 i‡(
+ªsu…
+ !
+USB_STOR_XFER_GOOD
+) {
+
+939  
+USB_STOR_TRANSPORT_ERROR
+;
+
+944 i‡(
+å™s„r_Àngth
+) {
+
+945 
+pùe
+ = 
+§b
+->
+sc_d©a_dúe˘i⁄
+ =
+DMA_FROM_DEVICE
+ ?
+
+946 
+us
+->
+ªcv_bulk_pùe
+ : us->
+£nd_bulk_pùe
+;
+
+947 
+ªsu…
+ = 
+	`usb_°‹_bulk_§b
+(
+us
+, 
+pùe
+, 
+§b
+);
+
+948 
+	`usb_°‹_dbg
+(
+us
+, "CBI d©®°agêªsu… i†0x%x\n", 
+ªsu…
+);
+
+951 i‡(
+ªsu…
+ =
+USB_STOR_XFER_STALLED
+)
+
+952  
+USB_STOR_TRANSPORT_FAILED
+;
+
+953 i‡(
+ªsu…
+ > 
+USB_STOR_XFER_STALLED
+)
+
+954  
+USB_STOR_TRANSPORT_ERROR
+;
+
+962 i‡(
+us
+->
+¥Ÿocﬁ
+ !
+USB_PR_CBI
+)
+
+963  
+USB_STOR_TRANSPORT_GOOD
+;
+
+965 
+ªsu…
+ = 
+	`usb_°‹_öå_å™s„r
+(
+us
+, us->
+iobuf
+, 2);
+
+966 
+	`usb_°‹_dbg
+(
+us
+, "Got interrupt data (0x%x, 0x%x)\n",
+
+967 
+us
+->
+iobuf
+[0], us->iobuf[1]);
+
+968 i‡(
+ªsu…
+ !
+USB_STOR_XFER_GOOD
+)
+
+969  
+USB_STOR_TRANSPORT_ERROR
+;
+
+978 i‡(
+us
+->
+sub˛ass
+ =
+USB_SC_UFI
+) {
+
+979 i‡(
+§b
+->
+cmnd
+[0] =
+REQUEST_SENSE
+ ||
+
+980 
+§b
+->
+cmnd
+[0] =
+INQUIRY
+)
+
+981  
+USB_STOR_TRANSPORT_GOOD
+;
+
+982 i‡(
+us
+->
+iobuf
+[0])
+
+983 
+Faûed
+;
+
+984  
+USB_STOR_TRANSPORT_GOOD
+;
+
+993 i‡(
+us
+->
+iobuf
+[0]) {
+
+994 
+	`usb_°‹_dbg
+(
+us
+, "CBI IRQ data showedÑeserved bType 0x%x\n",
+
+995 
+us
+->
+iobuf
+[0]);
+
+996 
+Faûed
+;
+
+1001 
+us
+->
+iobuf
+[1] & 0x0F) {
+
+1003  
+USB_STOR_TRANSPORT_GOOD
+;
+
+1005 
+Faûed
+;
+
+1007  
+USB_STOR_TRANSPORT_ERROR
+;
+
+1012 
+Faûed
+:
+
+1013 i‡(
+pùe
+)
+
+1014 
+	`usb_°‹_˛ór_hÆt
+(
+us
+, 
+pùe
+);
+
+1015  
+USB_STOR_TRANSPORT_FAILED
+;
+
+1016 
+	}
+}
+
+1017 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_CB_å™•‹t
+);
+
+1024 
+	$usb_°‹_Bulk_max_lun
+(
+us_d©a
+ *
+us
+)
+
+1026 
+ªsu…
+;
+
+1029 
+	`¥_öfo
+("Thi†i†%†fun˘i⁄:0\n", 
+__func__
+);
+
+1030 
+us
+->
+iobuf
+[0] = 0;
+
+1031 
+ªsu…
+ = 
+	`usb_°‹_c⁄åﬁ_msg
+(
+us
+, us->
+ªcv_˘æ_pùe
+,
+
+1032 
+US_BULK_GET_MAX_LUN
+,
+
+1033 
+USB_DIR_IN
+ | 
+USB_TYPE_CLASS
+ |
+
+1034 
+USB_RECIP_INTERFACE
+,
+
+1035 0, 
+us
+->
+i‚um
+, us->
+iobuf
+, 1, 10*
+HZ
+);
+
+1037 
+	`usb_°‹_dbg
+(
+us
+, "GetMaxLUN commandÑesult is %d, data is %d\n",
+
+1038 
+ªsu…
+, 
+us
+->
+iobuf
+[0]);
+
+1045 i‡(
+ªsu…
+ > 0) {
+
+1046 
+	`¥_öfo
+("Thi†i†%†fun˘i⁄:1\n", 
+__func__
+);
+
+1047 i‡(
+us
+->
+iobuf
+[0] < 16) {
+
+1048  
+us
+->
+iobuf
+[0];
+
+1050 
+	`dev_öfo
+(&
+us
+->
+pusb_ötf
+->
+dev
+,
+
+1052 
+us
+->
+iobuf
+[0]);
+
+1064 
+	}
+}
+
+1066 
+	$usb_°‹_Bulk_å™•‹t
+(
+scsi_cmnd
+ *
+§b
+, 
+us_d©a
+ *
+us
+)
+
+1068 
+bulk_cb_wøp
+ *
+bcb
+ = (bulk_cb_wø∞*Ë
+us
+->
+iobuf
+;
+
+1069 
+bulk_cs_wøp
+ *
+bcs
+ = (bulk_cs_wø∞*Ë
+us
+->
+iobuf
+;
+
+1070 
+å™s„r_Àngth
+ = 
+	`scsi_bufÊí
+(
+§b
+);
+
+1071 
+ªsidue
+;
+
+1072 
+ªsu…
+;
+
+1073 
+Áke_£n£
+ = 0;
+
+1074 
+cswÀn
+;
+
+1075 
+cbwÀn
+ = 
+US_BULK_CB_WRAP_LEN
+;
+
+1078 i‡(
+	`u∆ikñy
+(
+us
+->
+fÊags
+ & 
+US_FL_BULK32
+)) {
+
+1079 
+cbwÀn
+ = 32;
+
+1080 
+us
+->
+iobuf
+[31] = 0;
+
+1084 
+bcb
+->
+Sig«tuª
+ = 
+	`˝u_to_À32
+(
+US_BULK_CB_SIGN
+);
+
+1085 
+bcb
+->
+D©aTøns„rLígth
+ = 
+	`˝u_to_À32
+(
+å™s„r_Àngth
+);
+
+1086 
+bcb
+->
+Fœgs
+ = 
+§b
+->
+sc_d©a_dúe˘i⁄
+ =
+DMA_FROM_DEVICE
+ ?
+
+1087 
+US_BULK_FLAG_IN
+ : 0;
+
+1088 
+bcb
+->
+Tag
+ = ++
+us
+->
+èg
+;
+
+1089 
+bcb
+->
+Lun
+ = 
+§b
+->
+devi˚
+->
+lun
+;
+
+1090 i‡(
+us
+->
+fÊags
+ & 
+US_FL_SCM_MULT_TARG
+)
+
+1091 
+bcb
+->
+Lun
+ |
+§b
+->
+devi˚
+->
+id
+ << 4;
+
+1092 
+bcb
+->
+Lígth
+ = 
+§b
+->
+cmd_Àn
+;
+
+1095 
+	`mem£t
+(
+bcb
+->
+CDB
+, 0, (bcb->CDB));
+
+1096 
+	`mem˝y
+(
+bcb
+->
+CDB
+, 
+§b
+->
+cmnd
+, bcb->
+Lígth
+);
+
+1099 
+	`usb_°‹_dbg
+(
+us
+, "Bulk Command S 0x%x T 0x%x L %d F %d Trg %d LUN %d CL %d\n",
+
+1100 
+	`À32_to_˝u
+(
+bcb
+->
+Sig«tuª
+), bcb->
+Tag
+,
+
+1101 
+	`À32_to_˝u
+(
+bcb
+->
+D©aTøns„rLígth
+), bcb->
+Fœgs
+,
+
+1102 (
+bcb
+->
+Lun
+ >> 4), (bcb->Lun & 0x0F),
+
+1103 
+bcb
+->
+Lígth
+);
+
+1104 
+ªsu…
+ = 
+	`usb_°‹_bulk_å™s„r_buf
+(
+us
+, us->
+£nd_bulk_pùe
+,
+
+1105 
+bcb
+, 
+cbwÀn
+, 
+NULL
+);
+
+1106 
+	`usb_°‹_dbg
+(
+us
+, "Bulk comm™dÅøns„∏ªsu…=%d\n", 
+ªsu…
+);
+
+1107 i‡(
+ªsu…
+ !
+USB_STOR_XFER_GOOD
+)
+
+1108  
+USB_STOR_TRANSPORT_ERROR
+;
+
+1116 i‡(
+	`u∆ikñy
+(
+us
+->
+fÊags
+ & 
+US_FL_GO_SLOW
+))
+
+1117 
+	`udñay
+(125);
+
+1119 i‡(
+å™s„r_Àngth
+) {
+
+1120 
+pùe
+ = 
+§b
+->
+sc_d©a_dúe˘i⁄
+ =
+DMA_FROM_DEVICE
+ ?
+
+1121 
+us
+->
+ªcv_bulk_pùe
+ : us->
+£nd_bulk_pùe
+;
+
+1122 
+ªsu…
+ = 
+	`usb_°‹_bulk_§b
+(
+us
+, 
+pùe
+, 
+§b
+);
+
+1123 
+	`usb_°‹_dbg
+(
+us
+, "Bulk d©®å™s„∏ªsu… 0x%x\n", 
+ªsu…
+);
+
+1124 i‡(
+ªsu…
+ =
+USB_STOR_XFER_ERROR
+)
+
+1125  
+USB_STOR_TRANSPORT_ERROR
+;
+
+1133 i‡(
+ªsu…
+ =
+USB_STOR_XFER_LONG
+)
+
+1134 
+Áke_£n£
+ = 1;
+
+1142 i‡(
+ªsu…
+ =
+USB_STOR_XFER_SHORT
+ &&
+
+1143 
+§b
+->
+sc_d©a_dúe˘i⁄
+ =
+DMA_FROM_DEVICE
+ &&
+
+1144 
+å™s„r_Àngth
+ - 
+	`scsi_gë_ªsid
+(
+§b
+) ==
+
+1145 
+US_BULK_CS_WRAP_LEN
+) {
+
+1146 
+sˇâîli°
+ *
+sg
+ = 
+NULL
+;
+
+1147 
+off£t
+ = 0;
+
+1149 i‡(
+	`usb_°‹_ac˚ss_x„r_buf
+((*Ë
+bcs
+,
+
+1150 
+US_BULK_CS_WRAP_LEN
+, 
+§b
+, &
+sg
+,
+
+1151 &
+off£t
+, 
+FROM_XFER_BUF
+) ==
+
+1152 
+US_BULK_CS_WRAP_LEN
+ &&
+
+1153 
+bcs
+->
+Sig«tuª
+ ==
+
+1154 
+	`˝u_to_À32
+(
+US_BULK_CS_SIGN
+)) {
+
+1155 
+	`usb_°‹_dbg
+(
+us
+, "Device skipped dataÖhase\n");
+
+1156 
+	`scsi_£t_ªsid
+(
+§b
+, 
+å™s„r_Àngth
+);
+
+1157 
+skù≥d_d©a_pha£
+;
+
+1167 
+	`usb_°‹_dbg
+(
+us
+, "AttemptingÅo get CSW...\n");
+
+1168 
+ªsu…
+ = 
+	`usb_°‹_bulk_å™s„r_buf
+(
+us
+, us->
+ªcv_bulk_pùe
+,
+
+1169 
+bcs
+, 
+US_BULK_CS_WRAP_LEN
+, &
+cswÀn
+);
+
+1175 i‡(
+ªsu…
+ =
+USB_STOR_XFER_SHORT
+ && 
+cswÀn
+ == 0) {
+
+1176 
+	`usb_°‹_dbg
+(
+us
+, "Received 0-length CSW;Ñetrying...\n");
+
+1177 
+ªsu…
+ = 
+	`usb_°‹_bulk_å™s„r_buf
+(
+us
+, us->
+ªcv_bulk_pùe
+,
+
+1178 
+bcs
+, 
+US_BULK_CS_WRAP_LEN
+, &
+cswÀn
+);
+
+1182 i‡(
+ªsu…
+ =
+USB_STOR_XFER_STALLED
+) {
+
+1185 
+	`usb_°‹_dbg
+(
+us
+, "AttemptingÅo get CSW (2ndÅry)...\n");
+
+1186 
+ªsu…
+ = 
+	`usb_°‹_bulk_å™s„r_buf
+(
+us
+, us->
+ªcv_bulk_pùe
+,
+
+1187 
+bcs
+, 
+US_BULK_CS_WRAP_LEN
+, 
+NULL
+);
+
+1191 
+	`usb_°‹_dbg
+(
+us
+, "Bulk sètu†ªsu… = %d\n", 
+ªsu…
+);
+
+1192 i‡(
+ªsu…
+ !
+USB_STOR_XFER_GOOD
+)
+
+1193  
+USB_STOR_TRANSPORT_ERROR
+;
+
+1195 
+skù≥d_d©a_pha£
+:
+
+1197 
+ªsidue
+ = 
+	`À32_to_˝u
+(
+bcs
+->
+Residue
+);
+
+1198 
+	`usb_°‹_dbg
+(
+us
+, "Bulk Status S 0x%x T 0x%x R %u Stat 0x%x\n",
+
+1199 
+	`À32_to_˝u
+(
+bcs
+->
+Sig«tuª
+), bcs->
+Tag
+,
+
+1200 
+ªsidue
+, 
+bcs
+->
+Sètus
+);
+
+1201 i‡(!(
+bcs
+->
+Tag
+ =
+us
+->
+èg
+ || (us->
+fÊags
+ & 
+US_FL_BULK_IGNORE_TAG
+)) ||
+
+1202 
+bcs
+->
+Sètus
+ > 
+US_BULK_STAT_PHASE
+) {
+
+1203 
+	`usb_°‹_dbg
+(
+us
+, "BulkÜogicalÉrror\n");
+
+1204  
+USB_STOR_TRANSPORT_ERROR
+;
+
+1211 i‡(!
+us
+->
+bcs_sig«tuª
+) {
+
+1212 
+us
+->
+bcs_sig«tuª
+ = 
+bcs
+->
+Sig«tuª
+;
+
+1213 i‡(
+us
+->
+bcs_sig«tuª
+ !
+	`˝u_to_À32
+(
+US_BULK_CS_SIGN
+))
+
+1214 
+	`usb_°‹_dbg
+(
+us
+, "Learnt BCS signature 0x%08X\n",
+
+1215 
+	`À32_to_˝u
+(
+us
+->
+bcs_sig«tuª
+));
+
+1216 } i‡(
+bcs
+->
+Sig«tuª
+ !
+us
+->
+bcs_sig«tuª
+) {
+
+1217 
+	`usb_°‹_dbg
+(
+us
+, "Signature mismatch: got %08X,Éxpecting %08X\n",
+
+1218 
+	`À32_to_˝u
+(
+bcs
+->
+Sig«tuª
+),
+
+1219 
+	`À32_to_˝u
+(
+us
+->
+bcs_sig«tuª
+));
+
+1220  
+USB_STOR_TRANSPORT_ERROR
+;
+
+1225 i‡(
+ªsidue
+ && !(
+us
+->
+fÊags
+ & 
+US_FL_IGNORE_RESIDUE
+)) {
+
+1231 i‡(
+bcs
+->
+Sètus
+ =
+US_BULK_STAT_OK
+ &&
+
+1232 
+	`scsi_gë_ªsid
+(
+§b
+) == 0 &&
+
+1233 ((
+§b
+->
+cmnd
+[0] =
+INQUIRY
+ &&
+
+1234 
+å™s„r_Àngth
+ == 36) ||
+
+1235 (
+§b
+->
+cmnd
+[0] =
+READ_CAPACITY
+ &&
+
+1236 
+å™s„r_Àngth
+ == 8))) {
+
+1237 
+us
+->
+fÊags
+ |
+US_FL_IGNORE_RESIDUE
+;
+
+1240 
+ªsidue
+ = 
+	`mö
+‘esidue, 
+å™s„r_Àngth
+);
+
+1241 
+	`scsi_£t_ªsid
+(
+§b
+, 
+	`max
+(
+	`scsi_gë_ªsid
+(srb),
+
+1242 (Ë
+ªsidue
+));
+
+1247 
+bcs
+->
+Sètus
+) {
+
+1248 
+US_BULK_STAT_OK
+:
+
+1250 i‡(
+Áke_£n£
+) {
+
+1251 
+	`mem˝y
+(
+§b
+->
+£n£_buf„r
+,
+
+1252 
+usb_°‹_£n£_övÆidCDB
+,
+
+1253 (
+usb_°‹_£n£_övÆidCDB
+));
+
+1254  
+USB_STOR_TRANSPORT_NO_SENSE
+;
+
+1258  
+USB_STOR_TRANSPORT_GOOD
+;
+
+1260 
+US_BULK_STAT_FAIL
+:
+
+1262  
+USB_STOR_TRANSPORT_FAILED
+;
+
+1264 
+US_BULK_STAT_PHASE
+:
+
+1268  
+USB_STOR_TRANSPORT_ERROR
+;
+
+1272  
+USB_STOR_TRANSPORT_ERROR
+;
+
+1273 
+	}
+}
+
+1274 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_Bulk_å™•‹t
+);
+
+1288 
+	$usb_°‹_ª£t_comm⁄
+(
+us_d©a
+ *
+us
+,
+
+1289 
+u8
+ 
+ªque°
+, u8 
+ªque°ty≥
+,
+
+1290 
+u16
+ 
+vÆue
+, u16 
+ödex
+, *
+d©a
+, u16 
+size
+)
+
+1292 
+ªsu…
+;
+
+1293 
+ªsu…2
+;
+
+1295 i‡(
+	`ã°_bô
+(
+US_FLIDX_DISCONNECTING
+, &
+us
+->
+dÊags
+)) {
+
+1296 
+	`usb_°‹_dbg
+(
+us
+, "NoÑeset during disconnect\n");
+
+1297  -
+EIO
+;
+
+1300 
+ªsu…
+ = 
+	`usb_°‹_c⁄åﬁ_msg
+(
+us
+, us->
+£nd_˘æ_pùe
+,
+
+1301 
+ªque°
+, 
+ªque°ty≥
+, 
+vÆue
+, 
+ödex
+, 
+d©a
+, 
+size
+,
+
+1302 5*
+HZ
+);
+
+1303 i‡(
+ªsu…
+ < 0) {
+
+1304 
+	`usb_°‹_dbg
+(
+us
+, "So·Ñe£àÁûed: %d\n", 
+ªsu…
+);
+
+1305  
+ªsu…
+;
+
+1310 
+	`waô_evít_öãºu±ibÀ_timeout
+(
+us
+->
+dñay_waô
+,
+
+1311 
+	`ã°_bô
+(
+US_FLIDX_DISCONNECTING
+, &
+us
+->
+dÊags
+),
+
+1312 
+HZ
+*6);
+
+1313 i‡(
+	`ã°_bô
+(
+US_FLIDX_DISCONNECTING
+, &
+us
+->
+dÊags
+)) {
+
+1314 
+	`usb_°‹_dbg
+(
+us
+, "Reset interrupted by disconnect\n");
+
+1315  -
+EIO
+;
+
+1318 
+	`usb_°‹_dbg
+(
+us
+, "SoftÑeset: clearing bulk-inÉndpoint halt\n");
+
+1319 
+ªsu…
+ = 
+	`usb_°‹_˛ór_hÆt
+(
+us
+, us->
+ªcv_bulk_pùe
+);
+
+1321 
+	`usb_°‹_dbg
+(
+us
+, "SoftÑeset: clearing bulk-outÉndpoint halt\n");
+
+1322 
+ªsu…2
+ = 
+	`usb_°‹_˛ór_hÆt
+(
+us
+, us->
+£nd_bulk_pùe
+);
+
+1325 i‡(
+ªsu…
+ >= 0)
+
+1326 
+ªsu…
+ = 
+ªsu…2
+;
+
+1327 i‡(
+ªsu…
+ < 0)
+
+1328 
+	`usb_°‹_dbg
+(
+us
+, "SoftÑeset failed\n");
+
+1330 
+	`usb_°‹_dbg
+(
+us
+, "SoftÑeset done\n");
+
+1331  
+ªsu…
+;
+
+1332 
+	}
+}
+
+1336 
+	#CB_RESET_CMD_SIZE
+ 12
+
+	)
+
+1338 
+	$usb_°‹_CB_ª£t
+(
+us_d©a
+ *
+us
+)
+
+1340 
+	`mem£t
+(
+us
+->
+iobuf
+, 0xFF, 
+CB_RESET_CMD_SIZE
+);
+
+1341 
+us
+->
+iobuf
+[0] = 
+SEND_DIAGNOSTIC
+;
+
+1342 
+us
+->
+iobuf
+[1] = 4;
+
+1343  
+	`usb_°‹_ª£t_comm⁄
+(
+us
+, 
+US_CBI_ADSC
+,
+
+1344 
+USB_TYPE_CLASS
+ | 
+USB_RECIP_INTERFACE
+,
+
+1345 0, 
+us
+->
+i‚um
+, us->
+iobuf
+, 
+CB_RESET_CMD_SIZE
+);
+
+1346 
+	}
+}
+
+1347 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_CB_ª£t
+);
+
+1352 
+	$usb_°‹_Bulk_ª£t
+(
+us_d©a
+ *
+us
+)
+
+1354  
+	`usb_°‹_ª£t_comm⁄
+(
+us
+, 
+US_BULK_RESET_REQUEST
+,
+
+1355 
+USB_TYPE_CLASS
+ | 
+USB_RECIP_INTERFACE
+,
+
+1356 0, 
+us
+->
+i‚um
+, 
+NULL
+, 0);
+
+1357 
+	}
+}
+
+1358 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_Bulk_ª£t
+);
+
+1363 
+	$usb_°‹_p‹t_ª£t
+(
+us_d©a
+ *
+us
+)
+
+1365 
+ªsu…
+;
+
+1368 i‡(
+us
+->
+pusb_dev
+->
+quúks
+ & 
+USB_QUIRK_RESET
+)
+
+1369  -
+EPERM
+;
+
+1371 
+ªsu…
+ = 
+	`usb_lock_devi˚_f‹_ª£t
+(
+us
+->
+pusb_dev
+, us->
+pusb_ötf
+);
+
+1372 i‡(
+ªsu…
+ < 0)
+
+1373 
+	`usb_°‹_dbg
+(
+us
+, "unableÅoÜock device forÑeset: %d\n",
+
+1374 
+ªsu…
+);
+
+1377 i‡(
+	`ã°_bô
+(
+US_FLIDX_DISCONNECTING
+, &
+us
+->
+dÊags
+)) {
+
+1378 
+ªsu…
+ = -
+EIO
+;
+
+1379 
+	`usb_°‹_dbg
+(
+us
+, "NoÑeset during disconnect\n");
+
+1381 
+ªsu…
+ = 
+	`usb_ª£t_devi˚
+(
+us
+->
+pusb_dev
+);
+
+1382 
+	`usb_°‹_dbg
+(
+us
+, "usb_reset_deviceÑeturns %d\n",
+
+1383 
+ªsu…
+);
+
+1385 
+	`usb_u∆ock_devi˚
+(
+us
+->
+pusb_dev
+);
+
+1387  
+ªsu…
+;
+
+1388 
+	}
+}
+
+	@uas-detect.h
+
+1 
+	~<löux/usb.h
+>
+
+2 
+	~<löux/usb/hcd.h
+>
+
+3 
+	~"usb.h
+"
+
+5 
+	$uas_is_öãrÁ˚
+(
+usb_ho°_öãrÁ˚
+ *
+ötf
+)
+
+7  (
+ötf
+->
+desc
+.
+bI¡îÁ˚Cœss
+ =
+USB_CLASS_MASS_STORAGE
+ &&
+
+8 
+ötf
+->
+desc
+.
+bI¡îÁ˚SubCœss
+ =
+USB_SC_SCSI
+ &&
+
+9 
+ötf
+->
+desc
+.
+bI¡îÁ˚PrŸocﬁ
+ =
+USB_PR_UAS
+);
+
+10 
+	}
+}
+
+12 
+	$uas_föd_uas_Æt_£âög
+(
+usb_öãrÁ˚
+ *
+ötf
+)
+
+14 
+i
+;
+
+16 
+i
+ = 0; i < 
+ötf
+->
+num_Æt£âög
+; i++) {
+
+17 
+usb_ho°_öãrÁ˚
+ *
+Æt
+ = &
+ötf
+->
+Æt£âög
+[
+i
+];
+
+19 i‡(
+	`uas_is_öãrÁ˚
+(
+Æt
+))
+
+20  
+Æt
+->
+desc
+.
+bA…î«ãSëtög
+;
+
+23  -
+ENODEV
+;
+
+24 
+	}
+}
+
+26 
+	$uas_föd_ídpoöts
+(
+usb_ho°_öãrÁ˚
+ *
+Æt
+,
+
+27 
+usb_ho°_ídpoöt
+ *
+ïs
+[])
+
+29 
+usb_ho°_ídpoöt
+ *
+ídpoöt
+ = 
+Æt
+->endpoint;
+
+30 
+i
+, 
+n_ídpoöts
+ = 
+Æt
+->
+desc
+.
+bNumEndpoöts
+;
+
+32 
+i
+ = 0; i < 
+n_ídpoöts
+; i++) {
+
+33 *
+exåa
+ = 
+ídpoöt
+[
+i
+].extra;
+
+34 
+Àn
+ = 
+ídpoöt
+[
+i
+].
+exåÆí
+;
+
+35 
+Àn
+ >= 3) {
+
+36 i‡(
+exåa
+[1] =
+USB_DT_PIPE_USAGE
+) {
+
+37 
+pùe_id
+ = 
+exåa
+[2];
+
+38 i‡(
+pùe_id
+ > 0 &&Öipe_id < 5)
+
+39 
+ïs
+[
+pùe_id
+ - 1] = &
+ídpoöt
+[
+i
+];
+
+42 
+Àn
+ -
+exåa
+[0];
+
+43 
+exåa
+ +=Éxtra[0];
+
+47 i‡(!
+ïs
+[0] || !eps[1] || !eps[2] || !eps[3])
+
+48  -
+ENODEV
+;
+
+51 
+	}
+}
+
+53 
+	$uas_u£_uas_drivî
+(
+usb_öãrÁ˚
+ *
+ötf
+,
+
+54 c⁄° 
+usb_devi˚_id
+ *
+id
+,
+
+55 *
+Êags_ªt
+)
+
+57 
+usb_ho°_ídpoöt
+ *
+ïs
+[4] = { };
+
+58 
+usb_devi˚
+ *
+udev
+ = 
+	`öãrÁ˚_to_usbdev
+(
+ötf
+);
+
+59 
+usb_hcd
+ *
+hcd
+ = 
+	`bus_to_hcd
+(
+udev
+->
+bus
+);
+
+60 
+Êags
+ = 
+id
+->
+drivî_öfo
+;
+
+61 
+r
+, 
+Æt
+;
+
+64 
+Æt
+ = 
+	`uas_föd_uas_Æt_£âög
+(
+ötf
+);
+
+65 i‡(
+Æt
+ < 0)
+
+68 
+r
+ = 
+	`uas_föd_ídpoöts
+(&
+ötf
+->
+Æt£âög
+[
+Æt
+], 
+ïs
+);
+
+69 i‡(
+r
+ < 0)
+
+96 i‡(
+	`À16_to_˝u
+(
+udev
+->
+des¸ùt‹
+.
+idVíd‹
+) == 0x174c &&
+
+97 (
+	`À16_to_˝u
+(
+udev
+->
+des¸ùt‹
+.
+idProdu˘
+) == 0x5106 ||
+
+98 
+	`À16_to_˝u
+(
+udev
+->
+des¸ùt‹
+.
+idProdu˘
+) == 0x55aa)) {
+
+99 i‡(
+udev
+->
+a˘c⁄fig
+->
+desc
+.
+bMaxPowî
+ == 0) {
+
+101 } i‡(
+udev
+->
+•ìd
+ < 
+USB_SPEED_SUPER
+) {
+
+103 
+Êags
+ |
+US_FL_IGNORE_UAS
+;
+
+104 } i‡(
+	`usb_ss_max_°ªams
+(&
+ïs
+[1]->
+ss_ï_comp
+) == 32) {
+
+106 
+Êags
+ |
+US_FL_IGNORE_UAS
+;
+
+109 
+Êags
+ |
+US_FL_MAX_SECTORS_240
+;
+
+113 
+	`usb_°‹_adju°_quúks
+(
+udev
+, &
+Êags
+);
+
+115 i‡(
+Êags
+ & 
+US_FL_IGNORE_UAS
+) {
+
+116 
+	`dev_w¨n
+(&
+udev
+->
+dev
+,
+
+121 i‡(
+udev
+->
+bus
+->
+sg_èbÀsize
+ == 0) {
+
+122 
+	`dev_w¨n
+(&
+udev
+->
+dev
+,
+
+124 
+hcd
+->
+drivî
+->
+des¸ùti⁄
+);
+
+125 
+	`dev_w¨n
+(&
+udev
+->
+dev
+,
+
+130 i‡(
+udev
+->
+•ìd
+ >
+USB_SPEED_SUPER
+ && !
+hcd
+->
+ˇn_do_°ªams
+) {
+
+131 
+	`dev_w¨n
+(&
+udev
+->
+dev
+,
+
+133 
+	`hcd_to_bus
+(
+hcd
+)->
+bus_«me
+);
+
+134 
+	`dev_w¨n
+(&
+udev
+->
+dev
+,
+
+139 i‡(
+Êags_ªt
+)
+
+140 *
+Êags_ªt
+ = 
+Êags
+;
+
+143 
+	}
+}
+
+	@unusual_devs.h
+
+64 #i‡!
+deföed
+(
+CONFIG_USB_STORAGE_SDDR09
+) && \
+
+65 !
+	$deföed
+(
+CONFIG_USB_STORAGE_SDDR09_MODULE
+)
+
+66 
+	#NO_SDDR09
+
+
+	)
+
+71 
+	`UNUSUAL_DEV
+( 0x03eb, 0x2002, 0x0100, 0x0100,
+
+74 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+75 
+US_FL_IGNORE_RESIDUE
+),
+
+78 
+	`UNUSUAL_DEV
+( 0x03ee, 0x6906, 0x0003, 0x0003,
+
+81 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+82 
+US_FL_IGNORE_RESIDUE
+ ),
+
+84 
+	`UNUSUAL_DEV
+( 0x03f0, 0x0107, 0x0200, 0x0200,
+
+87 
+USB_SC_8070
+, 
+USB_PR_CB
+, 
+NULL
+, 0),
+
+90 
+	`UNUSUAL_DEV
+( 0x03f0, 0x070c, 0x0000, 0x0000,
+
+93 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+94 
+US_FL_SANE_SENSE
+ ),
+
+99 
+	`UNUSUAL_DEV
+( 0x03f0, 0x4002, 0x0001, 0x0001,
+
+102 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 
+US_FL_FIX_CAPACITY
+),
+
+104 
+	`UNUSUAL_DEV
+( 0x03f3, 0x0001, 0x0000, 0x9999,
+
+107 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_euscsi_öô
+,
+
+108 
+US_FL_SCM_MULT_TARG
+ ),
+
+114 
+	`UNUSUAL_DEV
+( 0x0409, 0x0040, 0x0000, 0x9999,
+
+117 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+118 
+US_FL_SINGLE_LUN
+ ),
+
+121 
+	`UNUSUAL_DEV
+( 0x040d, 0x6205, 0x0003, 0x0003,
+
+124 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+125 
+US_FL_IGNORE_RESIDUE
+ ),
+
+131 
+	`UNUSUAL_DEV
+( 0x0411, 0x001c, 0x0113, 0x0113,
+
+134 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+135 
+US_FL_FIX_INQUIRY
+ ),
+
+138 
+	`UNUSUAL_DEV
+( 0x0419, 0x0100, 0x0100, 0x0100,
+
+141 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+142 
+US_FL_IGNORE_RESIDUE
+ ),
+
+145 
+	`UNUSUAL_DEV
+( 0x0419, 0xaace, 0x0100, 0x0100,
+
+147 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+148 
+US_FL_IGNORE_RESIDUE
+ ),
+
+151 
+	`UNUSUAL_DEV
+( 0x0419, 0xaaf5, 0x0100, 0x0100,
+
+154 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+155 
+US_FL_IGNORE_RESIDUE
+ | 
+US_FL_NOT_LOCKABLE
+ ),
+
+158 
+	`UNUSUAL_DEV
+( 0x0419, 0xaaf6, 0x0100, 0x0100,
+
+161 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+162 
+US_FL_IGNORE_RESIDUE
+ ),
+
+165 
+	`UNUSUAL_DEV
+( 0x0420, 0x0001, 0x0100, 0x0100,
+
+167 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+168 
+US_FL_IGNORE_RESIDUE
+ ),
+
+172 
+	`UNUSUAL_DEV
+( 0x0421, 0x0019, 0x0592, 0x0610,
+
+175 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+176 
+US_FL_MAX_SECTORS_64
+ ),
+
+179 
+	`UNUSUAL_DEV
+( 0x0421, 0x042e, 0x0100, 0x0100,
+
+182 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+183 
+US_FL_IGNORE_RESIDUE
+ | 
+US_FL_FIX_CAPACITY
+ ),
+
+186 
+	`UNUSUAL_DEV
+( 0x0421, 0x0433, 0x0100, 0x0100,
+
+189 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+190 
+US_FL_IGNORE_RESIDUE
+ | 
+US_FL_FIX_CAPACITY
+ ),
+
+193 
+	`UNUSUAL_DEV
+( 0x0421, 0x0434, 0x0100, 0x0100,
+
+196 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+197 
+US_FL_FIX_CAPACITY
+ | 
+US_FL_IGNORE_RESIDUE
+ ),
+
+201 
+	`UNUSUAL_DEV
+( 0x0421, 0x0444, 0x0100, 0x0100,
+
+204 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+205 
+US_FL_IGNORE_RESIDUE
+ | 
+US_FL_FIX_CAPACITY
+ ),
+
+209 
+	`UNUSUAL_DEV
+( 0x0421, 0x0446, 0x0100, 0x0100,
+
+212 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+213 
+US_FL_IGNORE_RESIDUE
+ | 
+US_FL_FIX_CAPACITY
+ ),
+
+216 
+	`UNUSUAL_DEV
+( 0x0421, 0x044e, 0x0100, 0x0100,
+
+219 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+220 
+US_FL_IGNORE_RESIDUE
+ | 
+US_FL_FIX_CAPACITY
+ ),
+
+223 
+	`UNUSUAL_DEV
+( 0x0421, 0x047c, 0x0370, 0x0610,
+
+226 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+227 
+US_FL_MAX_SECTORS_64
+ ),
+
+230 
+	`UNUSUAL_DEV
+( 0x0421, 0x0492, 0x0452, 0x9999,
+
+233 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+234 
+US_FL_MAX_SECTORS_64
+ ),
+
+237 
+	`UNUSUAL_DEV
+( 0x0421, 0x0495, 0x0370, 0x0370,
+
+240 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+241 
+US_FL_MAX_SECTORS_64
+ ),
+
+244 
+	`UNUSUAL_DEV
+( 0x0421, 0x04b9, 0x0350, 0x0350,
+
+247 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+248 
+US_FL_MAX_SECTORS_64
+ ),
+
+251 
+	`UNUSUAL_DEV
+( 0x0421, 0x05af, 0x0742, 0x0742,
+
+254 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+255 
+US_FL_MAX_SECTORS_64
+),
+
+258 
+	`UNUSUAL_DEV
+( 0x0421, 0x06aa, 0x1110, 0x1110,
+
+261 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+262 
+US_FL_MAX_SECTORS_64
+ ),
+
+264 #ifde‡
+NO_SDDR09
+
+
+265 
+	`UNUSUAL_DEV
+( 0x0436, 0x0005, 0x0100, 0x0100,
+
+268 
+USB_SC_SCSI
+, 
+USB_PR_CB
+, 
+NULL
+,
+
+269 
+US_FL_SINGLE_LUN
+ ),
+
+274 
+	`UNUSUAL_DEV
+( 0x0451, 0x5416, 0x0100, 0x0100,
+
+277 
+USB_SC_DEVICE
+, 
+USB_PR_BULK
+, 
+NULL
+,
+
+278 
+US_FL_NEED_OVERRIDE
+ ),
+
+285 
+	`UNUSUAL_DEV
+( 0x0457, 0x0150, 0x0100, 0x0100,
+
+288 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 
+US_FL_NOT_LOCKABLE
+ ),
+
+295 
+	`UNUSUAL_DEV
+( 0x0457, 0x0151, 0x0100, 0x0100,
+
+298 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+299 
+US_FL_NOT_LOCKABLE
+ ),
+
+307 
+	`UNUSUAL_DEV
+( 0x045e, 0xffff, 0x0000, 0x0000,
+
+310 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+311 
+US_FL_MAX_SECTORS_64
+ ),
+
+319 
+	`UNUSUAL_DEV
+( 0x046b, 0xff40, 0x0100, 0x0100,
+
+322 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+323 
+US_FL_NO_WP_DETECT
+),
+
+326 
+	`UNUSUAL_DEV
+( 0x0482, 0x0100, 0x0100, 0x0100,
+
+329 
+USB_SC_8070
+, 
+USB_PR_CB
+, 
+NULL
+, 
+US_FL_FIX_INQUIRY
+),
+
+332 
+	`UNUSUAL_DEV
+( 0x0482, 0x0101, 0x0100, 0x0100,
+
+335 
+USB_SC_8070
+, 
+USB_PR_CB
+, 
+NULL
+, 
+US_FL_FIX_INQUIRY
+),
+
+338 
+	`UNUSUAL_DEV
+( 0x0482, 0x0103, 0x0100, 0x0100,
+
+341 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 
+US_FL_FIX_INQUIRY
+),
+
+344 
+	`UNUSUAL_DEV
+( 0x0482, 0x0107, 0x0100, 0x0100,
+
+347 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+348 
+US_FL_FIX_CAPACITY
+ | 
+US_FL_NOT_LOCKABLE
+),
+
+352 
+	`UNUSUAL_DEV
+( 0x04a4, 0x0004, 0x0001, 0x0001,
+
+355 
+USB_SC_SCSI
+, 
+USB_PR_CB
+, 
+NULL
+, 
+US_FL_SINGLE_LUN
+),
+
+360 
+	`UNUSUAL_DEV
+( 0x04a5, 0x3010, 0x0100, 0x0100,
+
+363 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+364 
+US_FL_IGNORE_RESIDUE
+ ),
+
+368 
+	`UNUSUAL_DEV
+( 0x04b0, 0x0301, 0x0010, 0x0010,
+
+371 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+,
+NULL
+,
+
+372 
+US_FL_NOT_LOCKABLE
+ ),
+
+375 
+	`UNUSUAL_DEV
+( 0x04b3, 0x4001, 0x0110, 0x0110,
+
+378 
+USB_SC_DEVICE
+, 
+USB_PR_CB
+, 
+NULL
+,
+
+379 
+US_FL_MAX_SECTORS_MIN
+),
+
+383 
+	`UNUSUAL_DEV
+( 0x04b8, 0x0601, 0x0100, 0x0100,
+
+386 
+USB_SC_SCSI
+, 
+USB_PR_CB
+, 
+NULL
+, 
+US_FL_FIX_INQUIRY
+),
+
+390 
+	`UNUSUAL_DEV
+( 0x04b8, 0x0602, 0x0110, 0x0110,
+
+393 
+USB_SC_SCSI
+, 
+USB_PR_BULK
+, 
+NULL
+, 
+US_FL_SINGLE_LUN
+),
+
+398 
+	`UNUSUAL_DEV
+( 0x04cb, 0x0100, 0x0000, 0x2210,
+
+401 
+USB_SC_UFI
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 
+US_FL_FIX_INQUIRY
+ | 
+US_FL_SINGLE_LUN
+),
+
+406 
+	`UNUSUAL_DEV
+( 0x04ce, 0x0002, 0x026c, 0x026c,
+
+409 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+410 
+US_FL_FIX_CAPACITY
+),
+
+417 
+	`UNUSUAL_DEV
+( 0x04da, 0x0901, 0x0100, 0x0200,
+
+420 
+USB_SC_UFI
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 0),
+
+424 
+	`UNUSUAL_DEV
+( 0x04da, 0x0d05, 0x0000, 0x0000,
+
+427 
+USB_SC_8070
+, 
+USB_PR_CB
+, 
+NULL
+, 0),
+
+430 
+	`UNUSUAL_DEV
+( 0x04da, 0x2372, 0x0000, 0x9999,
+
+433 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+434 
+US_FL_FIX_CAPACITY
+ | 
+US_FL_NOT_LOCKABLE
+ ),
+
+437 
+	`UNUSUAL_DEV
+( 0x04da, 0x2373, 0x0000, 0x9999,
+
+440 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+441 
+US_FL_FIX_CAPACITY
+ | 
+US_FL_NOT_LOCKABLE
+ ),
+
+446 
+	`UNUSUAL_DEV
+( 0x04e6, 0x0001, 0x0200, 0x0200,
+
+449 
+USB_SC_8020
+, 
+USB_PR_CB
+, 
+NULL
+, 0),
+
+451 
+	`UNUSUAL_DEV
+( 0x04e6, 0x0002, 0x0100, 0x0100,
+
+454 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_euscsi_öô
+,
+
+455 
+US_FL_SCM_MULT_TARG
+ ),
+
+457 #ifde‡
+NO_SDDR09
+
+
+458 
+	`UNUSUAL_DEV
+( 0x04e6, 0x0005, 0x0100, 0x0208,
+
+461 
+USB_SC_SCSI
+, 
+USB_PR_CB
+, 
+NULL
+,
+
+462 
+US_FL_SINGLE_LUN
+),
+
+466 
+	`UNUSUAL_DEV
+( 0x04e6, 0x0006, 0x0100, 0x0100,
+
+469 
+USB_SC_SCSI
+, 
+USB_PR_CB
+, 
+NULL
+,
+
+470 
+US_FL_SINGLE_LUN
+),
+
+473 
+	`UNUSUAL_DEV
+( 0x04e6, 0x0006, 0x0205, 0x0205,
+
+476 
+USB_SC_SCSI
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+477 
+US_FL_SINGLE_LUN
+),
+
+479 
+	`UNUSUAL_DEV
+( 0x04e6, 0x0007, 0x0100, 0x0200,
+
+482 
+USB_SC_SCSI
+, 
+USB_PR_CB
+, 
+NULL
+,
+
+483 
+US_FL_SINGLE_LUN
+),
+
+485 
+	`UNUSUAL_DEV
+( 0x04e6, 0x0009, 0x0200, 0x0200,
+
+488 
+USB_SC_8020
+, 
+USB_PR_CB
+, 
+NULL
+, 0),
+
+490 
+	`UNUSUAL_DEV
+( 0x04e6, 0x000a, 0x0200, 0x0200,
+
+493 
+USB_SC_8020
+, 
+USB_PR_CB
+, 
+NULL
+, 0),
+
+495 
+	`UNUSUAL_DEV
+( 0x04e6, 0x000b, 0x0100, 0x0100,
+
+498 
+USB_SC_SCSI
+, 
+USB_PR_BULK
+, 
+usb_°‹_euscsi_öô
+,
+
+499 
+US_FL_SCM_MULT_TARG
+ ),
+
+501 
+	`UNUSUAL_DEV
+( 0x04e6, 0x000c, 0x0100, 0x0100,
+
+504 
+USB_SC_SCSI
+, 
+USB_PR_BULK
+, 
+usb_°‹_euscsi_öô
+,
+
+505 
+US_FL_SCM_MULT_TARG
+ ),
+
+507 
+	`UNUSUAL_DEV
+( 0x04e6, 0x000f, 0x0000, 0x9999,
+
+510 
+USB_SC_SCSI
+, 
+USB_PR_BULK
+, 
+usb_°‹_euscsi_öô
+,
+
+511 
+US_FL_SCM_MULT_TARG
+ ),
+
+513 
+	`UNUSUAL_DEV
+( 0x04e6, 0x0101, 0x0200, 0x0200,
+
+516 
+USB_SC_8020
+, 
+USB_PR_CB
+, 
+NULL
+, 0),
+
+519 
+	`UNUSUAL_DEV
+( 0x04e8, 0x507c, 0x0220, 0x0220,
+
+522 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+523 
+US_FL_MAX_SECTORS_64
+),
+
+526 
+	`UNUSUAL_DEV
+( 0x04e8, 0x5122, 0x0000, 0x9999,
+
+529 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+530 
+US_FL_MAX_SECTORS_64
+ | 
+US_FL_BULK_IGNORE_TAG
+),
+
+533 
+	`UNUSUAL_DEV
+( 0x04e8, 0x5136, 0x0000, 0x9999,
+
+536 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+537 
+US_FL_MAX_SECTORS_64
+),
+
+543 
+	`UNUSUAL_DEV
+( 0x04fc, 0x80c2, 0x0100, 0x0100,
+
+546 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+547 
+US_FL_BULK32
+),
+
+550 
+	`UNUSUAL_DEV
+( 0x050d, 0x0115, 0x0133, 0x0133,
+
+553 
+USB_SC_SCSI
+, 
+USB_PR_BULK
+, 
+usb_°‹_euscsi_öô
+,
+
+554 
+US_FL_SCM_MULT_TARG
+ ),
+
+560 
+	`UNUSUAL_DEV
+( 0x0525, 0xa140, 0x0100, 0x0100,
+
+563 
+USB_SC_8070
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+564 
+US_FL_FIX_INQUIRY
+ ),
+
+567 
+	`COMPLIANT_DEV
+(0x0525, 0xa4a5, 0x0000, 0x9999,
+
+570 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+571 
+US_FL_CAPACITY_OK
+ ),
+
+575 
+	`UNUSUAL_DEV
+( 0x052b, 0x1801, 0x0100, 0x0100,
+
+578 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+579 
+US_FL_IGNORE_RESIDUE
+ ),
+
+583 
+	`UNUSUAL_DEV
+( 0x052b, 0x1804, 0x0100, 0x0100,
+
+586 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+587 
+US_FL_IGNORE_RESIDUE
+ ),
+
+590 
+	`UNUSUAL_DEV
+( 0x052b, 0x1807, 0x0100, 0x0100,
+
+593 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+594 
+US_FL_IGNORE_RESIDUE
+ ),
+
+598 
+	`UNUSUAL_DEV
+( 0x052b, 0x1905, 0x0100, 0x0100,
+
+601 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+602 
+US_FL_IGNORE_RESIDUE
+ ),
+
+606 
+	`UNUSUAL_DEV
+( 0x052b, 0x1911, 0x0100, 0x0100,
+
+609 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+610 
+US_FL_IGNORE_RESIDUE
+ ),
+
+612 
+	`UNUSUAL_DEV
+( 0x054c, 0x0010, 0x0106, 0x0450,
+
+615 
+USB_SC_SCSI
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+616 
+US_FL_SINGLE_LUN
+ | 
+US_FL_NOT_LOCKABLE
+ | 
+US_FL_NO_WP_DETECT
+ ),
+
+620 
+	`UNUSUAL_DEV
+( 0x054c, 0x0010, 0x0500, 0x0610,
+
+623 
+USB_SC_8070
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+624 
+US_FL_SINGLE_LUN
+ ),
+
+628 
+	`UNUSUAL_DEV
+( 0x054c, 0x0025, 0x0100, 0x0100,
+
+631 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+632 
+US_FL_SINGLE_LUN
+ ),
+
+635 
+	`UNUSUAL_DEV
+( 0x054c, 0x002c, 0x0501, 0x2000,
+
+638 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+639 
+US_FL_SINGLE_LUN
+ ),
+
+641 
+	`UNUSUAL_DEV
+( 0x054c, 0x002d, 0x0100, 0x0100,
+
+644 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+645 
+US_FL_SINGLE_LUN
+ ),
+
+648 
+	`UNUSUAL_DEV
+( 0x054c, 0x002e, 0x0106, 0x0310,
+
+651 
+USB_SC_SCSI
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+652 
+US_FL_SINGLE_LUN
+ ),
+
+655 
+	`UNUSUAL_DEV
+( 0x054c, 0x002e, 0x0500, 0x0500,
+
+658 
+USB_SC_UFI
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+659 
+US_FL_SINGLE_LUN
+ ),
+
+661 
+	`UNUSUAL_DEV
+( 0x054c, 0x0032, 0x0000, 0x9999,
+
+664 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+665 
+US_FL_SINGLE_LUN
+ ),
+
+668 
+	`UNUSUAL_DEV
+( 0x054c, 0x0058, 0x0000, 0x9999,
+
+671 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+672 
+US_FL_FIX_INQUIRY
+ ),
+
+674 
+	`UNUSUAL_DEV
+( 0x054c, 0x0069, 0x0000, 0x9999,
+
+677 
+USB_SC_UFI
+, 
+USB_PR_CB
+, 
+NULL
+,
+
+678 
+US_FL_SINGLE_LUN
+ ),
+
+681 
+	`UNUSUAL_DEV
+( 0x054c, 0x006d, 0x0000, 0x9999,
+
+684 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+685 
+US_FL_FIX_INQUIRY
+ ),
+
+688 
+	`UNUSUAL_DEV
+( 0x054c, 0x0099, 0x0000, 0x9999,
+
+691 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+692 
+US_FL_FIX_INQUIRY
+ ),
+
+695 
+	`UNUSUAL_DEV
+( 0x054c, 0x016a, 0x0000, 0x9999,
+
+698 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+699 
+US_FL_FIX_INQUIRY
+ ),
+
+702 
+	`UNUSUAL_DEV
+( 0x054c, 0x02a5, 0x0100, 0x0100,
+
+705 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+706 
+US_FL_NO_READ_CAPACITY_16
+ ),
+
+709 
+	`UNUSUAL_DEV
+( 0x055d, 0x2020, 0x0000, 0x0210,
+
+712 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+713 
+US_FL_SINGLE_LUN
+ ),
+
+716 
+	`UNUSUAL_DEV
+( 0x057b, 0x0000, 0x0000, 0x0299,
+
+719 
+USB_SC_DEVICE
+, 
+USB_PR_CB
+, 
+NULL
+,
+
+720 
+US_FL_SINGLE_LUN
+),
+
+726 
+	`UNUSUAL_DEV
+( 0x057b, 0x0022, 0x0000, 0x9999,
+
+729 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 0),
+
+732 
+	`UNUSUAL_DEV
+( 0x058f, 0x6387, 0x0141, 0x0141,
+
+735 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+736 
+US_FL_MAX_SECTORS_64
+ ),
+
+739 
+	`UNUSUAL_DEV
+( 0x0595, 0x4343, 0x0000, 0x2210,
+
+742 
+USB_SC_8070
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 0 ),
+
+750 
+	`UNUSUAL_DEV
+( 0x059b, 0x0001, 0x0100, 0x0100,
+
+753 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+754 
+US_FL_SINGLE_LUN
+ ),
+
+756 
+	`UNUSUAL_DEV
+( 0x059b, 0x0040, 0x0100, 0x0100,
+
+759 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+760 
+US_FL_SINGLE_LUN
+ ),
+
+763 
+	`UNUSUAL_DEV
+( 0x059f, 0x0643, 0x0000, 0x0000,
+
+766 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+767 
+US_FL_GO_SLOW
+ ),
+
+770 
+	`UNUSUAL_DEV
+( 0x059f, 0x0651, 0x0000, 0x0000,
+
+773 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+774 
+US_FL_NO_WP_DETECT
+ ),
+
+780 
+	`UNUSUAL_DEV
+( 0x05ab, 0x0060, 0x1104, 0x1110,
+
+783 
+USB_SC_SCSI
+, 
+USB_PR_BULK
+, 
+NULL
+,
+
+784 
+US_FL_NEED_OVERRIDE
+ ),
+
+792 
+	`UNUSUAL_DEV
+( 0x05ac, 0x1202, 0x0000, 0x9999,
+
+795 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+796 
+US_FL_FIX_CAPACITY
+ ),
+
+799 
+	`UNUSUAL_DEV
+( 0x05ac, 0x1203, 0x0000, 0x9999,
+
+802 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+803 
+US_FL_FIX_CAPACITY
+ ),
+
+805 
+	`UNUSUAL_DEV
+( 0x05ac, 0x1204, 0x0000, 0x9999,
+
+808 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+809 
+US_FL_FIX_CAPACITY
+ | 
+US_FL_NOT_LOCKABLE
+ ),
+
+811 
+	`UNUSUAL_DEV
+( 0x05ac, 0x1205, 0x0000, 0x9999,
+
+814 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+815 
+US_FL_FIX_CAPACITY
+ ),
+
+821 
+	`UNUSUAL_DEV
+( 0x05ac, 0x120a, 0x0000, 0x9999,
+
+824 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+825 
+US_FL_FIX_CAPACITY
+ ),
+
+833 
+	`UNUSUAL_DEV
+( 0x05c6, 0x1000, 0x0000, 0x9999,
+
+836 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+›ti⁄_ms_öô
+,
+
+840 
+	`UNUSUAL_DEV
+( 0x05dc, 0xb002, 0x0000, 0x0113,
+
+843 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+844 
+US_FL_FIX_INQUIRY
+ ),
+
+857 
+	`UNUSUAL_DEV
+( 0x05e3, 0x0701, 0x0000, 0xffff,
+
+860 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+861 
+US_FL_GO_SLOW
+ | 
+US_FL_MAX_SECTORS_64
+ | 
+US_FL_IGNORE_RESIDUE
+ ),
+
+863 
+	`UNUSUAL_DEV
+( 0x05e3, 0x0702, 0x0000, 0xffff,
+
+866 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+867 
+US_FL_GO_SLOW
+ | 
+US_FL_MAX_SECTORS_64
+ | 
+US_FL_IGNORE_RESIDUE
+ ),
+
+870 
+	`UNUSUAL_DEV
+( 0x05e3, 0x0723, 0x9451, 0x9451,
+
+873 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+874 
+US_FL_SANE_SENSE
+ ),
+
+878 
+	`UNUSUAL_DEV
+( 0x0636, 0x0003, 0x0000, 0x9999,
+
+881 
+USB_SC_SCSI
+, 
+USB_PR_BULK
+, 
+NULL
+,
+
+882 
+US_FL_FIX_INQUIRY
+ ),
+
+884 
+	`UNUSUAL_DEV
+( 0x0644, 0x0000, 0x0100, 0x0100,
+
+887 
+USB_SC_UFI
+, 
+USB_PR_CB
+, 
+NULL
+, 0 ),
+
+890 
+	`UNUSUAL_DEV
+( 0x066f, 0x8000, 0x0001, 0x0001,
+
+893 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+894 
+US_FL_FIX_CAPACITY
+ ),
+
+897 
+	`UNUSUAL_DEV
+( 0x067b, 0x1063, 0x0100, 0x0100,
+
+900 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+901 
+US_FL_BAD_SENSE
+ ),
+
+904 
+	`UNUSUAL_DEV
+( 0x067b, 0x2317, 0x0001, 0x001,
+
+907 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+908 
+US_FL_NOT_LOCKABLE
+ ),
+
+913 
+	`UNUSUAL_DEV
+( 0x067b, 0x2507, 0x0001, 0x0100,
+
+916 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+917 
+US_FL_FIX_CAPACITY
+ | 
+US_FL_GO_SLOW
+ ),
+
+920 
+	`UNUSUAL_DEV
+( 0x067b, 0x3507, 0x0001, 0x0101,
+
+923 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+924 
+US_FL_FIX_CAPACITY
+ | 
+US_FL_GO_SLOW
+ ),
+
+927 
+	`UNUSUAL_DEV
+( 0x0686, 0x4011, 0x0001, 0x0001,
+
+930 
+USB_SC_SCSI
+, 
+USB_PR_BULK
+, 
+NULL
+, 0 ),
+
+933 
+	`UNUSUAL_DEV
+( 0x0686, 0x4017, 0x0001, 0x0001,
+
+936 
+USB_SC_SCSI
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 0 ),
+
+938 
+	`UNUSUAL_DEV
+( 0x0693, 0x0005, 0x0100, 0x0100,
+
+941 
+USB_SC_SCSI
+, 
+USB_PR_BULK
+, 
+NULL
+, 0 ),
+
+944 
+	`UNUSUAL_DEV
+( 0x069b, 0x3004, 0x0001, 0x0001,
+
+947 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+948 
+US_FL_FIX_CAPACITY
+ ),
+
+950 
+	`UNUSUAL_DEV
+( 0x06ca, 0x2003, 0x0100, 0x0100,
+
+953 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_euscsi_öô
+,
+
+954 
+US_FL_SCM_MULT_TARG
+ ),
+
+957 
+	`UNUSUAL_DEV
+( 0x071b, 0x3203, 0x0000, 0x0000,
+
+960 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+961 
+US_FL_NO_WP_DETECT
+ | 
+US_FL_MAX_SECTORS_64
+ |
+
+962 
+US_FL_NO_READ_CAPACITY_16
+),
+
+968 
+	`UNUSUAL_DEV
+( 0x071b, 0x32bb, 0x0000, 0x0000,
+
+971 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+972 
+US_FL_NO_WP_DETECT
+ | 
+US_FL_MAX_SECTORS_64
+),
+
+984 
+	`UNUSUAL_DEV
+( 0x071b, 0x3203, 0x0100, 0x0100,
+
+987 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+988 
+US_FL_MAX_SECTORS_64
+),
+
+991 
+	`UNUSUAL_DEV
+( 0x0727, 0x0306, 0x0100, 0x0100,
+
+994 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+995 
+US_FL_IGNORE_RESIDUE
+),
+
+998 
+	`UNUSUAL_DEV
+( 0x0781, 0x0001, 0x0200, 0x0200,
+
+1001 
+USB_SC_SCSI
+, 
+USB_PR_CB
+, 
+NULL
+,
+
+1002 
+US_FL_SINGLE_LUN
+ ),
+
+1004 
+	`UNUSUAL_DEV
+( 0x0781, 0x0002, 0x0009, 0x0009,
+
+1007 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1008 
+US_FL_FIX_CAPACITY
+ ),
+
+1010 
+	`UNUSUAL_DEV
+( 0x0781, 0x0100, 0x0100, 0x0100,
+
+1013 
+USB_SC_SCSI
+, 
+USB_PR_CB
+, 
+NULL
+,
+
+1014 
+US_FL_SINGLE_LUN
+ ),
+
+1017 
+	`UNUSUAL_DEV
+( 0x07ab, 0xfccd, 0x0000, 0x9999,
+
+1020 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1021 
+US_FL_FIX_CAPACITY
+),
+
+1023 
+	`UNUSUAL_DEV
+( 0x07af, 0x0004, 0x0100, 0x0133,
+
+1026 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_euscsi_öô
+,
+
+1027 
+US_FL_SCM_MULT_TARG
+ ),
+
+1029 
+	`UNUSUAL_DEV
+( 0x07af, 0x0005, 0x0100, 0x0100,
+
+1032 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_euscsi_öô
+,
+
+1033 
+US_FL_SCM_MULT_TARG
+ ),
+
+1035 #ifde‡
+NO_SDDR09
+
+
+1036 
+	`UNUSUAL_DEV
+( 0x07af, 0x0006, 0x0100, 0x0100,
+
+1039 
+USB_SC_SCSI
+, 
+USB_PR_CB
+, 
+NULL
+,
+
+1040 
+US_FL_SINGLE_LUN
+ ),
+
+1049 
+	`UNUSUAL_DEV
+( 0x07c4, 0xa400, 0x0000, 0xffff,
+
+1052 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1053 
+US_FL_FIX_INQUIRY
+ | 
+US_FL_FIX_CAPACITY
+ ),
+
+1058 
+	`UNUSUAL_DEV
+( 0x07c4, 0xa4a5, 0x0000, 0xffff,
+
+1061 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1062 
+US_FL_IGNORE_RESIDUE
+ | 
+US_FL_MAX_SECTORS_64
+ ),
+
+1075 
+	`UNUSUAL_DEV
+( 0x07cf, 0x1001, 0x1000, 0x9999,
+
+1078 
+USB_SC_8070
+, 
+USB_PR_CB
+, 
+NULL
+,
+
+1079 
+US_FL_NEED_OVERRIDE
+ | 
+US_FL_FIX_INQUIRY
+ ),
+
+1082 
+	`UNUSUAL_DEV
+( 0x07cf, 0x1167, 0x0100, 0x0100,
+
+1085 
+USB_SC_8070
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 0),
+
+1088 
+	`UNUSUAL_DEV
+( 0x0839, 0x000a, 0x0001, 0x0001,
+
+1091 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1092 
+US_FL_FIX_INQUIRY
+),
+
+1095 
+	`UNUSUAL_DEV
+( 0x0840, 0x0082, 0x0001, 0x0001,
+
+1098 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1099 
+US_FL_FIX_CAPACITY
+),
+
+1102 
+	`UNUSUAL_DEV
+( 0x0840, 0x0084, 0x0001, 0x0001,
+
+1105 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1106 
+US_FL_FIX_CAPACITY
+),
+
+1109 
+	`UNUSUAL_DEV
+( 0x0840, 0x0085, 0x0001, 0x0001,
+
+1112 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1113 
+US_FL_FIX_CAPACITY
+),
+
+1116 
+	`UNUSUAL_DEV
+( 0x084b, 0xa001, 0x0000, 0x9999,
+
+1119 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_euscsi_öô
+,
+
+1120 
+US_FL_SCM_MULT_TARG
+ ),
+
+1128 
+	`UNUSUAL_DEV
+( 0x084d, 0x0011, 0x0110, 0x0110,
+
+1131 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1132 
+US_FL_BULK32
+),
+
+1138 
+	`UNUSUAL_DEV
+( 0x0851, 0x1542, 0x0002, 0x0002,
+
+1141 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 0),
+
+1148 
+	`UNUSUAL_DEV
+( 0x0851, 0x1543, 0x0200, 0x0200,
+
+1151 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1152 
+US_FL_NOT_LOCKABLE
+),
+
+1154 
+	`UNUSUAL_DEV
+( 0x085a, 0x0026, 0x0100, 0x0133,
+
+1157 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_euscsi_öô
+,
+
+1158 
+US_FL_SCM_MULT_TARG
+ ),
+
+1160 
+	`UNUSUAL_DEV
+( 0x085a, 0x0028, 0x0100, 0x0133,
+
+1163 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_euscsi_öô
+,
+
+1164 
+US_FL_SCM_MULT_TARG
+ ),
+
+1167 
+	`UNUSUAL_DEV
+( 0x08bd, 0x1100, 0x0000, 0x0000,
+
+1170 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1171 
+US_FL_SINGLE_LUN
+),
+
+1176 
+	`UNUSUAL_DEV
+( 0x08ca, 0x3103, 0x0100, 0x0100,
+
+1179 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1180 
+US_FL_IGNORE_RESIDUE
+),
+
+1187 
+	`UNUSUAL_DEV
+( 0x090a, 0x1001, 0x0100, 0x0100,
+
+1190 
+USB_SC_DEVICE
+, 
+USB_PR_BULK
+, 
+NULL
+,
+
+1191 
+US_FL_NEED_OVERRIDE
+ ),
+
+1196 
+	`UNUSUAL_DEV
+( 0x090a, 0x1050, 0x0100, 0x0100,
+
+1199 
+USB_SC_UFI
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1203 
+	`UNUSUAL_DEV
+( 0x090a, 0x1200, 0x0000, 0x9999,
+
+1206 
+USB_SC_RBC
+, 
+USB_PR_BULK
+, 
+NULL
+,
+
+1210 
+	`UNUSUAL_DEV
+( 0x090c, 0x1132, 0x0000, 0xffff,
+
+1213 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1214 
+US_FL_FIX_CAPACITY
+ ),
+
+1220 
+	`UNUSUAL_DEV
+( 0x090c, 0x6000, 0x0100, 0x0100,
+
+1223 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1224 
+US_FL_INITIAL_READ10
+ ),
+
+1233 
+	`UNUSUAL_DEV
+( 0x0a17, 0x0004, 0x1000, 0x1000,
+
+1236 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1237 
+US_FL_FIX_INQUIRY
+ ),
+
+1241 
+	`UNUSUAL_DEV
+( 0x0ace, 0x2011, 0x0101, 0x0101,
+
+1244 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1245 
+US_FL_IGNORE_DEVICE
+ ),
+
+1247 
+	`UNUSUAL_DEV
+( 0x0ace, 0x20ff, 0x0101, 0x0101,
+
+1250 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1251 
+US_FL_IGNORE_DEVICE
+ ),
+
+1259 
+	`UNUSUAL_DEV
+( 0x0af0, 0x6971, 0x0000, 0x9999,
+
+1262 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+›ti⁄_ms_öô
+,
+
+1269 
+	`UNUSUAL_DEV
+( 0x0af0, 0x7401, 0x0000, 0x0000,
+
+1272 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1279 
+	`UNUSUAL_DEV
+( 0x0af0, 0x7501, 0x0000, 0x0000,
+
+1282 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1285 
+	`UNUSUAL_DEV
+( 0x0af0, 0x7701, 0x0000, 0x0000,
+
+1288 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1291 
+	`UNUSUAL_DEV
+( 0x0af0, 0x7706, 0x0000, 0x0000,
+
+1294 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1297 
+	`UNUSUAL_DEV
+( 0x0af0, 0x7901, 0x0000, 0x0000,
+
+1300 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1303 
+	`UNUSUAL_DEV
+( 0x0af0, 0x7A01, 0x0000, 0x0000,
+
+1306 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1309 
+	`UNUSUAL_DEV
+( 0x0af0, 0x7A05, 0x0000, 0x0000,
+
+1312 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1315 
+	`UNUSUAL_DEV
+( 0x0af0, 0x8300, 0x0000, 0x0000,
+
+1318 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1321 
+	`UNUSUAL_DEV
+( 0x0af0, 0x8302, 0x0000, 0x0000,
+
+1324 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1327 
+	`UNUSUAL_DEV
+( 0x0af0, 0x8304, 0x0000, 0x0000,
+
+1330 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1333 
+	`UNUSUAL_DEV
+( 0x0af0, 0xc100, 0x0000, 0x0000,
+
+1336 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1339 
+	`UNUSUAL_DEV
+( 0x0af0, 0xd057, 0x0000, 0x0000,
+
+1342 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1345 
+	`UNUSUAL_DEV
+( 0x0af0, 0xd058, 0x0000, 0x0000,
+
+1348 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1351 
+	`UNUSUAL_DEV
+( 0x0af0, 0xd157, 0x0000, 0x0000,
+
+1354 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1357 
+	`UNUSUAL_DEV
+( 0x0af0, 0xd257, 0x0000, 0x0000,
+
+1360 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1363 
+	`UNUSUAL_DEV
+( 0x0af0, 0xd357, 0x0000, 0x0000,
+
+1366 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1370 
+	`UNUSUAL_DEV
+(0x0bc2, 0x2300, 0x0000, 0x9999,
+
+1373 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 
+US_FL_WRITE_CACHE
+),
+
+1376 
+	`UNUSUAL_DEV
+( 0x0bc2, 0x3010, 0x0000, 0x0000,
+
+1379 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1380 
+US_FL_SANE_SENSE
+ ),
+
+1382 
+	`UNUSUAL_DEV
+( 0x0d49, 0x7310, 0x0000, 0x9999,
+
+1385 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1386 
+US_FL_SANE_SENSE
+),
+
+1392 
+	`UNUSUAL_DEV
+( 0x0c45, 0x1060, 0x0100, 0x0100,
+
+1395 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1396 
+US_FL_SINGLE_LUN
+ ),
+
+1399 
+	`UNUSUAL_DEV
+( 0x0d96, 0x410a, 0x0001, 0xffff,
+
+1402 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1403 
+US_FL_FIX_INQUIRY
+),
+
+1410 
+	`UNUSUAL_DEV
+( 0x0d96, 0x5200, 0x0001, 0x0200,
+
+1413 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 
+US_FL_FIX_INQUIRY
+),
+
+1416 
+	`UNUSUAL_DEV
+( 0x0dc4, 0x0073, 0x0000, 0x0000,
+
+1419 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1420 
+US_FL_FIX_CAPACITY
+),
+
+1427 
+	`UNUSUAL_DEV
+( 0x0dd8, 0x1060, 0x0000, 0xffff,
+
+1430 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1431 
+US_FL_FIX_INQUIRY
+ ),
+
+1435 
+	`UNUSUAL_DEV
+( 0x0dd8, 0xd202, 0x0000, 0x9999,
+
+1438 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1439 
+US_FL_IGNORE_RESIDUE
+ ),
+
+1444 
+	`UNUSUAL_DEV
+( 0x0dda, 0x0001, 0x0012, 0x0012,
+
+1447 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1448 
+US_FL_IGNORE_RESIDUE
+ ),
+
+1451 
+	`UNUSUAL_DEV
+( 0x0dda, 0x0301, 0x0012, 0x0012,
+
+1454 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1455 
+US_FL_IGNORE_RESIDUE
+ ),
+
+1458 
+	`UNUSUAL_DEV
+( 0x0e21, 0x0520, 0x0100, 0x0100,
+
+1461 
+USB_SC_DEVICE
+, 
+USB_PR_BULK
+, 
+NULL
+,
+
+1462 
+US_FL_NEED_OVERRIDE
+ ),
+
+1465 
+	`UNUSUAL_DEV
+( 0x0ed1, 0x6660, 0x0100, 0x0300,
+
+1468 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1469 
+US_FL_FIX_INQUIRY
+ ),
+
+1473 
+	`UNUSUAL_DEV
+( 0x0ea0, 0x2168, 0x0110, 0x0110,
+
+1476 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1477 
+US_FL_IGNORE_RESIDUE
+ ),
+
+1480 
+	`UNUSUAL_DEV
+( 0x0ea0, 0x6828, 0x0110, 0x0110,
+
+1483 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1484 
+US_FL_IGNORE_RESIDUE
+ ),
+
+1488 
+	`UNUSUAL_DEV
+( 0x0ed1, 0x7636, 0x0103, 0x0103,
+
+1491 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1492 
+US_FL_IGNORE_RESIDUE
+ | 
+US_FL_GO_SLOW
+ | 
+US_FL_MAX_SECTORS_64
+),
+
+1499 
+	`UNUSUAL_DEV
+( 0x0f19, 0x0103, 0x0100, 0x0100,
+
+1502 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1503 
+US_FL_IGNORE_RESIDUE
+ ),
+
+1509 
+	`UNUSUAL_DEV
+( 0x0f19, 0x0105, 0x0100, 0x0100,
+
+1512 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1513 
+US_FL_IGNORE_RESIDUE
+ ),
+
+1516 
+	`UNUSUAL_DEV
+( 0x0f88, 0x042e, 0x0100, 0x0100,
+
+1519 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1520 
+US_FL_FIX_CAPACITY
+ ),
+
+1523 
+	`UNUSUAL_DEV
+( 0x0fca, 0x8004, 0x0201, 0x0201,
+
+1526 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1527 
+US_FL_MAX_SECTORS_64
+ ),
+
+1530 
+	`UNUSUAL_DEV
+( 0x0fce, 0xd008, 0x0000, 0x0000,
+
+1533 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1534 
+US_FL_NO_WP_DETECT
+ ),
+
+1537 
+	`UNUSUAL_DEV
+( 0x0fce, 0xd0e1, 0x0000, 0x0000,
+
+1540 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1541 
+US_FL_IGNORE_DEVICE
+),
+
+1545 
+	`UNUSUAL_DEV
+( 0x0fce, 0xe030, 0x0000, 0x0000,
+
+1548 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1549 
+US_FL_FIX_CAPACITY
+ | 
+US_FL_IGNORE_RESIDUE
+ ),
+
+1552 
+	`UNUSUAL_DEV
+( 0x0fce, 0xe031, 0x0000, 0x0000,
+
+1555 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1556 
+US_FL_IGNORE_RESIDUE
+ | 
+US_FL_FIX_CAPACITY
+ ),
+
+1559 
+	`UNUSUAL_DEV
+( 0x0fce, 0xe092, 0x0000, 0x0000,
+
+1562 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1563 
+US_FL_IGNORE_RESIDUE
+ ),
+
+1571 
+	`UNUSUAL_DEV
+( 0x1019, 0x0c55, 0x0000, 0x0110,
+
+1574 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_u¸61s2b_öô
+,
+
+1577 
+	`UNUSUAL_DEV
+( 0x1058, 0x0704, 0x0000, 0x9999,
+
+1580 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1581 
+US_FL_SANE_SENSE
+),
+
+1584 
+	`UNUSUAL_DEV
+(0x1058, 0x070a, 0x0000, 0x9999,
+
+1587 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 
+US_FL_WRITE_CACHE
+),
+
+1592 
+	`UNUSUAL_DEV
+( 0x10d6, 0x2200, 0x0100, 0x0100,
+
+1595 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1601 
+	`UNUSUAL_DEV
+( 0x1186, 0x3e04, 0x0000, 0x0000,
+
+1604 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+›ti⁄_ms_öô
+, 
+US_FL_IGNORE_DEVICE
+),
+
+1611 
+	`UNUSUAL_DEV
+( 0x1199, 0x0fff, 0x0000, 0x9999,
+
+1614 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+sõºa_ms_öô
+,
+
+1621 
+	`UNUSUAL_DEV
+( 0x1210, 0x0003, 0x0100, 0x0100,
+
+1624 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1625 
+US_FL_IGNORE_RESIDUE
+ ),
+
+1630 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1001, 0x0000, 0x0000,
+
+1633 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1635 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1003, 0x0000, 0x0000,
+
+1638 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1640 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1004, 0x0000, 0x0000,
+
+1643 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1645 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1401, 0x0000, 0x0000,
+
+1648 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1650 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1402, 0x0000, 0x0000,
+
+1653 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1655 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1403, 0x0000, 0x0000,
+
+1658 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1660 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1404, 0x0000, 0x0000,
+
+1663 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1665 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1405, 0x0000, 0x0000,
+
+1668 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1670 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1406, 0x0000, 0x0000,
+
+1673 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1675 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1407, 0x0000, 0x0000,
+
+1678 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1680 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1408, 0x0000, 0x0000,
+
+1683 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1685 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1409, 0x0000, 0x0000,
+
+1688 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1690 
+	`UNUSUAL_DEV
+( 0x12d1, 0x140A, 0x0000, 0x0000,
+
+1693 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1695 
+	`UNUSUAL_DEV
+( 0x12d1, 0x140B, 0x0000, 0x0000,
+
+1698 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1700 
+	`UNUSUAL_DEV
+( 0x12d1, 0x140C, 0x0000, 0x0000,
+
+1703 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1705 
+	`UNUSUAL_DEV
+( 0x12d1, 0x140D, 0x0000, 0x0000,
+
+1708 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1710 
+	`UNUSUAL_DEV
+( 0x12d1, 0x140E, 0x0000, 0x0000,
+
+1713 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1715 
+	`UNUSUAL_DEV
+( 0x12d1, 0x140F, 0x0000, 0x0000,
+
+1718 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1720 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1410, 0x0000, 0x0000,
+
+1723 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1725 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1411, 0x0000, 0x0000,
+
+1728 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1730 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1412, 0x0000, 0x0000,
+
+1733 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1735 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1413, 0x0000, 0x0000,
+
+1738 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1740 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1414, 0x0000, 0x0000,
+
+1743 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1745 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1415, 0x0000, 0x0000,
+
+1748 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1750 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1416, 0x0000, 0x0000,
+
+1753 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1755 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1417, 0x0000, 0x0000,
+
+1758 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1760 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1418, 0x0000, 0x0000,
+
+1763 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1765 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1419, 0x0000, 0x0000,
+
+1768 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1770 
+	`UNUSUAL_DEV
+( 0x12d1, 0x141A, 0x0000, 0x0000,
+
+1773 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1775 
+	`UNUSUAL_DEV
+( 0x12d1, 0x141B, 0x0000, 0x0000,
+
+1778 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1780 
+	`UNUSUAL_DEV
+( 0x12d1, 0x141C, 0x0000, 0x0000,
+
+1783 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1785 
+	`UNUSUAL_DEV
+( 0x12d1, 0x141D, 0x0000, 0x0000,
+
+1788 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1790 
+	`UNUSUAL_DEV
+( 0x12d1, 0x141E, 0x0000, 0x0000,
+
+1793 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1795 
+	`UNUSUAL_DEV
+( 0x12d1, 0x141F, 0x0000, 0x0000,
+
+1798 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1800 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1420, 0x0000, 0x0000,
+
+1803 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1805 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1421, 0x0000, 0x0000,
+
+1808 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1810 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1422, 0x0000, 0x0000,
+
+1813 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1815 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1423, 0x0000, 0x0000,
+
+1818 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1820 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1424, 0x0000, 0x0000,
+
+1823 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1825 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1425, 0x0000, 0x0000,
+
+1828 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1830 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1426, 0x0000, 0x0000,
+
+1833 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1835 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1427, 0x0000, 0x0000,
+
+1838 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1840 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1428, 0x0000, 0x0000,
+
+1843 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1845 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1429, 0x0000, 0x0000,
+
+1848 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1850 
+	`UNUSUAL_DEV
+( 0x12d1, 0x142A, 0x0000, 0x0000,
+
+1853 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1855 
+	`UNUSUAL_DEV
+( 0x12d1, 0x142B, 0x0000, 0x0000,
+
+1858 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1860 
+	`UNUSUAL_DEV
+( 0x12d1, 0x142C, 0x0000, 0x0000,
+
+1863 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1865 
+	`UNUSUAL_DEV
+( 0x12d1, 0x142D, 0x0000, 0x0000,
+
+1868 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1870 
+	`UNUSUAL_DEV
+( 0x12d1, 0x142E, 0x0000, 0x0000,
+
+1873 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1875 
+	`UNUSUAL_DEV
+( 0x12d1, 0x142F, 0x0000, 0x0000,
+
+1878 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1880 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1430, 0x0000, 0x0000,
+
+1883 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1885 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1431, 0x0000, 0x0000,
+
+1888 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1890 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1432, 0x0000, 0x0000,
+
+1893 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1895 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1433, 0x0000, 0x0000,
+
+1898 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1900 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1434, 0x0000, 0x0000,
+
+1903 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1905 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1435, 0x0000, 0x0000,
+
+1908 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1910 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1436, 0x0000, 0x0000,
+
+1913 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1915 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1437, 0x0000, 0x0000,
+
+1918 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1920 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1438, 0x0000, 0x0000,
+
+1923 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1925 
+	`UNUSUAL_DEV
+( 0x12d1, 0x1439, 0x0000, 0x0000,
+
+1928 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1930 
+	`UNUSUAL_DEV
+( 0x12d1, 0x143A, 0x0000, 0x0000,
+
+1933 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1935 
+	`UNUSUAL_DEV
+( 0x12d1, 0x143B, 0x0000, 0x0000,
+
+1938 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1940 
+	`UNUSUAL_DEV
+( 0x12d1, 0x143C, 0x0000, 0x0000,
+
+1943 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1945 
+	`UNUSUAL_DEV
+( 0x12d1, 0x143D, 0x0000, 0x0000,
+
+1948 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1950 
+	`UNUSUAL_DEV
+( 0x12d1, 0x143E, 0x0000, 0x0000,
+
+1953 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1955 
+	`UNUSUAL_DEV
+( 0x12d1, 0x143F, 0x0000, 0x0000,
+
+1958 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_huawei_e220_öô
+,
+
+1962 
+	`UNUSUAL_DEV
+( 0x132b, 0x000b, 0x0001, 0x0001,
+
+1965 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1969 
+	`UNUSUAL_DEV
+( 0x1370, 0x6828, 0x0110, 0x0110,
+
+1972 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1973 
+US_FL_IGNORE_RESIDUE
+ ),
+
+1976 
+	`UNUSUAL_DEV
+( 0x13fe, 0x3600, 0x0100, 0x0100,
+
+1979 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1980 
+US_FL_BULK_IGNORE_TAG
+ ),
+
+1983 
+	`UNUSUAL_DEV
+( 0x14cd, 0x6600, 0x0201, 0x0201,
+
+1986 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1987 
+US_FL_IGNORE_RESIDUE
+ ),
+
+1990 
+	`UNUSUAL_DEV
+( 0x152d, 0x0567, 0x0114, 0x0116,
+
+1993 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+1994 
+US_FL_BROKEN_FUA
+ ),
+
+1999 
+	`UNUSUAL_DEV
+( 0x152d, 0x2329, 0x0100, 0x0100,
+
+2002 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2003 
+US_FL_IGNORE_RESIDUE
+ | 
+US_FL_SANE_SENSE
+ ),
+
+2006 
+	`UNUSUAL_DEV
+( 0x152d, 0x2566, 0x0114, 0x0114,
+
+2009 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2010 
+US_FL_BROKEN_FUA
+ ),
+
+2014 
+	`UNUSUAL_DEV
+( 0x1645, 0x0007, 0x0100, 0x0133,
+
+2017 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_euscsi_öô
+,
+
+2018 
+US_FL_SCM_MULT_TARG
+ ),
+
+2022 
+	`UNUSUAL_DEV
+( 0x1652, 0x6600, 0x0201, 0x0201,
+
+2025 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2026 
+US_FL_IGNORE_RESIDUE
+ ),
+
+2029 
+	`UNUSUAL_DEV
+( 0x174c, 0x55aa, 0x0100, 0x0100,
+
+2032 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2033 
+US_FL_NEEDS_CAP16
+),
+
+2036 
+	`UNUSUAL_DEV
+( 0x177f, 0x0400, 0x0000, 0x0000,
+
+2039 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2040 
+US_FL_BULK_IGNORE_TAG
+ | 
+US_FL_MAX_SECTORS_64
+ ),
+
+2042 
+	`UNUSUAL_DEV
+( 0x1822, 0x0001, 0x0000, 0x9999,
+
+2045 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_euscsi_öô
+,
+
+2046 
+US_FL_SCM_MULT_TARG
+ ),
+
+2052 
+	`UNUSUAL_DEV
+( 0x1908, 0x1315, 0x0000, 0x0000,
+
+2055 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2056 
+US_FL_BAD_SENSE
+ ),
+
+2057 
+	`UNUSUAL_DEV
+( 0x1908, 0x1320, 0x0000, 0x0000,
+
+2060 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2061 
+US_FL_BAD_SENSE
+ ),
+
+2062 
+	`UNUSUAL_DEV
+( 0x1908, 0x3335, 0x0200, 0x0200,
+
+2065 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2066 
+US_FL_NO_READ_DISC_INFO
+ ),
+
+2074 
+	`UNUSUAL_DEV
+( 0x19d2, 0x1225, 0x0000, 0xffff,
+
+2077 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2078 
+US_FL_SINGLE_LUN
+ ),
+
+2083 
+	`UNUSUAL_DEV
+( 0x1b1c, 0x1ab5, 0x0200, 0x0200,
+
+2086 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2087 
+US_FL_INITIAL_READ10
+ ),
+
+2092 
+	`UNUSUAL_DEV
+( 0x1e68, 0x001b, 0x0000, 0x0000,
+
+2095 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2096 
+US_FL_IGNORE_RESIDUE
+ | 
+US_FL_SANE_SENSE
+ ),
+
+2099 
+	`UNUSUAL_DEV
+( 0x1e74, 0x4621, 0x0000, 0x0000,
+
+2102 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2103 
+US_FL_BULK_IGNORE_TAG
+ | 
+US_FL_MAX_SECTORS_64
+ ),
+
+2106 
+	`UNUSUAL_DEV
+( 0x2027, 0xa001, 0x0000, 0x9999,
+
+2109 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+usb_°‹_euscsi_öô
+,
+
+2110 
+US_FL_SCM_MULT_TARG
+ ),
+
+2112 
+	`UNUSUAL_DEV
+( 0x2116, 0x0320, 0x0001, 0x0001,
+
+2115 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2116 
+US_FL_FIX_CAPACITY
+),
+
+2121 
+	`UNUSUAL_DEV
+( 0x22b8, 0x3010, 0x0001, 0x0001,
+
+2124 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2125 
+US_FL_FIX_CAPACITY
+ | 
+US_FL_IGNORE_RESIDUE
+ ),
+
+2132 
+	`UNUSUAL_DEV
+( 0x22b8, 0x6426, 0x0101, 0x0101,
+
+2135 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2136 
+US_FL_FIX_INQUIRY
+ | 
+US_FL_FIX_CAPACITY
+ | 
+US_FL_BULK_IGNORE_TAG
+),
+
+2139 
+	`UNUSUAL_DEV
+( 0x2735, 0x100b, 0x0000, 0x9999,
+
+2142 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2143 
+US_FL_GO_SLOW
+ ),
+
+2148 
+	`UNUSUAL_DEV
+( 0x3340, 0xffff, 0x0000, 0x0000,
+
+2151 
+USB_SC_DEVICE
+,
+USB_PR_DEVICE
+,
+NULL
+,
+
+2152 
+US_FL_MAX_SECTORS_64
+ ),
+
+2155 
+	`UNUSUAL_DEV
+( 0x4102, 0x1020, 0x0100, 0x0100,
+
+2158 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2159 
+US_FL_IGNORE_RESIDUE
+ ),
+
+2162 
+	`UNUSUAL_DEV
+( 0x4102, 0x1059, 0x0000, 0x0000,
+
+2165 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2166 
+US_FL_MAX_SECTORS_64
+ ),
+
+2172 
+	`UNUSUAL_DEV
+( 0x4146, 0xba01, 0x0100, 0x0100,
+
+2175 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 
+US_FL_NOT_LOCKABLE
+ ),
+
+2181 
+	`UNUSUAL_DEV
+( 0xc251, 0x4003, 0x0100, 0x0100,
+
+2184 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2185 
+US_FL_NOT_LOCKABLE
+),
+
+2188 
+	`UNUSUAL_DEV
+( 0xed06, 0x4500, 0x0001, 0x0001,
+
+2191 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+2192 
+US_FL_CAPACITY_HEURISTICS
+),
+
+2195 
+	`UNUSUAL_DEV
+( 0xed10, 0x7636, 0x0001, 0x0001,
+
+2198 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+, 
+US_FL_NOT_LOCKABLE
+ ),
+
+2201 #i‡
+	`IS_ENABLED
+(
+CONFIG_USB_UAS
+)
+
+2202 
+	~"unusuÆ_uas.h
+"
+
+2206 
+	`USUAL_DEV
+(
+USB_SC_RBC
+, 
+USB_PR_CB
+),
+
+2207 
+	`USUAL_DEV
+(
+USB_SC_8020
+, 
+USB_PR_CB
+),
+
+2208 
+	`USUAL_DEV
+(
+USB_SC_QIC
+, 
+USB_PR_CB
+),
+
+2209 
+	`USUAL_DEV
+(
+USB_SC_UFI
+, 
+USB_PR_CB
+),
+
+2210 
+	`USUAL_DEV
+(
+USB_SC_8070
+, 
+USB_PR_CB
+),
+
+2211 
+	`USUAL_DEV
+(
+USB_SC_SCSI
+, 
+USB_PR_CB
+),
+
+2214 
+	`USUAL_DEV
+(
+USB_SC_RBC
+, 
+USB_PR_CBI
+),
+
+2215 
+	`USUAL_DEV
+(
+USB_SC_8020
+, 
+USB_PR_CBI
+),
+
+2216 
+	`USUAL_DEV
+(
+USB_SC_QIC
+, 
+USB_PR_CBI
+),
+
+2217 
+	`USUAL_DEV
+(
+USB_SC_UFI
+, 
+USB_PR_CBI
+),
+
+2218 
+	`USUAL_DEV
+(
+USB_SC_8070
+, 
+USB_PR_CBI
+),
+
+2219 
+	`USUAL_DEV
+(
+USB_SC_SCSI
+, 
+USB_PR_CBI
+),
+
+2222 
+	`USUAL_DEV
+(
+USB_SC_RBC
+, 
+USB_PR_BULK
+),
+
+2223 
+	`USUAL_DEV
+(
+USB_SC_8020
+, 
+USB_PR_BULK
+),
+
+2224 
+	`USUAL_DEV
+(
+USB_SC_QIC
+, 
+USB_PR_BULK
+),
+
+2225 
+	`USUAL_DEV
+(
+USB_SC_UFI
+, 
+USB_PR_BULK
+),
+
+2226 
+	`USUAL_DEV
+(
+USB_SC_8070
+, 
+USB_PR_BULK
+),
+
+2227 
+	`USUAL_DEV
+(
+USB_SC_SCSI
+, 
+USB_PR_BULK
+),
+
+	@unusual_uas.h
+
+47 
+UNUSUAL_DEV
+(0x0984, 0x0301, 0x0128, 0x0128,
+
+50 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+51 
+US_FL_IGNORE_UAS
+),
+
+54 
+UNUSUAL_DEV
+(0x0bc2, 0x2312, 0x0000, 0x9999,
+
+57 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+58 
+US_FL_NO_ATA_1X
+),
+
+61 
+UNUSUAL_DEV
+(0x0bc2, 0x3312, 0x0000, 0x9999,
+
+64 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+65 
+US_FL_NO_ATA_1X
+),
+
+68 
+UNUSUAL_DEV
+(0x0bc2, 0x3320, 0x0000, 0x9999,
+
+71 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+72 
+US_FL_NO_ATA_1X
+),
+
+75 
+UNUSUAL_DEV
+(0x0bc2, 0xa003, 0x0000, 0x9999,
+
+78 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+79 
+US_FL_NO_ATA_1X
+),
+
+82 
+UNUSUAL_DEV
+(0x0bc2, 0xa013, 0x0000, 0x9999,
+
+85 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+86 
+US_FL_NO_ATA_1X
+),
+
+89 
+UNUSUAL_DEV
+(0x0bc2, 0xa0a4, 0x0000, 0x9999,
+
+92 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+93 
+US_FL_NO_ATA_1X
+),
+
+96 
+UNUSUAL_DEV
+(0x0bc2, 0xab20, 0x0000, 0x9999,
+
+99 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+100 
+US_FL_NO_ATA_1X
+),
+
+103 
+UNUSUAL_DEV
+(0x0bc2, 0xab21, 0x0000, 0x9999,
+
+106 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+107 
+US_FL_NO_ATA_1X
+),
+
+110 
+UNUSUAL_DEV
+(0x0bc2, 0xab2a, 0x0000, 0x9999,
+
+113 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+114 
+US_FL_NO_ATA_1X
+),
+
+117 
+UNUSUAL_DEV
+(0x13fd, 0x3940, 0x0000, 0x9999,
+
+120 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+121 
+US_FL_NO_ATA_1X
+),
+
+124 
+UNUSUAL_DEV
+(0x152d, 0x0539, 0x0000, 0x9999,
+
+127 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+128 
+US_FL_NO_REPORT_OPCODES
+),
+
+131 
+UNUSUAL_DEV
+(0x152d, 0x0567, 0x0000, 0x9999,
+
+134 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+135 
+US_FL_BROKEN_FUA
+ | 
+US_FL_NO_REPORT_OPCODES
+),
+
+138 
+UNUSUAL_DEV
+(0x2109, 0x0711, 0x0000, 0x9999,
+
+141 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+142 
+US_FL_NO_ATA_1X
+),
+
+145 
+UNUSUAL_DEV
+(0x357d, 0x7788, 0x0000, 0x9999,
+
+148 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+149 
+US_FL_NO_REPORT_OPCODES
+),
+
+152 
+UNUSUAL_DEV
+(0x4971, 0x1012, 0x0000, 0x9999,
+
+155 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+156 
+US_FL_IGNORE_UAS
+),
+
+159 
+UNUSUAL_DEV
+(0x4971, 0x8017, 0x0000, 0x9999,
+
+162 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+, 
+NULL
+,
+
+163 
+US_FL_NO_REPORT_OPCODES
+),
+
+	@usb.c
+
+48 #ifde‡
+CONFIG_USB_STORAGE_DEBUG
+
+
+49 
+	#DEBUG
+
+
+	)
+
+52 
+	~<löux/sched.h
+>
+
+53 
+	~<löux/î∫o.h
+>
+
+54 
+	~<löux/‰ìzî.h
+>
+
+55 
+	~<löux/moduÀ.h
+>
+
+56 
+	~<löux/¶ab.h
+>
+
+57 
+	~<löux/kthªad.h
+>
+
+58 
+	~<löux/muãx.h
+>
+
+59 
+	~<löux/ut¢ame.h
+>
+
+61 
+	~<scsi/scsi.h
+>
+
+62 
+	~<scsi/scsi_cmnd.h
+>
+
+63 
+	~<scsi/scsi_devi˚.h
+>
+
+65 
+	~"usb.h
+"
+
+66 
+	~"scsiglue.h
+"
+
+67 
+	~"å™•‹t.h
+"
+
+68 
+	~"¥Ÿocﬁ.h
+"
+
+69 
+	~"debug.h
+"
+
+75 #i‡
+IS_ENABLED
+(
+CONFIG_USB_UAS
+)
+
+80 
+MODULE_AUTHOR
+("Matthew Dharm <mdharm-usb@one-eyed-alien.net>");
+
+81 
+MODULE_DESCRIPTION
+("USB Mass Storage driver for Linux");
+
+82 
+MODULE_LICENSE
+("GPL");
+
+84 
+	gdñay_u£
+ = 1;
+
+85 
+moduÀ_∑øm
+(
+dñay_u£
+, 
+uöt
+, 
+S_IRUGO
+ | 
+S_IWUSR
+);
+
+86 
+MODULE_PARM_DESC
+(
+dñay_u£
+, "secondsÅo delay before usingáÇew device");
+
+88 
+	gquúks
+[128];
+
+89 
+moduÀ_∑øm_°rög
+(
+quúks
+, quúks, (quúks), 
+S_IRUGO
+ | 
+S_IWUSR
+);
+
+90 
+MODULE_PARM_DESC
+(
+quúks
+, "supplementalÜist of device IDsándÅheir quirks");
+
+107 
+	#UNUSUAL_DEV
+(
+idVíd‹
+, 
+idProdu˘
+, 
+bcdDevi˚Mö
+, 
+bcdDevi˚Max
+, \
+
+108 
+víd‹_«me
+, 
+¥odu˘_«me
+, 
+u£_¥Ÿocﬁ
+, 
+u£_å™•‹t
+, \
+
+109 
+öô_fun˘i⁄
+, 
+Fœgs
+) \
+
+111 .
+víd‹Name
+ = 
+víd‹_«me
+, \
+
+112 .
+¥odu˘Name
+ = 
+¥odu˘_«me
+, \
+
+113 .
+u£PrŸocﬁ
+ = 
+u£_¥Ÿocﬁ
+, \
+
+114 .
+u£Tøn•‹t
+ = 
+u£_å™•‹t
+, \
+
+115 .
+öôFun˘i⁄
+ = 
+öô_fun˘i⁄
+, \
+
+116 }
+
+	)
+
+118 
+	#COMPLIANT_DEV
+ 
+UNUSUAL_DEV
+
+
+	)
+
+120 
+	#USUAL_DEV
+(
+u£_¥Ÿocﬁ
+, 
+u£_å™•‹t
+) \
+
+122 .
+u£PrŸocﬁ
+ = 
+u£_¥Ÿocﬁ
+, \
+
+123 .
+u£Tøn•‹t
+ = 
+u£_å™•‹t
+, \
+
+124 }
+
+	)
+
+138 
+us_unusuÆ_dev
+ 
+	gus_unusuÆ_dev_li°
+[] = {
+
+143 
+us_unusuÆ_dev
+ 
+	gf‹_dy«mic_ids
+ =
+
+144 
+USUAL_DEV
+(
+USB_SC_SCSI
+, 
+USB_PR_BULK
+);
+
+146 #unde‡
+UNUSUAL_DEV
+
+
+147 #unde‡
+COMPLIANT_DEV
+
+
+148 #unde‡
+USUAL_DEV
+
+
+149 #unde‡
+UNUSUAL_VENDOR_INTF
+
+
+151 #ifde‡
+CONFIG_LOCKDEP
+
+
+153 
+lock_˛ass_key
+ 
+	gus_öãrÁ˚_key
+[
+USB_MAXINTERFACES
+];
+
+155 
+	$us_£t_lock_˛ass
+(
+muãx
+ *mutex,
+
+156 
+usb_öãrÁ˚
+ *
+ötf
+)
+
+158 
+usb_devi˚
+ *
+udev
+ = 
+	`öãrÁ˚_to_usbdev
+(
+ötf
+);
+
+159 
+usb_ho°_c⁄fig
+ *
+c⁄fig
+ = 
+udev
+->
+a˘c⁄fig
+;
+
+160 
+i
+;
+
+162 
+i
+ = 0; i < 
+c⁄fig
+->
+desc
+.
+bNumI¡îÁ˚s
+; i++) {
+
+163 i‡(
+c⁄fig
+->
+öãrÁ˚
+[
+i
+] =
+ötf
+)
+
+167 
+	`BUG_ON
+(
+i
+ =
+c⁄fig
+->
+desc
+.
+bNumI¡îÁ˚s
+);
+
+169 
+	`lockdï_£t_˛ass
+(
+muãx
+, &
+us_öãrÁ˚_key
+[
+i
+]);
+
+170 
+	}
+}
+
+174 
+	$us_£t_lock_˛ass
+(
+muãx
+ *mutex,
+
+175 
+usb_öãrÁ˚
+ *
+ötf
+)
+
+177 
+	}
+}
+
+181 #ifde‡
+CONFIG_PM
+
+
+183 
+	$usb_°‹_su•íd
+(
+usb_öãrÁ˚
+ *
+iÁ˚
+, 
+pm_mesßge_t
+ 
+mesßge
+)
+
+185 
+us_d©a
+ *
+us
+ = 
+	`usb_gë_ötfd©a
+(
+iÁ˚
+);
+
+188 
+	`muãx_lock
+(&
+us
+->
+dev_muãx
+);
+
+190 i‡(
+us
+->
+su•íd_ªsume_hook
+)
+
+191 (
+us
+->
+su•íd_ªsume_hook
+)(us, 
+US_SUSPEND
+);
+
+196 
+	`muãx_u∆ock
+(&
+us
+->
+dev_muãx
+);
+
+198 
+	}
+}
+
+199 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_su•íd
+);
+
+201 
+	$usb_°‹_ªsume
+(
+usb_öãrÁ˚
+ *
+iÁ˚
+)
+
+203 
+us_d©a
+ *
+us
+ = 
+	`usb_gë_ötfd©a
+(
+iÁ˚
+);
+
+205 
+	`muãx_lock
+(&
+us
+->
+dev_muãx
+);
+
+207 i‡(
+us
+->
+su•íd_ªsume_hook
+)
+
+208 (
+us
+->
+su•íd_ªsume_hook
+)(us, 
+US_RESUME
+);
+
+210 
+	`muãx_u∆ock
+(&
+us
+->
+dev_muãx
+);
+
+212 
+	}
+}
+
+213 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_ªsume
+);
+
+215 
+	$usb_°‹_ª£t_ªsume
+(
+usb_öãrÁ˚
+ *
+iÁ˚
+)
+
+217 
+us_d©a
+ *
+us
+ = 
+	`usb_gë_ötfd©a
+(
+iÁ˚
+);
+
+220 
+	`usb_°‹_ªp‹t_bus_ª£t
+(
+us
+);
+
+225 
+	}
+}
+
+226 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_ª£t_ªsume
+);
+
+235 
+	$usb_°‹_¥e_ª£t
+(
+usb_öãrÁ˚
+ *
+iÁ˚
+)
+
+237 
+us_d©a
+ *
+us
+ = 
+	`usb_gë_ötfd©a
+(
+iÁ˚
+);
+
+240 
+	`muãx_lock
+(&
+us
+->
+dev_muãx
+);
+
+242 
+	}
+}
+
+243 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_¥e_ª£t
+);
+
+245 
+	$usb_°‹_po°_ª£t
+(
+usb_öãrÁ˚
+ *
+iÁ˚
+)
+
+247 
+us_d©a
+ *
+us
+ = 
+	`usb_gë_ötfd©a
+(
+iÁ˚
+);
+
+250 
+	`usb_°‹_ªp‹t_bus_ª£t
+(
+us
+);
+
+255 
+	`muãx_u∆ock
+(&
+us
+->
+dev_muãx
+);
+
+257 
+	}
+}
+
+258 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_po°_ª£t
+);
+
+269 
+	$fûl_öquúy_ª•⁄£
+(
+us_d©a
+ *
+us
+, *
+d©a
+,
+
+270 
+d©a_Àn
+)
+
+272 i‡(
+d©a_Àn
+ < 36)
+
+275 
+	`mem£t
+(
+d©a
++8, ' ', 28);
+
+276 i‡(
+d©a
+[0]&0x20) {
+
+286 
+u16
+ 
+bcdDevi˚
+ = 
+	`À16_to_˝u
+(
+us
+->
+pusb_dev
+->
+des¸ùt‹
+.bcdDevice);
+
+287 
+n
+;
+
+289 
+n
+ = 
+	`°æí
+(
+us
+->
+unusuÆ_dev
+->
+víd‹Name
+);
+
+290 
+	`mem˝y
+(
+d©a
++8, 
+us
+->
+unusuÆ_dev
+->
+víd‹Name
+, 
+	`mö
+(8, 
+n
+));
+
+291 
+n
+ = 
+	`°æí
+(
+us
+->
+unusuÆ_dev
+->
+¥odu˘Name
+);
+
+292 
+	`mem˝y
+(
+d©a
++16, 
+us
+->
+unusuÆ_dev
+->
+¥odu˘Name
+, 
+	`mö
+(16, 
+n
+));
+
+294 
+d©a
+[32] = 0x30 + ((
+bcdDevi˚
+>>12) & 0x0F);
+
+295 
+d©a
+[33] = 0x30 + ((
+bcdDevi˚
+>>8) & 0x0F);
+
+296 
+d©a
+[34] = 0x30 + ((
+bcdDevi˚
+>>4) & 0x0F);
+
+297 
+d©a
+[35] = 0x30 + ((
+bcdDevi˚
+) & 0x0F);
+
+301 
+	}
+}
+
+302 
+EXPORT_SYMBOL_GPL
+(
+fûl_öquúy_ª•⁄£
+);
+
+304 
+	$usb_°‹_c⁄åﬁ_thªad
+(* 
+__us
+)
+
+306 
+us_d©a
+ *
+us
+ = (us_d©®*)
+__us
+;
+
+307 
+Scsi_Ho°
+ *
+ho°
+ = 
+	`us_to_ho°
+(
+us
+);
+
+310 
+	`usb_°‹_dbg
+(
+us
+, "***Åhread sleeping\n");
+
+311 i‡(
+	`waô_f‹_com∂ëi⁄_öãºu±ibÀ
+(&
+us
+->
+cmnd_ªady
+))
+
+314 
+	`usb_°‹_dbg
+(
+us
+, "***Åhreadáwakened\n");
+
+317 
+	`muãx_lock
+(&(
+us
+->
+dev_muãx
+));
+
+320 
+	`scsi_lock
+(
+ho°
+);
+
+323 i‡(
+us
+->
+§b
+ =
+NULL
+) {
+
+324 
+	`scsi_u∆ock
+(
+ho°
+);
+
+325 
+	`muãx_u∆ock
+(&
+us
+->
+dev_muãx
+);
+
+326 
+	`usb_°‹_dbg
+(
+us
+, "--Éxiting\n");
+
+331 i‡(
+	`ã°_bô
+(
+US_FLIDX_TIMED_OUT
+, &
+us
+->
+dÊags
+)) {
+
+332 
+us
+->
+§b
+->
+ªsu…
+ = 
+DID_ABORT
+ << 16;
+
+333 
+SkùF‹Ab‹t
+;
+
+336 
+	`scsi_u∆ock
+(
+ho°
+);
+
+341 i‡(
+us
+->
+§b
+->
+sc_d©a_dúe˘i⁄
+ =
+DMA_BIDIRECTIONAL
+) {
+
+342 
+	`usb_°‹_dbg
+(
+us
+, "UNKNOWN data direction\n");
+
+343 
+us
+->
+§b
+->
+ªsu…
+ = 
+DID_ERROR
+ << 16;
+
+349 i‡(
+us
+->
+§b
+->
+devi˚
+->
+id
+ &&
+
+350 !(
+us
+->
+fÊags
+ & 
+US_FL_SCM_MULT_TARG
+)) {
+
+351 
+	`usb_°‹_dbg
+(
+us
+, "BadÅargetÇumber (%d:%llu)\n",
+
+352 
+us
+->
+§b
+->
+devi˚
+->
+id
+,
+
+353 
+us
+->
+§b
+->
+devi˚
+->
+lun
+);
+
+354 
+us
+->
+§b
+->
+ªsu…
+ = 
+DID_BAD_TARGET
+ << 16;
+
+357 i‡(
+us
+->
+§b
+->
+devi˚
+->
+lun
+ > us->
+max_lun
+) {
+
+358 
+	`usb_°‹_dbg
+(
+us
+, "Bad LUN (%d:%llu)\n",
+
+359 
+us
+->
+§b
+->
+devi˚
+->
+id
+,
+
+360 
+us
+->
+§b
+->
+devi˚
+->
+lun
+);
+
+361 
+us
+->
+§b
+->
+ªsu…
+ = 
+DID_BAD_TARGET
+ << 16;
+
+366 i‡((
+us
+->
+§b
+->
+cmnd
+[0] =
+INQUIRY
+) &&
+
+367 (
+us
+->
+fÊags
+ & 
+US_FL_FIX_INQUIRY
+)) {
+
+368 
+d©a_±r
+[36] = {
+
+372 
+	`usb_°‹_dbg
+(
+us
+, "Faking INQUIRY command\n");
+
+374 
+us
+->
+§b
+->
+ªsu…
+ = 
+SAM_STAT_GOOD
+;
+
+379 
+	`US_DEBUG
+(
+	`usb_°‹_show_comm™d
+(
+us
+, us->
+§b
+));
+
+380 
+us
+->
+	`¥Ÿo_h™dÀr
+(us->
+§b
+, us);
+
+381 
+	`usb_m¨k_œ°_busy
+(
+us
+->
+pusb_dev
+);
+
+385 
+	`scsi_lock
+(
+ho°
+);
+
+388 i‡(
+us
+->
+§b
+->
+ªsu…
+ !
+DID_ABORT
+ << 16) {
+
+389 
+	`usb_°‹_dbg
+(
+us
+, "scsi cmd done,Ñesult=0x%x\n",
+
+390 
+us
+->
+§b
+->
+ªsu…
+);
+
+391 
+us
+->
+§b
+->
+	`scsi_d⁄e
+(us->srb);
+
+393 
+SkùF‹Ab‹t
+:
+
+394 
+	`usb_°‹_dbg
+(
+us
+, "scsi commandáborted\n");
+
+402 i‡(
+	`ã°_bô
+(
+US_FLIDX_TIMED_OUT
+, &
+us
+->
+dÊags
+)) {
+
+403 
+	`com∂ëe
+(&(
+us
+->
+nŸify
+));
+
+406 
+	`˛ór_bô
+(
+US_FLIDX_ABORTING
+, &
+us
+->
+dÊags
+);
+
+407 
+	`˛ór_bô
+(
+US_FLIDX_TIMED_OUT
+, &
+us
+->
+dÊags
+);
+
+411 
+us
+->
+§b
+ = 
+NULL
+;
+
+412 
+	`scsi_u∆ock
+(
+ho°
+);
+
+415 
+	`muãx_u∆ock
+(&
+us
+->
+dev_muãx
+);
+
+420 
+	`£t_cuºít_°©e
+(
+TASK_INTERRUPTIBLE
+);
+
+421 i‡(
+	`kthªad_should_°›
+())
+
+423 
+	`scheduÀ
+();
+
+425 
+	`__£t_cuºít_°©e
+(
+TASK_RUNNING
+);
+
+427 
+	}
+}
+
+434 
+	$assocüã_dev
+(
+us_d©a
+ *
+us
+, 
+usb_öãrÁ˚
+ *
+ötf
+)
+
+437 
+us
+->
+pusb_dev
+ = 
+	`öãrÁ˚_to_usbdev
+(
+ötf
+);
+
+438 
+us
+->
+pusb_ötf
+ = 
+ötf
+;
+
+439 
+us
+->
+i‚um
+ = 
+ötf
+->
+cur_Æt£âög
+->
+desc
+.
+bI¡îÁ˚Numbî
+;
+
+440 
+	`usb_°‹_dbg
+(
+us
+, "Vendor: 0x%04x, Product: 0x%04x, Revision: 0x%04x\n",
+
+441 
+	`À16_to_˝u
+(
+us
+->
+pusb_dev
+->
+des¸ùt‹
+.
+idVíd‹
+),
+
+442 
+	`À16_to_˝u
+(
+us
+->
+pusb_dev
+->
+des¸ùt‹
+.
+idProdu˘
+),
+
+443 
+	`À16_to_˝u
+(
+us
+->
+pusb_dev
+->
+des¸ùt‹
+.
+bcdDevi˚
+));
+
+444 
+	`usb_°‹_dbg
+(
+us
+, "Interface Subclass: 0x%02x, Protocol: 0x%02x\n",
+
+445 
+ötf
+->
+cur_Æt£âög
+->
+desc
+.
+bI¡îÁ˚SubCœss
+,
+
+446 
+ötf
+->
+cur_Æt£âög
+->
+desc
+.
+bI¡îÁ˚PrŸocﬁ
+);
+
+449 
+	`usb_£t_ötfd©a
+(
+ötf
+, 
+us
+);
+
+452 
+us
+->
+¸
+ = 
+	`kmÆloc
+((*us->¸), 
+GFP_KERNEL
+);
+
+453 i‡(!
+us
+->
+¸
+)
+
+454  -
+ENOMEM
+;
+
+456 
+us
+->
+iobuf
+ = 
+	`usb_Æloc_cohîít
+(us->
+pusb_dev
+, 
+US_IOBUF_SIZE
+,
+
+457 
+GFP_KERNEL
+, &
+us
+->
+iobuf_dma
+);
+
+458 i‡(!
+us
+->
+iobuf
+) {
+
+459 
+	`usb_°‹_dbg
+(
+us
+, "I/O bufferállocation failed\n");
+
+460  -
+ENOMEM
+;
+
+463 
+	}
+}
+
+466 
+	#TOLOWER
+(
+x
+Ë((xË| 0x20)
+
+	)
+
+469 
+	$usb_°‹_adju°_quúks
+(
+usb_devi˚
+ *
+udev
+, *
+fÊags
+)
+
+471 *
+p
+;
+
+472 
+u16
+ 
+vid
+ = 
+	`À16_to_˝u
+(
+udev
+->
+des¸ùt‹
+.
+idVíd‹
+);
+
+473 
+u16
+ 
+pid
+ = 
+	`À16_to_˝u
+(
+udev
+->
+des¸ùt‹
+.
+idProdu˘
+);
+
+474 
+f
+ = 0;
+
+475 
+mask
+ = (
+US_FL_SANE_SENSE
+ | 
+US_FL_BAD_SENSE
+ |
+
+476 
+US_FL_FIX_CAPACITY
+ | 
+US_FL_IGNORE_UAS
+ |
+
+477 
+US_FL_CAPACITY_HEURISTICS
+ | 
+US_FL_IGNORE_DEVICE
+ |
+
+478 
+US_FL_NOT_LOCKABLE
+ | 
+US_FL_MAX_SECTORS_64
+ |
+
+479 
+US_FL_CAPACITY_OK
+ | 
+US_FL_IGNORE_RESIDUE
+ |
+
+480 
+US_FL_SINGLE_LUN
+ | 
+US_FL_NO_WP_DETECT
+ |
+
+481 
+US_FL_NO_READ_DISC_INFO
+ | 
+US_FL_NO_READ_CAPACITY_16
+ |
+
+482 
+US_FL_INITIAL_READ10
+ | 
+US_FL_WRITE_CACHE
+ |
+
+483 
+US_FL_NO_ATA_1X
+ | 
+US_FL_NO_REPORT_OPCODES
+ |
+
+484 
+US_FL_MAX_SECTORS_240
+);
+
+486 
+p
+ = 
+quúks
+;
+
+487 *
+p
+) {
+
+489 i‡(
+vid
+ =
+	`sim∂e_°πoul
+(
+p
+, &p, 16) &&
+
+490 *
+p
+ == ':' &&
+
+491 
+pid
+ =
+	`sim∂e_°πoul
+(
+p
++1, &p, 16) &&
+
+492 *
+p
+ == ':')
+
+496 *
+p
+) {
+
+497 i‡(*
+p
+++ == ',')
+
+501 i‡(!*
+p
+)
+
+505 *++
+p
+ && *p != ',') {
+
+506 
+	`TOLOWER
+(*
+p
+)) {
+
+508 
+f
+ |
+US_FL_SANE_SENSE
+;
+
+511 
+f
+ |
+US_FL_BAD_SENSE
+;
+
+514 
+f
+ |
+US_FL_FIX_CAPACITY
+;
+
+517 
+f
+ |
+US_FL_NO_READ_DISC_INFO
+;
+
+520 
+f
+ |
+US_FL_NO_READ_CAPACITY_16
+;
+
+523 
+f
+ |
+US_FL_NO_REPORT_OPCODES
+;
+
+526 
+f
+ |
+US_FL_MAX_SECTORS_240
+;
+
+529 
+f
+ |
+US_FL_CAPACITY_HEURISTICS
+;
+
+532 
+f
+ |
+US_FL_IGNORE_DEVICE
+;
+
+535 
+f
+ |
+US_FL_NOT_LOCKABLE
+;
+
+538 
+f
+ |
+US_FL_MAX_SECTORS_64
+;
+
+541 
+f
+ |
+US_FL_INITIAL_READ10
+;
+
+544 
+f
+ |
+US_FL_CAPACITY_OK
+;
+
+547 
+f
+ |
+US_FL_WRITE_CACHE
+;
+
+550 
+f
+ |
+US_FL_IGNORE_RESIDUE
+;
+
+553 
+f
+ |
+US_FL_SINGLE_LUN
+;
+
+556 
+f
+ |
+US_FL_NO_ATA_1X
+;
+
+559 
+f
+ |
+US_FL_IGNORE_UAS
+;
+
+562 
+f
+ |
+US_FL_NO_WP_DETECT
+;
+
+567 *
+fÊags
+ = (*fÊag†& ~
+mask
+Ë| 
+f
+;
+
+568 
+	}
+}
+
+569 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_adju°_quúks
+);
+
+572 
+	$gë_devi˚_öfo
+(
+us_d©a
+ *
+us
+, c⁄° 
+usb_devi˚_id
+ *
+id
+,
+
+573 
+us_unusuÆ_dev
+ *
+unusuÆ_dev
+)
+
+575 
+usb_devi˚
+ *
+dev
+ = 
+us
+->
+pusb_dev
+;
+
+576 
+usb_öãrÁ˚_des¸ùt‹
+ *
+idesc
+ =
+
+577 &
+us
+->
+pusb_ötf
+->
+cur_Æt£âög
+->
+desc
+;
+
+578 
+devi˚
+ *
+pdev
+ = &
+us
+->
+pusb_ötf
+->
+dev
+;
+
+582 
+us
+->
+unusuÆ_dev
+ = unusual_dev;
+
+583 
+us
+->
+sub˛ass
+ = (
+unusuÆ_dev
+->
+u£PrŸocﬁ
+ =
+USB_SC_DEVICE
+) ?
+
+584 
+idesc
+->
+bI¡îÁ˚SubCœss
+ :
+
+585 
+unusuÆ_dev
+->
+u£PrŸocﬁ
+;
+
+586 
+us
+->
+¥Ÿocﬁ
+ = (
+unusuÆ_dev
+->
+u£Tøn•‹t
+ =
+USB_PR_DEVICE
+) ?
+
+587 
+idesc
+->
+bI¡îÁ˚PrŸocﬁ
+ :
+
+588 
+unusuÆ_dev
+->
+u£Tøn•‹t
+;
+
+590 
+	`¥_öfo
+("unusuÆ_dev->u£PrŸocﬁ: %d\n", 
+unusuÆ_dev
+->
+u£PrŸocﬁ
+);
+
+591 
+	`¥_öfo
+("unusuÆ_dev->u£Tøn•‹t: %d\n", 
+unusuÆ_dev
+->
+u£Tøn•‹t
+);
+
+593 
+	`¥_öfo
+("USB_SC_DEVICE: %d\tUSB_PR_DEVICE:%d\n", 
+USB_SC_DEVICE
+, 
+USB_PR_DEVICE
+);
+
+594 
+	`¥_öfo
+("us->sub˛ass: %d\tus->¥Ÿocﬁ: %d\n", 
+us
+->
+sub˛ass
+, us->
+¥Ÿocﬁ
+);
+
+596 
+us
+->
+fÊags
+ = 
+id
+->
+drivî_öfo
+;
+
+597 
+	`usb_°‹_adju°_quúks
+(
+us
+->
+pusb_dev
+, &us->
+fÊags
+);
+
+599 i‡(
+us
+->
+fÊags
+ & 
+US_FL_IGNORE_DEVICE
+) {
+
+600 
+	`dev_öfo
+(
+pdev
+, "device ignored\n");
+
+601  -
+ENODEV
+;
+
+608 i‡(
+dev
+->
+•ìd
+ !
+USB_SPEED_HIGH
+)
+
+609 
+us
+->
+fÊags
+ &~
+US_FL_GO_SLOW
+;
+
+611 i‡(
+us
+->
+fÊags
+)
+
+612 
+	`dev_öfo
+(
+pdev
+, "Quirks match for vid %04xÖid %04x: %lx\n",
+
+613 
+	`À16_to_˝u
+(
+dev
+->
+des¸ùt‹
+.
+idVíd‹
+),
+
+614 
+	`À16_to_˝u
+(
+dev
+->
+des¸ùt‹
+.
+idProdu˘
+),
+
+615 
+us
+->
+fÊags
+);
+
+622 i‡(
+id
+->
+idVíd‹
+ || id->
+idProdu˘
+) {
+
+623 c⁄° *
+msgs
+[3] = {
+
+627 
+usb_devi˚_des¸ùt‹
+ *
+ddesc
+ = &
+dev
+->
+des¸ùt‹
+;
+
+628 
+msg
+ = -1;
+
+630 i‡(
+unusuÆ_dev
+->
+u£PrŸocﬁ
+ !
+USB_SC_DEVICE
+ &&
+
+631 
+us
+->
+sub˛ass
+ =
+idesc
+->
+bI¡îÁ˚SubCœss
+)
+
+632 
+msg
+ += 1;
+
+633 i‡(
+unusuÆ_dev
+->
+u£Tøn•‹t
+ !
+USB_PR_DEVICE
+ &&
+
+634 
+us
+->
+¥Ÿocﬁ
+ =
+idesc
+->
+bI¡îÁ˚PrŸocﬁ
+)
+
+635 
+msg
+ += 2;
+
+636 i‡(
+msg
+ >0 && !(
+us
+->
+fÊags
+ & 
+US_FL_NEED_OVERRIDE
+))
+
+637 
+	`dev_nŸi˚
+(
+pdev
+, "This device "
+
+644 
+	`À16_to_˝u
+(
+ddesc
+->
+idVíd‹
+),
+
+645 
+	`À16_to_˝u
+(
+ddesc
+->
+idProdu˘
+),
+
+646 
+	`À16_to_˝u
+(
+ddesc
+->
+bcdDevi˚
+),
+
+647 
+idesc
+->
+bI¡îÁ˚SubCœss
+,
+
+648 
+idesc
+->
+bI¡îÁ˚PrŸocﬁ
+,
+
+649 
+msgs
+[
+msg
+],
+
+650 
+	`ut¢ame
+()->
+ªÀa£
+);
+
+654 
+	}
+}
+
+657 
+	$gë_å™•‹t
+(
+us_d©a
+ *
+us
+)
+
+659 
+us
+->
+¥Ÿocﬁ
+) {
+
+674 
+USB_PR_BULK
+:
+
+675 
+us
+->
+å™•‹t_«me
+ = "Bulk";
+
+676 
+us
+->
+å™•‹t
+ = 
+usb_°‹_Bulk_å™•‹t
+;
+
+677 
+us
+->
+å™•‹t_ª£t
+ = 
+usb_°‹_Bulk_ª£t
+;
+
+680 
+	}
+}
+
+683 
+	$gë_¥Ÿocﬁ
+(
+us_d©a
+ *
+us
+)
+
+685 
+us
+->
+sub˛ass
+) {
+
+709 
+USB_SC_SCSI
+:
+
+710 
+us
+->
+¥Ÿocﬁ_«me
+ = "Transparent SCSI";
+
+711 
+us
+->
+¥Ÿo_h™dÀr
+ = 
+usb_°‹_å™•¨ít_scsi_comm™d
+;
+
+719 
+	}
+}
+
+722 
+	$gë_pùes
+(
+us_d©a
+ *
+us
+)
+
+724 
+usb_ho°_öãrÁ˚
+ *
+Æt£âög
+ =
+
+725 
+us
+->
+pusb_ötf
+->
+cur_Æt£âög
+;
+
+726 
+i
+;
+
+727 
+usb_ídpoöt_des¸ùt‹
+ *
+ï
+;
+
+728 
+usb_ídpoöt_des¸ùt‹
+ *
+ï_ö
+ = 
+NULL
+;
+
+729 
+usb_ídpoöt_des¸ùt‹
+ *
+ï_out
+ = 
+NULL
+;
+
+730 
+usb_ídpoöt_des¸ùt‹
+ *
+ï_öt
+ = 
+NULL
+;
+
+738 
+i
+ = 0; i < 
+Æt£âög
+->
+desc
+.
+bNumEndpoöts
+; i++) {
+
+739 
+ï
+ = &
+Æt£âög
+->
+ídpoöt
+[
+i
+].
+desc
+;
+
+741 i‡(
+	`usb_ídpoöt_x„r_bulk
+(
+ï
+)) {
+
+742 i‡(
+	`usb_ídpoöt_dú_ö
+(
+ï
+)) {
+
+743 i‡(!
+ï_ö
+)
+
+744 
+ï_ö
+ = 
+ï
+;
+
+746 i‡(!
+ï_out
+)
+
+747 
+ï_out
+ = 
+ï
+;
+
+751 i‡(
+	`usb_ídpoöt_is_öt_ö
+(
+ï
+)) {
+
+752 i‡(!
+ï_öt
+)
+
+753 
+ï_öt
+ = 
+ï
+;
+
+757 i‡(!
+ï_ö
+ || !
+ï_out
+ || (
+us
+->
+¥Ÿocﬁ
+ =
+USB_PR_CBI
+ && !
+ï_öt
+)) {
+
+758 
+	`usb_°‹_dbg
+(
+us
+, "Endpoint sanity check failed! Rejecting dev.\n");
+
+759  -
+EIO
+;
+
+763 
+us
+->
+£nd_˘æ_pùe
+ = 
+	`usb_¢d˘æpùe
+(us->
+pusb_dev
+, 0);
+
+764 
+us
+->
+ªcv_˘æ_pùe
+ = 
+	`usb_rcv˘æpùe
+(us->
+pusb_dev
+, 0);
+
+765 
+us
+->
+£nd_bulk_pùe
+ = 
+	`usb_¢dbulkpùe
+(us->
+pusb_dev
+,
+
+766 
+	`usb_ídpoöt_num
+(
+ï_out
+));
+
+767 
+us
+->
+ªcv_bulk_pùe
+ = 
+	`usb_rcvbulkpùe
+(us->
+pusb_dev
+,
+
+768 
+	`usb_ídpoöt_num
+(
+ï_ö
+));
+
+769 i‡(
+ï_öt
+) {
+
+770 
+us
+->
+ªcv_öå_pùe
+ = 
+	`usb_rcvöçùe
+(us->
+pusb_dev
+,
+
+771 
+	`usb_ídpoöt_num
+(
+ï_öt
+));
+
+772 
+us
+->
+ï_bI¡îvÆ
+ = 
+ï_öt
+->
+bI¡îvÆ
+;
+
+775 
+	}
+}
+
+778 
+	$usb_°‹_acquúe_ªsour˚s
+(
+us_d©a
+ *
+us
+)
+
+780 
+p
+;
+
+781 
+èsk_°ru˘
+ *
+th
+;
+
+783 
+us
+->
+cuºít_urb
+ = 
+	`usb_Æloc_urb
+(0, 
+GFP_KERNEL
+);
+
+784 i‡(!
+us
+->
+cuºít_urb
+) {
+
+785 
+	`usb_°‹_dbg
+(
+us
+, "URBállocation failed\n");
+
+786  -
+ENOMEM
+;
+
+791 i‡(
+us
+->
+unusuÆ_dev
+->
+öôFun˘i⁄
+) {
+
+792 
+p
+ = 
+us
+->
+unusuÆ_dev
+->
+	`öôFun˘i⁄
+(us);
+
+793 i‡(
+p
+)
+
+794  
+p
+;
+
+798 
+th
+ = 
+	`kthªad_run
+(
+usb_°‹_c⁄åﬁ_thªad
+, 
+us
+, "usb-storage");
+
+799 i‡(
+	`IS_ERR
+(
+th
+)) {
+
+800 
+	`dev_w¨n
+(&
+us
+->
+pusb_ötf
+->
+dev
+,
+
+802  
+	`PTR_ERR
+(
+th
+);
+
+804 
+us
+->
+˘l_thªad
+ = 
+th
+;
+
+807 
+	}
+}
+
+810 
+	$usb_°‹_ªÀa£_ªsour˚s
+(
+us_d©a
+ *
+us
+)
+
+816 
+	`usb_°‹_dbg
+(
+us
+, "-- sendingÉxit commandÅoÅhread\n");
+
+817 
+	`com∂ëe
+(&
+us
+->
+cmnd_ªady
+);
+
+818 i‡(
+us
+->
+˘l_thªad
+)
+
+819 
+	`kthªad_°›
+(
+us
+->
+˘l_thªad
+);
+
+822 i‡(
+us
+->
+exåa_de°ru˘‹
+) {
+
+823 
+	`usb_°‹_dbg
+(
+us
+, "-- callingÉxtra_destructor()\n");
+
+824 
+us
+->
+	`exåa_de°ru˘‹
+(us->
+exåa
+);
+
+828 
+	`k‰ì
+(
+us
+->
+exåa
+);
+
+829 
+	`usb_‰ì_urb
+(
+us
+->
+cuºít_urb
+);
+
+830 
+	}
+}
+
+833 
+	$dissocüã_dev
+(
+us_d©a
+ *
+us
+)
+
+836 
+	`k‰ì
+(
+us
+->
+¸
+);
+
+837 
+	`usb_‰ì_cohîít
+(
+us
+->
+pusb_dev
+, 
+US_IOBUF_SIZE
+, us->
+iobuf
+, us->
+iobuf_dma
+);
+
+840 
+	`usb_£t_ötfd©a
+(
+us
+->
+pusb_ötf
+, 
+NULL
+);
+
+841 
+	}
+}
+
+846 
+	$quõs˚_™d_ªmove_ho°
+(
+us_d©a
+ *
+us
+)
+
+848 
+Scsi_Ho°
+ *
+ho°
+ = 
+	`us_to_ho°
+(
+us
+);
+
+851 i‡(
+us
+->
+pusb_dev
+->
+°©e
+ =
+USB_STATE_NOTATTACHED
+) {
+
+852 
+	`£t_bô
+(
+US_FLIDX_DISCONNECTING
+, &
+us
+->
+dÊags
+);
+
+853 
+	`wake_up
+(&
+us
+->
+dñay_waô
+);
+
+859 
+	`ˇn˚l_dñayed_w‹k_sync
+(&
+us
+->
+sˇn_dw‹k
+);
+
+862 i‡(
+	`ã°_bô
+(
+US_FLIDX_SCAN_PENDING
+, &
+us
+->
+dÊags
+))
+
+863 
+	`usb_aut›m_put_öãrÁ˚_no_su•íd
+(
+us
+->
+pusb_ötf
+);
+
+868 
+	`scsi_ªmove_ho°
+(
+ho°
+);
+
+873 
+	`scsi_lock
+(
+ho°
+);
+
+874 
+	`£t_bô
+(
+US_FLIDX_DISCONNECTING
+, &
+us
+->
+dÊags
+);
+
+875 
+	`scsi_u∆ock
+(
+ho°
+);
+
+876 
+	`wake_up
+(&
+us
+->
+dñay_waô
+);
+
+877 
+	}
+}
+
+880 
+	$ªÀa£_evîythög
+(
+us_d©a
+ *
+us
+)
+
+882 
+	`usb_°‹_ªÀa£_ªsour˚s
+(
+us
+);
+
+883 
+	`dissocüã_dev
+(
+us
+);
+
+887 
+	`scsi_ho°_put
+(
+	`us_to_ho°
+(
+us
+));
+
+888 
+	}
+}
+
+891 
+	$usb_°‹_sˇn_dw‹k
+(
+w‹k_°ru˘
+ *
+w‹k
+)
+
+893 
+us_d©a
+ *
+us
+ = 
+	`c⁄èöî_of
+(
+w‹k
+, us_data,
+
+894 
+sˇn_dw‹k
+.
+w‹k
+);
+
+895 
+devi˚
+ *
+dev
+ = &
+us
+->
+pusb_ötf
+->dev;
+
+897 
+	`dev_dbg
+(
+dev
+, "starting scan\n");
+
+899 
+	`¥_öfo
+("Thi†i†%†fun˘i⁄:0\n", 
+__func__
+);
+
+901 i‡(
+us
+->
+¥Ÿocﬁ
+ =
+USB_PR_BULK
+ &&
+
+902 !(
+us
+->
+fÊags
+ & 
+US_FL_SINGLE_LUN
+) &&
+
+903 !(
+us
+->
+fÊags
+ & 
+US_FL_SCM_MULT_TARG
+)) {
+
+904 
+	`muãx_lock
+(&
+us
+->
+dev_muãx
+);
+
+905 
+us
+->
+max_lun
+ = 
+	`usb_°‹_Bulk_max_lun
+(us);
+
+910 i‡(
+us
+->
+max_lun
+ >= 8)
+
+911 
+	`us_to_ho°
+(
+us
+)->
+max_lun
+ = us->max_lun+1;
+
+912 
+	`muãx_u∆ock
+(&
+us
+->
+dev_muãx
+);
+
+914 
+	`scsi_sˇn_ho°
+(
+	`us_to_ho°
+(
+us
+));
+
+915 
+	`dev_dbg
+(
+dev
+, "scan complete\n");
+
+919 
+	`usb_aut›m_put_öãrÁ˚
+(
+us
+->
+pusb_ötf
+);
+
+920 
+	`˛ór_bô
+(
+US_FLIDX_SCAN_PENDING
+, &
+us
+->
+dÊags
+);
+
+921 
+	}
+}
+
+923 
+	$usb_°‹_sg_èbÀsize
+(
+usb_öãrÁ˚
+ *
+ötf
+)
+
+925 
+usb_devi˚
+ *
+usb_dev
+ = 
+	`öãrÁ˚_to_usbdev
+(
+ötf
+);
+
+927 i‡(
+usb_dev
+->
+bus
+->
+sg_èbÀsize
+) {
+
+928  
+usb_dev
+->
+bus
+->
+sg_èbÀsize
+;
+
+930  
+SG_ALL
+;
+
+931 
+	}
+}
+
+934 
+	$usb_°‹_¥obe1
+(
+us_d©a
+ **
+pus
+,
+
+935 
+usb_öãrÁ˚
+ *
+ötf
+,
+
+936 c⁄° 
+usb_devi˚_id
+ *
+id
+,
+
+937 
+us_unusuÆ_dev
+ *
+unusuÆ_dev
+)
+
+939 
+Scsi_Ho°
+ *
+ho°
+;
+
+940 
+us_d©a
+ *
+us
+;
+
+941 
+ªsu…
+;
+
+943 
+	`dev_öfo
+(&
+ötf
+->
+dev
+, "USB Mass Storage device detected\n");
+
+949 
+ho°
+ = 
+	`scsi_ho°_Æloc
+(&
+usb_°‹_ãm∂©e
+, (*
+us
+));
+
+950 i‡(!
+ho°
+) {
+
+951 
+	`dev_w¨n
+(&
+ötf
+->
+dev
+, "UnableÅoállocateÅhe scsi host\n");
+
+952  -
+ENOMEM
+;
+
+958 
+ho°
+->
+max_cmd_Àn
+ = 16;
+
+959 
+ho°
+->
+sg_èbÀsize
+ = 
+	`usb_°‹_sg_èbÀsize
+(
+ötf
+);
+
+960 
+	`¥_öfo
+("sg_èbÀsizêis: %d\n", 
+ho°
+->
+sg_èbÀsize
+);
+
+961 *
+pus
+ = 
+us
+ = 
+	`ho°_to_us
+(
+ho°
+);
+
+962 
+	`muãx_öô
+(&(
+us
+->
+dev_muãx
+));
+
+963 
+	`us_£t_lock_˛ass
+(&
+us
+->
+dev_muãx
+, 
+ötf
+);
+
+964 
+	`öô_com∂ëi⁄
+(&
+us
+->
+cmnd_ªady
+);
+
+965 
+	`öô_com∂ëi⁄
+(&(
+us
+->
+nŸify
+));
+
+966 
+	`öô_waôqueue_hód
+(&
+us
+->
+dñay_waô
+);
+
+967 
+	`INIT_DELAYED_WORK
+(&
+us
+->
+sˇn_dw‹k
+, 
+usb_°‹_sˇn_dw‹k
+);
+
+970 
+ªsu…
+ = 
+	`assocüã_dev
+(
+us
+, 
+ötf
+);
+
+971 i‡(
+ªsu…
+)
+
+972 
+BadDevi˚
+;
+
+975 
+ªsu…
+ = 
+	`gë_devi˚_öfo
+(
+us
+, 
+id
+, 
+unusuÆ_dev
+);
+
+976 i‡(
+ªsu…
+)
+
+977 
+BadDevi˚
+;
+
+980 
+	`gë_å™•‹t
+(
+us
+);
+
+981 
+	`gë_¥Ÿocﬁ
+(
+us
+);
+
+988 
+BadDevi˚
+:
+
+989 
+	`usb_°‹_dbg
+(
+us
+, "storage_probe() failed\n");
+
+990 
+	`ªÀa£_evîythög
+(
+us
+);
+
+991  
+ªsu…
+;
+
+992 
+	}
+}
+
+993 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_¥obe1
+);
+
+996 
+	$usb_°‹_¥obe2
+(
+us_d©a
+ *
+us
+)
+
+998 
+ªsu…
+;
+
+999 
+devi˚
+ *
+dev
+ = &
+us
+->
+pusb_ötf
+->dev;
+
+1002 i‡(!
+us
+->
+å™•‹t
+ || !us->
+¥Ÿo_h™dÀr
+) {
+
+1003 
+ªsu…
+ = -
+ENXIO
+;
+
+1004 
+BadDevi˚
+;
+
+1006 
+	`usb_°‹_dbg
+(
+us
+, "Tøn•‹t: %s\n", us->
+å™•‹t_«me
+);
+
+1007 
+	`usb_°‹_dbg
+(
+us
+, "PrŸocﬁ: %s\n", us->
+¥Ÿocﬁ_«me
+);
+
+1009 i‡(
+us
+->
+fÊags
+ & 
+US_FL_SCM_MULT_TARG
+) {
+
+1014 
+us
+->
+max_lun
+ = 7;
+
+1016 
+	`us_to_ho°
+(
+us
+)->
+this_id
+ = 7;
+
+1020 
+	`us_to_ho°
+(
+us
+)->
+max_id
+ = 1;
+
+1026 i‡(
+us
+->
+å™•‹t
+ =
+usb_°‹_Bulk_å™•‹t
+)
+
+1027 
+	`us_to_ho°
+(
+us
+)->
+no_scsi2_lun_ö_cdb
+ = 1;
+
+1031 i‡(
+us
+->
+fÊags
+ & 
+US_FL_SINGLE_LUN
+)
+
+1032 
+us
+->
+max_lun
+ = 0;
+
+1035 
+ªsu…
+ = 
+	`gë_pùes
+(
+us
+);
+
+1036 i‡(
+ªsu…
+)
+
+1037 
+BadDevi˚
+;
+
+1043 i‡(
+us
+->
+fÊags
+ & 
+US_FL_INITIAL_READ10
+)
+
+1044 
+	`£t_bô
+(
+US_FLIDX_REDO_READ10
+, &
+us
+->
+dÊags
+);
+
+1047 
+ªsu…
+ = 
+	`usb_°‹_acquúe_ªsour˚s
+(
+us
+);
+
+1048 i‡(
+ªsu…
+)
+
+1049 
+BadDevi˚
+;
+
+1050 
+	`¢¥ötf
+(
+us
+->
+scsi_«me
+, (us->scsi_name), "usb-storage %s",
+
+1051 
+	`dev_«me
+(&
+us
+->
+pusb_ötf
+->
+dev
+));
+
+1052 
+ªsu…
+ = 
+	`scsi_add_ho°
+(
+	`us_to_ho°
+(
+us
+), 
+dev
+);
+
+1053 i‡(
+ªsu…
+) {
+
+1054 
+	`dev_w¨n
+(
+dev
+,
+
+1056 
+BadDevi˚
+;
+
+1059 
+	`usb_aut›m_gë_öãrÁ˚_no_ªsume
+(
+us
+->
+pusb_ötf
+);
+
+1060 
+	`£t_bô
+(
+US_FLIDX_SCAN_PENDING
+, &
+us
+->
+dÊags
+);
+
+1062 i‡(
+dñay_u£
+ > 0)
+
+1063 
+	`dev_dbg
+(
+dev
+, "waiting for deviceÅo settle before scanning\n");
+
+1064 
+	`queue_dñayed_w‹k
+(
+sy°em_‰ìzabÀ_wq
+, &
+us
+->
+sˇn_dw‹k
+,
+
+1065 
+dñay_u£
+ * 
+HZ
+);
+
+1069 
+BadDevi˚
+:
+
+1070 
+	`usb_°‹_dbg
+(
+us
+, "storage_probe() failed\n");
+
+1071 
+	`ªÀa£_evîythög
+(
+us
+);
+
+1072  
+ªsu…
+;
+
+1073 
+	}
+}
+
+1074 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_¥obe2
+);
+
+1077 
+	$usb_°‹_disc⁄√˘
+(
+usb_öãrÁ˚
+ *
+ötf
+)
+
+1079 
+us_d©a
+ *
+us
+ = 
+	`usb_gë_ötfd©a
+(
+ötf
+);
+
+1081 
+	`quõs˚_™d_ªmove_ho°
+(
+us
+);
+
+1082 
+	`ªÀa£_evîythög
+(
+us
+);
+
+1083 
+	}
+}
+
+1084 
+EXPORT_SYMBOL_GPL
+(
+usb_°‹_disc⁄√˘
+);
+
+1087 
+	$°‹age_¥obe
+(
+usb_öãrÁ˚
+ *
+ötf
+,
+
+1088 c⁄° 
+usb_devi˚_id
+ *
+id
+)
+
+1090 
+us_unusuÆ_dev
+ *
+unusuÆ_dev
+;
+
+1091 
+us_d©a
+ *
+us
+;
+
+1092 
+ªsu…
+;
+
+1093 
+size
+;
+
+1105 i‡(
+	`usb_usuÆ_ign‹e_devi˚
+(
+ötf
+))
+
+1106  -
+ENXIO
+;
+
+1116 
+size
+ = 
+	`ARRAY_SIZE
+(
+us_unusuÆ_dev_li°
+);
+
+1117 i‡(
+id
+ >
+usb_°‹age_usb_ids
+ && id < usb_°‹age_usb_id†+ 
+size
+) {
+
+1118 
+unusuÆ_dev
+ = (
+id
+ - 
+usb_°‹age_usb_ids
+Ë+ 
+us_unusuÆ_dev_li°
+;
+
+1120 
+	`¥_öfo
+("Hello_bye\n");
+
+1121 
+unusuÆ_dev
+ = &
+f‹_dy«mic_ids
+;
+
+1123 
+	`dev_dbg
+(&
+ötf
+->
+dev
+, "Use Bulk-OnlyÅransport withÅhe Transparent SCSIÖrotocol for dynamic id: 0x%04x 0x%04x\n",
+
+1124 
+id
+->
+idVíd‹
+, id->
+idProdu˘
+);
+
+1127 
+	`¥_öfo
+("USB_PR_BULK: %d\n", 
+USB_PR_BULK
+);
+
+1128 
+	`¥_öfo
+("USB_SC_SCSI: %d\n", 
+USB_SC_SCSI
+);
+
+1130 
+ªsu…
+ = 
+	`usb_°‹_¥obe1
+(&
+us
+, 
+ötf
+, 
+id
+, 
+unusuÆ_dev
+);
+
+1131 i‡(
+ªsu…
+)
+
+1132  
+ªsu…
+;
+
+1136 
+ªsu…
+ = 
+	`usb_°‹_¥obe2
+(
+us
+);
+
+1137  
+ªsu…
+;
+
+1138 
+	}
+}
+
+1140 
+usb_drivî
+ 
+	gusb_°‹age_drivî
+ = {
+
+1141 .
+«me
+ = "usb-storage",
+
+1142 .
+	g¥obe
+ = 
+°‹age_¥obe
+,
+
+1143 .
+	gdisc⁄√˘
+ = 
+usb_°‹_disc⁄√˘
+,
+
+1144 .
+	gsu•íd
+ = 
+usb_°‹_su•íd
+,
+
+1145 .
+	gªsume
+ = 
+usb_°‹_ªsume
+,
+
+1146 .
+	gª£t_ªsume
+ = 
+usb_°‹_ª£t_ªsume
+,
+
+1147 .
+	g¥e_ª£t
+ = 
+usb_°‹_¥e_ª£t
+,
+
+1148 .
+	gpo°_ª£t
+ = 
+usb_°‹_po°_ª£t
+,
+
+1149 .
+	gid_èbÀ
+ = 
+usb_°‹age_usb_ids
+,
+
+1150 .
+	gsuµ‹ts_autosu•íd
+ = 1,
+
+1151 .
+	gso·_unböd
+ = 1,
+
+1154 
+__öô
+ 
+	$usb_°‹age_öô
+()
+
+1156 
+ªtvÆ
+;
+
+1158 
+	`¥_öfo
+("RegisteringÅhe USB mass storage driver...\n");
+
+1159 
+ªtvÆ
+ = 
+	`usb_ªgi°î
+(&
+usb_°‹age_drivî
+);
+
+1160 i‡(
+ªtvÆ
+)
+
+1161 
+	`¥_öfo
+("USB deviceÑegistration failed\n");
+
+1162  
+ªtvÆ
+;
+
+1163 
+	}
+}
+
+1165 
+__exô
+ 
+	$usb_°‹age_exô
+()
+
+1167 
+	`¥_öfo
+("De-registeringÅhe USB driver...\n");
+
+1168 
+	`usb_dîegi°î
+(&
+usb_°‹age_drivî
+);
+
+1169 
+	}
+}
+
+1172 
+moduÀ_öô
+(
+usb_°‹age_öô
+);
+
+1173 
+moduÀ_exô
+(
+usb_°‹age_exô
+);
+
+	@usb.h
+
+42 #i‚de‡
+_USB_H_
+
+
+43 
+	#_USB_H_
+
+
+	)
+
+45 
+	~<löux/usb.h
+>
+
+46 
+	~<löux/usb_usuÆ.h
+>
+
+47 
+	~<löux/blkdev.h
+>
+
+48 
+	~<löux/com∂ëi⁄.h
+>
+
+49 
+	~<löux/muãx.h
+>
+
+50 
+	~<löux/w‹kqueue.h
+>
+
+51 
+	~<scsi/scsi_ho°.h
+>
+
+53 
+	gus_d©a
+;
+
+54 
+	gscsi_cmnd
+;
+
+60 
+	sus_unusuÆ_dev
+ {
+
+61 c⁄° * 
+	mvíd‹Name
+;
+
+62 c⁄° * 
+	m¥odu˘Name
+;
+
+63 
+__u8
+ 
+	mu£PrŸocﬁ
+;
+
+64 
+__u8
+ 
+	mu£Tøn•‹t
+;
+
+65 (*
+	möôFun˘i⁄
+)(
+	mus_d©a
+ *);
+
+70 
+	#US_FLIDX_URB_ACTIVE
+ 0
+
+	)
+
+71 
+	#US_FLIDX_SG_ACTIVE
+ 1
+
+	)
+
+72 
+	#US_FLIDX_ABORTING
+ 2
+
+	)
+
+73 
+	#US_FLIDX_DISCONNECTING
+ 3
+
+	)
+
+74 
+	#US_FLIDX_RESETTING
+ 4
+
+	)
+
+75 
+	#US_FLIDX_TIMED_OUT
+ 5
+
+	)
+
+76 
+	#US_FLIDX_SCAN_PENDING
+ 6
+
+	)
+
+77 
+	#US_FLIDX_REDO_READ10
+ 7
+
+	)
+
+78 
+	#US_FLIDX_READ10_WORKED
+ 8
+
+	)
+
+80 
+	#USB_STOR_STRING_LEN
+ 32
+
+	)
+
+89 
+	#US_IOBUF_SIZE
+ 64
+
+	)
+
+90 
+	#US_SENSE_SIZE
+ 18
+
+	)
+
+92 (*
+	tå™s_cmnd
+)(
+	tscsi_cmnd
+ *, 
+	tus_d©a
+*);
+
+93 (*
+	tå™s_ª£t
+)(
+	tus_d©a
+*);
+
+94 (*
+	t¥Ÿo_cmnd
+)(
+	tscsi_cmnd
+*, 
+	tus_d©a
+*);
+
+95 (*
+	texåa_d©a_de°ru˘‹
+)(*);
+
+96 (*
+	tpm_hook
+)(
+	tus_d©a
+ *, );
+
+98 
+	#US_SUSPEND
+ 0
+
+	)
+
+99 
+	#US_RESUME
+ 1
+
+	)
+
+102 
+	sus_d©a
+ {
+
+107 
+muãx
+ 
+dev_muãx
+;
+
+108 
+usb_devi˚
+ *
+pusb_dev
+;
+
+109 
+usb_öãrÁ˚
+ *
+pusb_ötf
+;
+
+110 
+us_unusuÆ_dev
+ *
+unusuÆ_dev
+;
+
+111 
+fÊags
+;
+
+112 
+dÊags
+;
+
+113 
+£nd_bulk_pùe
+;
+
+114 
+ªcv_bulk_pùe
+;
+
+115 
+£nd_˘æ_pùe
+;
+
+116 
+ªcv_˘æ_pùe
+;
+
+117 
+ªcv_öå_pùe
+;
+
+120 *
+å™•‹t_«me
+;
+
+121 *
+¥Ÿocﬁ_«me
+;
+
+122 
+__À32
+ 
+bcs_sig«tuª
+;
+
+123 
+u8
+ 
+sub˛ass
+;
+
+124 
+u8
+ 
+¥Ÿocﬁ
+;
+
+125 
+u8
+ 
+max_lun
+;
+
+127 
+u8
+ 
+i‚um
+;
+
+128 
+u8
+ 
+ï_bI¡îvÆ
+;
+
+131 
+å™s_cmnd
+ 
+å™•‹t
+;
+
+132 
+å™s_ª£t
+ 
+å™•‹t_ª£t
+;
+
+133 
+¥Ÿo_cmnd
+ 
+¥Ÿo_h™dÀr
+;
+
+136 
+scsi_cmnd
+ *
+§b
+;
+
+137 
+èg
+;
+
+138 
+scsi_«me
+[32];
+
+141 
+urb
+ *
+cuºít_urb
+;
+
+142 
+usb_˘æªque°
+ *
+¸
+;
+
+143 
+usb_sg_ªque°
+ 
+cuºít_sg
+;
+
+144 *
+iobuf
+;
+
+145 
+dma_addr_t
+ 
+iobuf_dma
+;
+
+146 
+èsk_°ru˘
+ *
+˘l_thªad
+;
+
+149 
+com∂ëi⁄
+ 
+cmnd_ªady
+;
+
+150 
+com∂ëi⁄
+ 
+nŸify
+;
+
+151 
+waô_queue_hód_t
+ 
+dñay_waô
+;
+
+152 
+dñayed_w‹k
+ 
+sˇn_dw‹k
+;
+
+155 *
+exåa
+;
+
+156 
+exåa_d©a_de°ru˘‹
+ 
+exåa_de°ru˘‹
+;
+
+157 #ifde‡
+CONFIG_PM
+
+
+158 
+pm_hook
+ 
+su•íd_ªsume_hook
+;
+
+162 
+u£_œ°_£˘‹_hacks
+;
+
+163 
+œ°_£˘‹_ªåõs
+;
+
+167 
+ölöe
+ 
+Scsi_Ho°
+ *
+	$us_to_ho°
+(
+us_d©a
+ *
+us
+) {
+
+168  
+	`c⁄èöî_of
+((*Ë
+us
+, 
+Scsi_Ho°
+, 
+ho°d©a
+);
+
+169 
+	}
+}
+
+170 
+ölöe
+ 
+us_d©a
+ *
+	$ho°_to_us
+(
+Scsi_Ho°
+ *
+ho°
+) {
+
+171  (
+us_d©a
+ *Ë
+ho°
+->
+ho°d©a
+;
+
+172 
+	}
+}
+
+175 
+fûl_öquúy_ª•⁄£
+(
+us_d©a
+ *
+us
+,
+
+176 *
+d©a
+, 
+d©a_Àn
+);
+
+180 
+	#scsi_u∆ock
+(
+ho°
+Ë
+	`•ö_u∆ock_úq
+(ho°->
+ho°_lock
+)
+
+	)
+
+181 
+	#scsi_lock
+(
+ho°
+Ë
+	`•ö_lock_úq
+(ho°->
+ho°_lock
+)
+
+	)
+
+184 #ifde‡
+CONFIG_PM
+
+
+185 
+usb_°‹_su•íd
+(
+usb_öãrÁ˚
+ *
+iÁ˚
+, 
+pm_mesßge_t
+ 
+mesßge
+);
+
+186 
+usb_°‹_ªsume
+(
+usb_öãrÁ˚
+ *
+iÁ˚
+);
+
+187 
+usb_°‹_ª£t_ªsume
+(
+usb_öãrÁ˚
+ *
+iÁ˚
+);
+
+189 
+	#usb_°‹_su•íd
+ 
+NULL
+
+
+	)
+
+190 
+	#usb_°‹_ªsume
+ 
+NULL
+
+
+	)
+
+191 
+	#usb_°‹_ª£t_ªsume
+ 
+NULL
+
+
+	)
+
+194 
+usb_°‹_¥e_ª£t
+(
+usb_öãrÁ˚
+ *
+iÁ˚
+);
+
+195 
+usb_°‹_po°_ª£t
+(
+usb_öãrÁ˚
+ *
+iÁ˚
+);
+
+197 
+usb_°‹_¥obe1
+(
+us_d©a
+ **
+pus
+,
+
+198 
+usb_öãrÁ˚
+ *
+ötf
+,
+
+199 c⁄° 
+usb_devi˚_id
+ *
+id
+,
+
+200 
+us_unusuÆ_dev
+ *
+unusuÆ_dev
+);
+
+201 
+usb_°‹_¥obe2
+(
+us_d©a
+ *
+us
+);
+
+202 
+usb_°‹_disc⁄√˘
+(
+usb_öãrÁ˚
+ *
+ötf
+);
+
+204 
+usb_°‹_adju°_quúks
+(
+usb_devi˚
+ *
+dev
+,
+
+205 *
+fÊags
+);
+
+	@usual-tables.c
+
+24 
+	~<löux/kî√l.h
+>
+
+25 
+	~<löux/moduÀ.h
+>
+
+26 
+	~<löux/usb.h
+>
+
+27 
+	~<löux/usb_usuÆ.h
+>
+
+33 
+	#UNUSUAL_DEV
+(
+id_víd‹
+, 
+id_¥odu˘
+, 
+bcdDevi˚Mö
+, 
+bcdDevi˚Max
+, \
+
+34 
+víd‹Name
+, 
+¥odu˘Name
+, 
+u£PrŸocﬁ
+, 
+u£Tøn•‹t
+, \
+
+35 
+öôFun˘i⁄
+, 
+Êags
+) \
+
+36 { 
+	`USB_DEVICE_VER
+(
+id_víd‹
+, 
+id_¥odu˘
+, 
+bcdDevi˚Mö
+, 
+bcdDevi˚Max
+), \
+
+37 .
+drivî_öfo
+ = (
+Êags
+Ë}
+
+	)
+
+39 
+	#COMPLIANT_DEV
+ 
+UNUSUAL_DEV
+
+
+	)
+
+41 
+	#USUAL_DEV
+(
+u£PrŸo
+, 
+u£Tøns
+) \
+
+42 { 
+	`USB_INTERFACE_INFO
+(
+USB_CLASS_MASS_STORAGE
+, 
+u£PrŸo
+, 
+u£Tøns
+Ë}
+
+	)
+
+45 
+	#UNUSUAL_VENDOR_INTF
+(
+id_víd‹
+, 
+˛
+, 
+sc
+, 
+¥
+, \
+
+46 
+víd‹Name
+, 
+¥odu˘Name
+, 
+u£PrŸocﬁ
+, 
+u£Tøn•‹t
+, \
+
+47 
+öôFun˘i⁄
+, 
+Êags
+) \
+
+49 .
+m©ch_Êags
+ = 
+USB_DEVICE_ID_MATCH_INT_INFO
+ \
+
+50 | 
+USB_DEVICE_ID_MATCH_VENDOR
+, \
+
+51 .
+idVíd‹
+ = (
+id_víd‹
+), \
+
+52 .
+bI¡îÁ˚Cœss
+ = (
+˛
+), \
+
+53 .
+bI¡îÁ˚SubCœss
+ = (
+sc
+), \
+
+54 .
+bI¡îÁ˚PrŸocﬁ
+ = (
+¥
+), \
+
+55 .
+drivî_öfo
+ = (
+Êags
+) \
+
+56 }
+
+	)
+
+58 
+usb_devi˚_id
+ 
+	gusb_°‹age_usb_ids
+[] = {
+
+59 
+	~"unusuÆ_devs.h
+"
+
+62 
+MODULE_DEVICE_TABLE
+(
+usb
+, 
+usb_°‹age_usb_ids
+);
+
+64 #unde‡
+UNUSUAL_DEV
+
+
+65 #unde‡
+COMPLIANT_DEV
+
+
+66 #unde‡
+USUAL_DEV
+
+
+67 #unde‡
+UNUSUAL_VENDOR_INTF
+
+
+72 
+	sign‹e_íåy
+ {
+
+73 
+u16
+ 
+	mvid
+, 
+	mpid
+, 
+	mbcdmö
+, 
+	mbcdmax
+;
+
+76 
+	#UNUSUAL_DEV
+(
+id_víd‹
+, 
+id_¥odu˘
+, 
+bcdDevi˚Mö
+, 
+bcdDevi˚Max
+, \
+
+77 
+víd‹Name
+, 
+¥odu˘Name
+, 
+u£PrŸocﬁ
+, 
+u£Tøn•‹t
+, \
+
+78 
+öôFun˘i⁄
+, 
+Êags
+) \
+
+80 .
+vid
+ = 
+id_víd‹
+, \
+
+81 .
+pid
+ = 
+id_¥odu˘
+, \
+
+82 .
+bcdmö
+ = 
+bcdDevi˚Mö
+, \
+
+83 .
+bcdmax
+ = 
+bcdDevi˚Max
+, \
+
+84 }
+
+	)
+
+86 
+ign‹e_íåy
+ 
+	gign‹e_ids
+[] = {
+
+104 #unde‡
+UNUSUAL_DEV
+
+
+107 
+	$usb_usuÆ_ign‹e_devi˚
+(
+usb_öãrÁ˚
+ *
+ötf
+)
+
+109 
+usb_devi˚
+ *
+udev
+;
+
+110 
+vid
+, 
+pid
+, 
+bcd
+;
+
+111 
+ign‹e_íåy
+ *
+p
+;
+
+113 
+udev
+ = 
+	`öãrÁ˚_to_usbdev
+(
+ötf
+);
+
+114 
+vid
+ = 
+	`À16_to_˝u
+(
+udev
+->
+des¸ùt‹
+.
+idVíd‹
+);
+
+115 
+pid
+ = 
+	`À16_to_˝u
+(
+udev
+->
+des¸ùt‹
+.
+idProdu˘
+);
+
+116 
+bcd
+ = 
+	`À16_to_˝u
+(
+udev
+->
+des¸ùt‹
+.
+bcdDevi˚
+);
+
+118 
+p
+ = 
+ign‹e_ids
+;Ö->
+vid
+; ++p) {
+
+119 i‡(
+p
+->
+vid
+ =vid &&Ö->
+pid
+ ==Öid &&
+
+120 
+p
+->
+bcdmö
+ <
+bcd
+ &&Ö->
+bcdmax
+ >= bcd)
+
+121  -
+ENXIO
+;
+
+124 
+	}
+}
+
+	@/usr/include/linux/errno.h
+
+1 
+	~<asm/î∫o.h
+>
+
+	@/usr/include/linux/kernel.h
+
+1 #i‚de‡
+_LINUX_KERNEL_H
+
+
+2 
+	#_LINUX_KERNEL_H
+
+
+	)
+
+4 
+	~<löux/sysöfo.h
+>
+
+9 
+	#__ALIGN_KERNEL
+(
+x
+, 
+a
+Ë
+	`__ALIGN_KERNEL_MASK
+(x, (
+	`ty≥of
+(x))◊Ë- 1)
+
+	)
+
+10 
+	#__ALIGN_KERNEL_MASK
+(
+x
+, 
+mask
+Ë(((xË+ (mask)Ë& ~(mask))
+
+	)
+
+	@/usr/include/linux/sched.h
+
+1 #i‚de‡
+_LINUX_SCHED_H
+
+
+2 
+	#_LINUX_SCHED_H
+
+
+	)
+
+7 
+	#CSIGNAL
+ 0x000000f‡
+
+	)
+
+8 
+	#CLONE_VM
+ 0x00000100
+
+	)
+
+9 
+	#CLONE_FS
+ 0x00000200
+
+	)
+
+10 
+	#CLONE_FILES
+ 0x00000400
+
+	)
+
+11 
+	#CLONE_SIGHAND
+ 0x00000800
+
+	)
+
+12 
+	#CLONE_PTRACE
+ 0x00002000
+
+	)
+
+13 
+	#CLONE_VFORK
+ 0x00004000
+
+	)
+
+14 
+	#CLONE_PARENT
+ 0x00008000
+
+	)
+
+15 
+	#CLONE_THREAD
+ 0x00010000
+
+	)
+
+16 
+	#CLONE_NEWNS
+ 0x00020000
+
+	)
+
+17 
+	#CLONE_SYSVSEM
+ 0x00040000
+
+	)
+
+18 
+	#CLONE_SETTLS
+ 0x00080000
+
+	)
+
+19 
+	#CLONE_PARENT_SETTID
+ 0x00100000
+
+	)
+
+20 
+	#CLONE_CHILD_CLEARTID
+ 0x00200000
+
+	)
+
+21 
+	#CLONE_DETACHED
+ 0x00400000
+
+	)
+
+22 
+	#CLONE_UNTRACED
+ 0x00800000
+
+	)
+
+23 
+	#CLONE_CHILD_SETTID
+ 0x01000000
+
+	)
+
+26 
+	#CLONE_NEWUTS
+ 0x04000000
+
+	)
+
+27 
+	#CLONE_NEWIPC
+ 0x08000000
+
+	)
+
+28 
+	#CLONE_NEWUSER
+ 0x10000000
+
+	)
+
+29 
+	#CLONE_NEWPID
+ 0x20000000
+
+	)
+
+30 
+	#CLONE_NEWNET
+ 0x40000000
+
+	)
+
+31 
+	#CLONE_IO
+ 0x80000000
+
+	)
+
+36 
+	#SCHED_NORMAL
+ 0
+
+	)
+
+37 
+	#SCHED_FIFO
+ 1
+
+	)
+
+38 
+	#SCHED_RR
+ 2
+
+	)
+
+39 
+	#SCHED_BATCH
+ 3
+
+	)
+
+41 
+	#SCHED_IDLE
+ 5
+
+	)
+
+43 
+	#SCHED_RESET_ON_FORK
+ 0x40000000
+
+	)
+
+	@/usr/include/linux/utsname.h
+
+1 #i‚de‡
+_LINUX_UTSNAME_H
+
+
+2 
+	#_LINUX_UTSNAME_H
+
+
+	)
+
+4 
+	#__OLD_UTS_LEN
+ 8
+
+	)
+
+6 
+	sﬁdﬁd_ut¢ame
+ {
+
+7 
+	msy¢ame
+[9];
+
+8 
+	mnodíame
+[9];
+
+9 
+	mªÀa£
+[9];
+
+10 
+	mvîsi⁄
+[9];
+
+11 
+	mmachöe
+[9];
+
+14 
+	#__NEW_UTS_LEN
+ 64
+
+	)
+
+16 
+	sﬁd_ut¢ame
+ {
+
+17 
+	msy¢ame
+[65];
+
+18 
+	mnodíame
+[65];
+
+19 
+	mªÀa£
+[65];
+
+20 
+	mvîsi⁄
+[65];
+
+21 
+	mmachöe
+[65];
+
+24 
+	s√w_ut¢ame
+ {
+
+25 
+	msy¢ame
+[
+__NEW_UTS_LEN
+ + 1];
+
+26 
+	mnodíame
+[
+__NEW_UTS_LEN
+ + 1];
+
+27 
+	mªÀa£
+[
+__NEW_UTS_LEN
+ + 1];
+
+28 
+	mvîsi⁄
+[
+__NEW_UTS_LEN
+ + 1];
+
+29 
+	mmachöe
+[
+__NEW_UTS_LEN
+ + 1];
+
+30 
+	mdomaö«me
+[
+__NEW_UTS_LEN
+ + 1];
+
+	@/usr/include/scsi/scsi.h
+
+23 #i‚de‡
+_SCSI_SCSI_H
+
+
+24 
+	#_SCSI_SCSI_H
+ 1
+
+	)
+
+26 
+	~<„©uªs.h
+>
+
+32 
+	#TEST_UNIT_READY
+ 0x00
+
+	)
+
+33 
+	#REZERO_UNIT
+ 0x01
+
+	)
+
+34 
+	#REQUEST_SENSE
+ 0x03
+
+	)
+
+35 
+	#FORMAT_UNIT
+ 0x04
+
+	)
+
+36 
+	#READ_BLOCK_LIMITS
+ 0x05
+
+	)
+
+37 
+	#REASSIGN_BLOCKS
+ 0x07
+
+	)
+
+38 
+	#READ_6
+ 0x08
+
+	)
+
+39 
+	#WRITE_6
+ 0x0a
+
+	)
+
+40 
+	#SEEK_6
+ 0x0b
+
+	)
+
+41 
+	#READ_REVERSE
+ 0x0f
+
+	)
+
+42 
+	#WRITE_FILEMARKS
+ 0x10
+
+	)
+
+43 
+	#SPACE
+ 0x11
+
+	)
+
+44 
+	#INQUIRY
+ 0x12
+
+	)
+
+45 
+	#RECOVER_BUFFERED_DATA
+ 0x14
+
+	)
+
+46 
+	#MODE_SELECT
+ 0x15
+
+	)
+
+47 
+	#RESERVE
+ 0x16
+
+	)
+
+48 
+	#RELEASE
+ 0x17
+
+	)
+
+49 
+	#COPY
+ 0x18
+
+	)
+
+50 
+	#ERASE
+ 0x19
+
+	)
+
+51 
+	#MODE_SENSE
+ 0x1a
+
+	)
+
+52 
+	#START_STOP
+ 0x1b
+
+	)
+
+53 
+	#RECEIVE_DIAGNOSTIC
+ 0x1c
+
+	)
+
+54 
+	#SEND_DIAGNOSTIC
+ 0x1d
+
+	)
+
+55 
+	#ALLOW_MEDIUM_REMOVAL
+ 0x1e
+
+	)
+
+57 
+	#SET_WINDOW
+ 0x24
+
+	)
+
+58 
+	#READ_CAPACITY
+ 0x25
+
+	)
+
+59 
+	#READ_10
+ 0x28
+
+	)
+
+60 
+	#WRITE_10
+ 0x2a
+
+	)
+
+61 
+	#SEEK_10
+ 0x2b
+
+	)
+
+62 
+	#WRITE_VERIFY
+ 0x2e
+
+	)
+
+63 
+	#VERIFY
+ 0x2f
+
+	)
+
+64 
+	#SEARCH_HIGH
+ 0x30
+
+	)
+
+65 
+	#SEARCH_EQUAL
+ 0x31
+
+	)
+
+66 
+	#SEARCH_LOW
+ 0x32
+
+	)
+
+67 
+	#SET_LIMITS
+ 0x33
+
+	)
+
+68 
+	#PRE_FETCH
+ 0x34
+
+	)
+
+69 
+	#READ_POSITION
+ 0x34
+
+	)
+
+70 
+	#SYNCHRONIZE_CACHE
+ 0x35
+
+	)
+
+71 
+	#LOCK_UNLOCK_CACHE
+ 0x36
+
+	)
+
+72 
+	#READ_DEFECT_DATA
+ 0x37
+
+	)
+
+73 
+	#MEDIUM_SCAN
+ 0x38
+
+	)
+
+74 
+	#COMPARE
+ 0x39
+
+	)
+
+75 
+	#COPY_VERIFY
+ 0x3a
+
+	)
+
+76 
+	#WRITE_BUFFER
+ 0x3b
+
+	)
+
+77 
+	#READ_BUFFER
+ 0x3c
+
+	)
+
+78 
+	#UPDATE_BLOCK
+ 0x3d
+
+	)
+
+79 
+	#READ_LONG
+ 0x3e
+
+	)
+
+80 
+	#WRITE_LONG
+ 0x3f
+
+	)
+
+81 
+	#CHANGE_DEFINITION
+ 0x40
+
+	)
+
+82 
+	#WRITE_SAME
+ 0x41
+
+	)
+
+83 
+	#READ_TOC
+ 0x43
+
+	)
+
+84 
+	#LOG_SELECT
+ 0x4c
+
+	)
+
+85 
+	#LOG_SENSE
+ 0x4d
+
+	)
+
+86 
+	#MODE_SELECT_10
+ 0x55
+
+	)
+
+87 
+	#RESERVE_10
+ 0x56
+
+	)
+
+88 
+	#RELEASE_10
+ 0x57
+
+	)
+
+89 
+	#MODE_SENSE_10
+ 0x5a
+
+	)
+
+90 
+	#PERSISTENT_RESERVE_IN
+ 0x5e
+
+	)
+
+91 
+	#PERSISTENT_RESERVE_OUT
+ 0x5f
+
+	)
+
+92 
+	#MOVE_MEDIUM
+ 0xa5
+
+	)
+
+93 
+	#READ_12
+ 0xa8
+
+	)
+
+94 
+	#WRITE_12
+ 0xØ
+
+	)
+
+95 
+	#WRITE_VERIFY_12
+ 0x´
+
+	)
+
+96 
+	#SEARCH_HIGH_12
+ 0xb0
+
+	)
+
+97 
+	#SEARCH_EQUAL_12
+ 0xb1
+
+	)
+
+98 
+	#SEARCH_LOW_12
+ 0xb2
+
+	)
+
+99 
+	#READ_ELEMENT_STATUS
+ 0xb8
+
+	)
+
+100 
+	#SEND_VOLUME_TAG
+ 0xb6
+
+	)
+
+101 
+	#WRITE_LONG_2
+ 0xó
+
+	)
+
+107 
+	#GOOD
+ 0x00
+
+	)
+
+108 
+	#CHECK_CONDITION
+ 0x01
+
+	)
+
+109 
+	#CONDITION_GOOD
+ 0x02
+
+	)
+
+110 
+	#BUSY
+ 0x04
+
+	)
+
+111 
+	#INTERMEDIATE_GOOD
+ 0x08
+
+	)
+
+112 
+	#INTERMEDIATE_C_GOOD
+ 0x0a
+
+	)
+
+113 
+	#RESERVATION_CONFLICT
+ 0x0c
+
+	)
+
+114 
+	#COMMAND_TERMINATED
+ 0x11
+
+	)
+
+115 
+	#QUEUE_FULL
+ 0x14
+
+	)
+
+117 
+	#STATUS_MASK
+ 0x3e
+
+	)
+
+123 
+	#NO_SENSE
+ 0x00
+
+	)
+
+124 
+	#RECOVERED_ERROR
+ 0x01
+
+	)
+
+125 
+	#NOT_READY
+ 0x02
+
+	)
+
+126 
+	#MEDIUM_ERROR
+ 0x03
+
+	)
+
+127 
+	#HARDWARE_ERROR
+ 0x04
+
+	)
+
+128 
+	#ILLEGAL_REQUEST
+ 0x05
+
+	)
+
+129 
+	#UNIT_ATTENTION
+ 0x06
+
+	)
+
+130 
+	#DATA_PROTECT
+ 0x07
+
+	)
+
+131 
+	#BLANK_CHECK
+ 0x08
+
+	)
+
+132 
+	#COPY_ABORTED
+ 0x0a
+
+	)
+
+133 
+	#ABORTED_COMMAND
+ 0x0b
+
+	)
+
+134 
+	#VOLUME_OVERFLOW
+ 0x0d
+
+	)
+
+135 
+	#MISCOMPARE
+ 0x0e
+
+	)
+
+142 
+	#TYPE_DISK
+ 0x00
+
+	)
+
+143 
+	#TYPE_TAPE
+ 0x01
+
+	)
+
+144 
+	#TYPE_PROCESSOR
+ 0x03
+
+	)
+
+145 
+	#TYPE_WORM
+ 0x04
+
+	)
+
+146 
+	#TYPE_ROM
+ 0x05
+
+	)
+
+147 
+	#TYPE_SCANNER
+ 0x06
+
+	)
+
+148 
+	#TYPE_MOD
+ 0x07
+
+	)
+
+150 
+	#TYPE_MEDIUM_CHANGER
+ 0x08
+
+	)
+
+151 
+	#TYPE_ENCLOSURE
+ 0x0d
+
+	)
+
+152 
+	#TYPE_NO_LUN
+ 0x7f
+
+	)
+
+160 
+	sccs_mode£l_hód
+
+
+162 
+	m_r1
+;
+
+163 
+	mmedium
+;
+
+164 
+	m_r2
+;
+
+165 
+	mblock_desc_Àngth
+;
+
+166 
+	mdísôy
+;
+
+167 
+	mnumbî_blocks_hi
+;
+
+169 
+	mnumbî_blocks_med
+;
+
+170 
+	mnumbî_blocks_lo
+;
+
+171 
+	m_r3
+;
+
+172 
+	mblock_Àngth_hi
+;
+
+174 
+	mblock_Àngth_med
+;
+
+175 
+	mblock_Àngth_lo
+;
+
+182 
+	#COMMAND_COMPLETE
+ 0x00
+
+	)
+
+183 
+	#EXTENDED_MESSAGE
+ 0x01
+
+	)
+
+184 
+	#EXTENDED_MODIFY_DATA_POINTER
+ 0x00
+
+	)
+
+185 
+	#EXTENDED_SDTR
+ 0x01
+
+	)
+
+186 
+	#EXTENDED_EXTENDED_IDENTIFY
+ 0x02
+
+	)
+
+187 
+	#EXTENDED_WDTR
+ 0x03
+
+	)
+
+188 
+	#SAVE_POINTERS
+ 0x02
+
+	)
+
+189 
+	#RESTORE_POINTERS
+ 0x03
+
+	)
+
+190 
+	#DISCONNECT
+ 0x04
+
+	)
+
+191 
+	#INITIATOR_ERROR
+ 0x05
+
+	)
+
+192 
+	#ABORT
+ 0x06
+
+	)
+
+193 
+	#MESSAGE_REJECT
+ 0x07
+
+	)
+
+194 
+	#NOP
+ 0x08
+
+	)
+
+195 
+	#MSG_PARITY_ERROR
+ 0x09
+
+	)
+
+196 
+	#LINKED_CMD_COMPLETE
+ 0x0a
+
+	)
+
+197 
+	#LINKED_FLG_CMD_COMPLETE
+ 0x0b
+
+	)
+
+198 
+	#BUS_DEVICE_RESET
+ 0x0c
+
+	)
+
+200 
+	#INITIATE_RECOVERY
+ 0x0‡
+
+	)
+
+201 
+	#RELEASE_RECOVERY
+ 0x10
+
+	)
+
+203 
+	#SIMPLE_QUEUE_TAG
+ 0x20
+
+	)
+
+204 
+	#HEAD_OF_QUEUE_TAG
+ 0x21
+
+	)
+
+205 
+	#ORDERED_QUEUE_TAG
+ 0x22
+
+	)
+
+212 
+	#SCSI_IOCTL_GET_IDLUN
+ 0x5382
+
+	)
+
+216 
+	#SCSI_IOCTL_TAGGED_ENABLE
+ 0x5383
+
+	)
+
+217 
+	#SCSI_IOCTL_TAGGED_DISABLE
+ 0x5384
+
+	)
+
+220 
+	#SCSI_IOCTL_PROBE_HOST
+ 0x5385
+
+	)
+
+223 
+	#SCSI_IOCTL_GET_BUS_NUMBER
+ 0x5386
+
+	)
+
+	@/usr/include/features.h
+
+18 #i‚def 
+_FEATURES_H
+
+
+19 
+	#_FEATURES_H
+ 1
+
+	)
+
+101 #unde‡
+__USE_ISOC11
+
+
+102 #unde‡
+__USE_ISOC99
+
+
+103 #unde‡
+__USE_ISOC95
+
+
+104 #unde‡
+__USE_ISOCXX11
+
+
+105 #unde‡
+__USE_POSIX
+
+
+106 #unde‡
+__USE_POSIX2
+
+
+107 #unde‡
+__USE_POSIX199309
+
+
+108 #unde‡
+__USE_POSIX199506
+
+
+109 #unde‡
+__USE_XOPEN
+
+
+110 #unde‡
+__USE_XOPEN_EXTENDED
+
+
+111 #unde‡
+__USE_UNIX98
+
+
+112 #unde‡
+__USE_XOPEN2K
+
+
+113 #unde‡
+__USE_XOPEN2KXSI
+
+
+114 #unde‡
+__USE_XOPEN2K8
+
+
+115 #unde‡
+__USE_XOPEN2K8XSI
+
+
+116 #unde‡
+__USE_LARGEFILE
+
+
+117 #unde‡
+__USE_LARGEFILE64
+
+
+118 #unde‡
+__USE_FILE_OFFSET64
+
+
+119 #unde‡
+__USE_BSD
+
+
+120 #unde‡
+__USE_SVID
+
+
+121 #unde‡
+__USE_MISC
+
+
+122 #unde‡
+__USE_ATFILE
+
+
+123 #unde‡
+__USE_GNU
+
+
+124 #unde‡
+__USE_REENTRANT
+
+
+125 #unde‡
+__USE_FORTIFY_LEVEL
+
+
+126 #unde‡
+__KERNEL_STRICT_NAMES
+
+
+130 #i‚de‡
+_LOOSE_KERNEL_NAMES
+
+
+131 
+	#__KERNEL_STRICT_NAMES
+
+
+	)
+
+141 #i‡
+deföed
+ 
+__GNUC__
+ && deföed 
+__GNUC_MINOR__
+
+
+142 
+	#__GNUC_PREREQ
+(
+maj
+, 
+mö
+) \
+
+143 ((
+__GNUC__
+ << 16Ë+ 
+__GNUC_MINOR__
+ >((
+maj
+Ë<< 16Ë+ (
+mö
+))
+
+	)
+
+145 
+	#__GNUC_PREREQ
+(
+maj
+, 
+mö
+Ë0
+
+	)
+
+150 #ifde‡
+_GNU_SOURCE
+
+
+151 #unde‡
+_ISOC95_SOURCE
+
+
+152 
+	#_ISOC95_SOURCE
+ 1
+
+	)
+
+153 #unde‡
+_ISOC99_SOURCE
+
+
+154 
+	#_ISOC99_SOURCE
+ 1
+
+	)
+
+155 #unde‡
+_ISOC11_SOURCE
+
+
+156 
+	#_ISOC11_SOURCE
+ 1
+
+	)
+
+157 #unde‡
+_POSIX_SOURCE
+
+
+158 
+	#_POSIX_SOURCE
+ 1
+
+	)
+
+159 #unde‡
+_POSIX_C_SOURCE
+
+
+160 
+	#_POSIX_C_SOURCE
+ 200809L
+
+	)
+
+161 #unde‡
+_XOPEN_SOURCE
+
+
+162 
+	#_XOPEN_SOURCE
+ 700
+
+	)
+
+163 #unde‡
+_XOPEN_SOURCE_EXTENDED
+
+
+164 
+	#_XOPEN_SOURCE_EXTENDED
+ 1
+
+	)
+
+165 #unde‡
+_LARGEFILE64_SOURCE
+
+
+166 
+	#_LARGEFILE64_SOURCE
+ 1
+
+	)
+
+167 #unde‡
+_DEFAULT_SOURCE
+
+
+168 
+	#_DEFAULT_SOURCE
+ 1
+
+	)
+
+169 #unde‡
+_BSD_SOURCE
+
+
+170 
+	#_BSD_SOURCE
+ 1
+
+	)
+
+171 #unde‡
+_SVID_SOURCE
+
+
+172 
+	#_SVID_SOURCE
+ 1
+
+	)
+
+173 #unde‡
+_ATFILE_SOURCE
+
+
+174 
+	#_ATFILE_SOURCE
+ 1
+
+	)
+
+179 #i‡(
+deföed
+ 
+_DEFAULT_SOURCE
+ \
+
+180 || (!
+deföed
+ 
+	g__STRICT_ANSI__
+ \
+
+181 && !
+deföed
+ 
+	g_ISOC99_SOURCE
+ \
+
+182 && !
+deföed
+ 
+	g_POSIX_SOURCE
+ && !deföed 
+	g_POSIX_C_SOURCE
+ \
+
+183 && !
+deföed
+ 
+	g_XOPEN_SOURCE
+ \
+
+184 && !
+deföed
+ 
+	g_BSD_SOURCE
+ && !deföed 
+	g_SVID_SOURCE
+))
+
+185 #unde‡
+_DEFAULT_SOURCE
+
+
+186 
+	#_DEFAULT_SOURCE
+ 1
+
+	)
+
+187 #unde‡
+_BSD_SOURCE
+
+
+188 
+	#_BSD_SOURCE
+ 1
+
+	)
+
+189 #unde‡
+_SVID_SOURCE
+
+
+190 
+	#_SVID_SOURCE
+ 1
+
+	)
+
+194 #i‡(
+deföed
+ 
+_ISOC11_SOURCE
+ \
+
+195 || (
+deföed
+ 
+	g__STDC_VERSION__
+ && __STDC_VERSION__ >= 201112L))
+
+196 
+	#__USE_ISOC11
+ 1
+
+	)
+
+200 #i‡(
+deföed
+ 
+_ISOC99_SOURCE
+ || deföed 
+_ISOC11_SOURCE
+ \
+
+201 || (
+deföed
+ 
+__STDC_VERSION__
+ && __STDC_VERSION__ >= 199901L))
+
+202 
+	#__USE_ISOC99
+ 1
+
+	)
+
+206 #i‡(
+deföed
+ 
+_ISOC99_SOURCE
+ || deföed 
+_ISOC11_SOURCE
+ \
+
+207 || (
+deföed
+ 
+__STDC_VERSION__
+ && __STDC_VERSION__ >= 199409L))
+
+208 
+	#__USE_ISOC95
+ 1
+
+	)
+
+215 #i‡((
+deföed
+ 
+__˝lu•lus
+ && __cplusplus >= 201103L) \
+
+216 || 
+deföed
+ 
+__GXX_EXPERIMENTAL_CXX0X__
+)
+
+217 
+	#__USE_ISOCXX11
+ 1
+
+	)
+
+223 #ifde‡
+_DEFAULT_SOURCE
+
+
+224 #i‡!
+deföed
+ 
+_POSIX_SOURCE
+ && !deföed 
+_POSIX_C_SOURCE
+
+
+225 
+	#__USE_POSIX_IMPLICITLY
+ 1
+
+	)
+
+227 #unde‡
+_POSIX_SOURCE
+
+
+228 
+	#_POSIX_SOURCE
+ 1
+
+	)
+
+229 #unde‡
+_POSIX_C_SOURCE
+
+
+230 
+	#_POSIX_C_SOURCE
+ 200809L
+
+	)
+
+232 #i‡((!
+deföed
+ 
+__STRICT_ANSI__
+ || (
+_XOPEN_SOURCE
+ - 0) >= 500) && \
+
+233 !
+deföed
+ 
+_POSIX_SOURCE
+ && !deföed 
+_POSIX_C_SOURCE
+)
+
+234 
+	#_POSIX_SOURCE
+ 1
+
+	)
+
+235 #i‡
+deföed
+ 
+_XOPEN_SOURCE
+ && (_XOPEN_SOURCE - 0) < 500
+
+236 
+	#_POSIX_C_SOURCE
+ 2
+
+	)
+
+237 #ñi‡
+deföed
+ 
+_XOPEN_SOURCE
+ && (_XOPEN_SOURCE - 0) < 600
+
+238 
+	#_POSIX_C_SOURCE
+ 199506L
+
+	)
+
+239 #ñi‡
+deföed
+ 
+_XOPEN_SOURCE
+ && (_XOPEN_SOURCE - 0) < 700
+
+240 
+	#_POSIX_C_SOURCE
+ 200112L
+
+	)
+
+242 
+	#_POSIX_C_SOURCE
+ 200809L
+
+	)
+
+244 
+	#__USE_POSIX_IMPLICITLY
+ 1
+
+	)
+
+247 #i‡
+deföed
+ 
+_POSIX_SOURCE
+ || 
+_POSIX_C_SOURCE
+ >1 || deföed 
+_XOPEN_SOURCE
+
+
+248 
+	#__USE_POSIX
+ 1
+
+	)
+
+251 #i‡
+deföed
+ 
+_POSIX_C_SOURCE
+ && _POSIX_C_SOURCE >2 || deföed 
+_XOPEN_SOURCE
+
+
+252 
+	#__USE_POSIX2
+ 1
+
+	)
+
+255 #i‡(
+_POSIX_C_SOURCE
+ - 0) >= 199309L
+
+256 
+	#__USE_POSIX199309
+ 1
+
+	)
+
+259 #i‡(
+_POSIX_C_SOURCE
+ - 0) >= 199506L
+
+260 
+	#__USE_POSIX199506
+ 1
+
+	)
+
+263 #i‡(
+_POSIX_C_SOURCE
+ - 0) >= 200112L
+
+264 
+	#__USE_XOPEN2K
+ 1
+
+	)
+
+265 #unde‡
+__USE_ISOC95
+
+
+266 
+	#__USE_ISOC95
+ 1
+
+	)
+
+267 #unde‡
+__USE_ISOC99
+
+
+268 
+	#__USE_ISOC99
+ 1
+
+	)
+
+271 #i‡(
+_POSIX_C_SOURCE
+ - 0) >= 200809L
+
+272 
+	#__USE_XOPEN2K8
+ 1
+
+	)
+
+273 #unde‡
+_ATFILE_SOURCE
+
+
+274 
+	#_ATFILE_SOURCE
+ 1
+
+	)
+
+277 #ifdef 
+_XOPEN_SOURCE
+
+
+278 
+	#__USE_XOPEN
+ 1
+
+	)
+
+279 #i‡(
+_XOPEN_SOURCE
+ - 0) >= 500
+
+280 
+	#__USE_XOPEN_EXTENDED
+ 1
+
+	)
+
+281 
+	#__USE_UNIX98
+ 1
+
+	)
+
+282 #unde‡
+_LARGEFILE_SOURCE
+
+
+283 
+	#_LARGEFILE_SOURCE
+ 1
+
+	)
+
+284 #i‡(
+_XOPEN_SOURCE
+ - 0) >= 600
+
+285 #i‡(
+_XOPEN_SOURCE
+ - 0) >= 700
+
+286 
+	#__USE_XOPEN2K8
+ 1
+
+	)
+
+287 
+	#__USE_XOPEN2K8XSI
+ 1
+
+	)
+
+289 
+	#__USE_XOPEN2K
+ 1
+
+	)
+
+290 
+	#__USE_XOPEN2KXSI
+ 1
+
+	)
+
+291 #unde‡
+__USE_ISOC95
+
+
+292 
+	#__USE_ISOC95
+ 1
+
+	)
+
+293 #unde‡
+__USE_ISOC99
+
+
+294 
+	#__USE_ISOC99
+ 1
+
+	)
+
+297 #ifde‡
+_XOPEN_SOURCE_EXTENDED
+
+
+298 
+	#__USE_XOPEN_EXTENDED
+ 1
+
+	)
+
+303 #ifde‡
+_LARGEFILE_SOURCE
+
+
+304 
+	#__USE_LARGEFILE
+ 1
+
+	)
+
+307 #ifde‡
+_LARGEFILE64_SOURCE
+
+
+308 
+	#__USE_LARGEFILE64
+ 1
+
+	)
+
+311 #i‡
+deföed
+ 
+_FILE_OFFSET_BITS
+ && _FILE_OFFSET_BITS == 64
+
+312 
+	#__USE_FILE_OFFSET64
+ 1
+
+	)
+
+315 #i‡
+deföed
+ 
+_BSD_SOURCE
+ || deföed 
+_SVID_SOURCE
+
+
+316 
+	#__USE_MISC
+ 1
+
+	)
+
+319 #ifdef 
+_BSD_SOURCE
+
+
+320 
+	#__USE_BSD
+ 1
+
+	)
+
+323 #ifdef 
+_SVID_SOURCE
+
+
+324 
+	#__USE_SVID
+ 1
+
+	)
+
+327 #ifdef 
+_ATFILE_SOURCE
+
+
+328 
+	#__USE_ATFILE
+ 1
+
+	)
+
+331 #ifdef 
+_GNU_SOURCE
+
+
+332 
+	#__USE_GNU
+ 1
+
+	)
+
+335 #i‡
+deföed
+ 
+_REENTRANT
+ || deföed 
+_THREAD_SAFE
+
+
+336 
+	#__USE_REENTRANT
+ 1
+
+	)
+
+339 #i‡
+deföed
+ 
+_FORTIFY_SOURCE
+ && _FORTIFY_SOURCE > 0 \
+
+340 && 
+__GNUC_PREREQ
+ (4, 1Ë&& 
+deföed
+ 
+	g__OPTIMIZE__
+ && __OPTIMIZE__ > 0
+
+341 #i‡
+_FORTIFY_SOURCE
+ > 1
+
+342 
+	#__USE_FORTIFY_LEVEL
+ 2
+
+	)
+
+344 
+	#__USE_FORTIFY_LEVEL
+ 1
+
+	)
+
+347 
+	#__USE_FORTIFY_LEVEL
+ 0
+
+	)
+
+352 
+	~<°dc-¥edef.h
+>
+
+360 #unde‡
+__GNU_LIBRARY__
+
+
+361 
+	#__GNU_LIBRARY__
+ 6
+
+	)
+
+365 
+	#__GLIBC__
+ 2
+
+	)
+
+366 
+	#__GLIBC_MINOR__
+ 19
+
+	)
+
+368 
+	#__GLIBC_PREREQ
+(
+maj
+, 
+mö
+) \
+
+369 ((
+__GLIBC__
+ << 16Ë+ 
+__GLIBC_MINOR__
+ >((
+maj
+Ë<< 16Ë+ (
+mö
+))
+
+	)
+
+372 #i‚de‡
+__ASSEMBLER__
+
+
+373 #i‚de‡
+_SYS_CDEFS_H
+
+
+374 
+	~<sys/cdefs.h
+>
+
+379 #i‡
+deföed
+ 
+__USE_FILE_OFFSET64
+ && !deföed 
+__REDIRECT
+
+
+380 
+	#__USE_LARGEFILE
+ 1
+
+	)
+
+381 
+	#__USE_LARGEFILE64
+ 1
+
+	)
+
+387 #i‡
+__GNUC_PREREQ
+ (2, 7Ë&& 
+deföed
+ 
+__OPTIMIZE__
+ \
+
+388 && !
+deföed
+ 
+	g__OPTIMIZE_SIZE__
+ && !deföed 
+	g__NO_INLINE__
+ \
+
+389 && 
+deföed
+ 
+	g__exã∫_ölöe
+
+
+390 
+	#__USE_EXTERN_INLINES
+ 1
+
+	)
+
+398 
+	~<gnu/°ubs.h
+>
+
+	@/usr/include/linux/sysinfo.h
+
+1 #i‚de‡
+_LINUX_SYSINFO_H
+
+
+2 
+	#_LINUX_SYSINFO_H
+
+
+	)
+
+4 
+	~<löux/ty≥s.h
+>
+
+6 
+	#SI_LOAD_SHIFT
+ 16
+
+	)
+
+7 
+	ssysöfo
+ {
+
+8 
+__kî√l_l⁄g_t
+ 
+	mu±ime
+;
+
+9 
+__kî√l_ul⁄g_t
+ 
+	mlﬂds
+[3];
+
+10 
+__kî√l_ul⁄g_t
+ 
+	mtŸÆøm
+;
+
+11 
+__kî√l_ul⁄g_t
+ 
+	m‰ìøm
+;
+
+12 
+__kî√l_ul⁄g_t
+ 
+	msh¨edøm
+;
+
+13 
+__kî√l_ul⁄g_t
+ 
+	mbuf„ºam
+;
+
+14 
+__kî√l_ul⁄g_t
+ 
+	mtŸÆsw≠
+;
+
+15 
+__kî√l_ul⁄g_t
+ 
+	m‰ìsw≠
+;
+
+16 
+__u16
+ 
+	m¥ocs
+;
+
+17 
+__u16
+ 
+	m∑d
+;
+
+18 
+__kî√l_ul⁄g_t
+ 
+	mtŸÆhigh
+;
+
+19 
+__kî√l_ul⁄g_t
+ 
+	m‰ìhigh
+;
+
+20 
+__u32
+ 
+	mmem_unô
+;
+
+21 
+	m_f
+[20-2*(
+__kî√l_ul⁄g_t
+)-(
+__u32
+)];
+
+	@/usr/include/linux/types.h
+
+1 #i‚de‡
+_LINUX_TYPES_H
+
+
+2 
+	#_LINUX_TYPES_H
+
+
+	)
+
+4 
+	~<asm/ty≥s.h
+>
+
+6 #i‚de‡
+__ASSEMBLY__
+
+
+8 
+	~<löux/posix_ty≥s.h
+>
+
+16 #ifde‡
+__CHECKER__
+
+
+17 
+	#__bôwi£__
+ 
+	`__©åibuã__
+((
+bôwi£
+))
+
+	)
+
+19 
+	#__bôwi£__
+
+
+	)
+
+21 #ifde‡
+__CHECK_ENDIAN__
+
+
+22 
+	#__bôwi£
+ 
+__bôwi£__
+
+
+	)
+
+24 
+	#__bôwi£
+
+
+	)
+
+27 
+__u16
+ 
+	t__bôwi£
+ 
+	t__À16
+;
+
+28 
+__u16
+ 
+	t__bôwi£
+ 
+	t__be16
+;
+
+29 
+__u32
+ 
+	t__bôwi£
+ 
+	t__À32
+;
+
+30 
+__u32
+ 
+	t__bôwi£
+ 
+	t__be32
+;
+
+31 
+__u64
+ 
+	t__bôwi£
+ 
+	t__À64
+;
+
+32 
+__u64
+ 
+	t__bôwi£
+ 
+	t__be64
+;
+
+34 
+__u16
+ 
+	t__bôwi£
+ 
+	t__sum16
+;
+
+35 
+__u32
+ 
+	t__bôwi£
+ 
+	t__wsum
+;
+
+46 
+	#__Æig√d_u64
+ 
+__u64
+ 
+	`__©åibuã__
+((
+	`Æig√d
+(8)))
+
+	)
+
+47 
+	#__Æig√d_be64
+ 
+__be64
+ 
+	`__©åibuã__
+((
+	`Æig√d
+(8)))
+
+	)
+
+48 
+	#__Æig√d_À64
+ 
+__À64
+ 
+	`__©åibuã__
+((
+	`Æig√d
+(8)))
+
+	)
+
+	@/usr/include/stdc-predef.h
+
+18 #i‚def 
+_STDC_PREDEF_H
+
+
+19 
+	#_STDC_PREDEF_H
+ 1
+
+	)
+
+36 #ifde‡
+__GCC_IEC_559
+
+
+37 #i‡
+__GCC_IEC_559
+ > 0
+
+38 
+	#__STDC_IEC_559__
+ 1
+
+	)
+
+41 
+	#__STDC_IEC_559__
+ 1
+
+	)
+
+44 #ifde‡
+__GCC_IEC_559_COMPLEX
+
+
+45 #i‡
+__GCC_IEC_559_COMPLEX
+ > 0
+
+46 
+	#__STDC_IEC_559_COMPLEX__
+ 1
+
+	)
+
+49 
+	#__STDC_IEC_559_COMPLEX__
+ 1
+
+	)
+
+54 
+	#__STDC_ISO_10646__
+ 201103L
+
+	)
+
+57 
+	#__STDC_NO_THREADS__
+ 1
+
+	)
+
+	@/usr/include/linux/posix_types.h
+
+1 #i‚de‡
+_LINUX_POSIX_TYPES_H
+
+
+2 
+	#_LINUX_POSIX_TYPES_H
+
+
+	)
+
+4 
+	~<löux/°ddef.h
+>
+
+21 #unde‡
+__FD_SETSIZE
+
+
+22 
+	#__FD_SETSIZE
+ 1024
+
+	)
+
+25 
+	mfds_bôs
+[
+__FD_SETSIZE
+ / (8 * ())];
+
+26 } 
+	t__kî√l_fd_£t
+;
+
+29 (*
+	t__kî√l_sigh™dÀr_t
+)();
+
+32 
+	t__kî√l_key_t
+;
+
+33 
+	t__kî√l_mqd_t
+;
+
+35 
+	~<asm/posix_ty≥s.h
+>
+
+	@/usr/include/linux/stddef.h
+
+	@
+1
+.
+1
+/usr/include
+27
+476
+debug.h
+driver.c
+protocol.c
+protocol.h
+scsiglue.c
+scsiglue.h
+sd.h
+transport.c
+transport.h
+transport1.c
+uas-detect.h
+unusual_devs.h
+unusual_uas.h
+usb.c
+usb.h
+usual-tables.c
+/usr/include/linux/errno.h
+/usr/include/linux/kernel.h
+/usr/include/linux/sched.h
+/usr/include/linux/utsname.h
+/usr/include/scsi/scsi.h
+/usr/include/features.h
+/usr/include/linux/sysinfo.h
+/usr/include/linux/types.h
+/usr/include/stdc-predef.h
+/usr/include/linux/posix_types.h
+/usr/include/linux/stddef.h
